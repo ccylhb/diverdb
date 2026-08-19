@@ -1,0 +1,98 @@
+---
+import Base from "../../layouts/Base.astro";
+import staff from "../../data/staff.json";
+
+const sorted = [...staff].sort((a, b) => Number(b.maxtotal || 0) - Number(a.maxtotal || 0));
+---
+
+<Base
+  title="Staff Database - Dave the Diver - DiverDB"
+  description="Searchable Dave the Diver staff database: hiring fee, cooking, serving, procurement, appeal stats and special skills."
+>
+  <h1>Staff Database</h1>
+  <p class="muted">
+    Compare every sushi restaurant employee by base and max stats, hiring cost and special skills.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:200px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Billy" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Rating
+      <select id="rating" style="display:block;width:100%;margin-top:0.3rem">
+        <option value="">All ratings</option>
+        {[...new Set(staff.map((s) => s.rating).filter(Boolean))].sort().map((r) => <option value={r}>{r}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="staff-table">
+      <thead>
+        <tr>
+          <th data-key="title">Staff</th>
+          <th>Rating</th>
+          <th data-key="hiringfee" data-numeric="true">Hire fee</th>
+          <th data-key="basetotal" data-numeric="true">Base total</th>
+          <th data-key="maxtotal" data-numeric="true">Max total</th>
+          <th>Base cooking / serving / procure / appeal</th>
+          <th>Special skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((s) => (
+          <tr data-name={(s.title || "").toLowerCase()} data-rating={s.rating || ""}>
+            <td><strong>{s.title}</strong></td>
+            <td>{s.rating || "—"}</td>
+            <td>{s.hiringfee || "—"}</td>
+            <td>{s.basetotal || "—"}</td>
+            <td>{s.maxtotal || "—"}</td>
+            <td>{s.basecooking || "—"} / {s.baseserving || "—"} / {s.baseprocure || "—"} / {s.baseappeal || "—"}</td>
+            <td style="max-width:240px">{s.specialskills || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const rating = document.getElementById("rating");
+    const table = document.getElementById("staff-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const matchQ = !query || row.dataset.name.includes(query);
+        const matchRating = !rating.value || row.dataset.rating === rating.value;
+        row.style.display = matchQ && matchRating ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const index = Array.from(headers).indexOf(th) + 1;
+          const av = a.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const result = numeric ? (Number(av) || 0) - (Number(bv) || 0) : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+    rating.addEventListener("change", render);
+  </script>
+</Base>

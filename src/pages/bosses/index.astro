@@ -1,0 +1,85 @@
+---
+import Base from "../../layouts/Base.astro";
+import bosses from "../../data/bosses.json";
+
+const sorted = [...bosses].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+---
+
+<Base
+  title="Boss Database - Dave the Diver - DiverDB"
+  description="Dave the Diver boss database: source zone, rank, recipes and loot drops for every major boss encounter."
+>
+  <h1>Boss Database</h1>
+  <p class="muted">
+    Every major boss with its source zone, loot and the recipes unlocked from its ingredients.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:220px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Giant Squid" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="boss-table">
+      <thead>
+        <tr>
+          <th data-key="title">Boss</th>
+          <th>Source</th>
+          <th data-key="rank" data-numeric="true">Rank</th>
+          <th>Weight</th>
+          <th>Recipes</th>
+          <th>Loot</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((b) => (
+          <tr data-name={(b.title || "").toLowerCase()}>
+            <td><strong>{b.title}</strong></td>
+            <td>{b.source || "—"}</td>
+            <td>{b.rank || "—"}</td>
+            <td>{b.weight || "—"}</td>
+            <td style="max-width:260px">{b.recipes || "—"}</td>
+            <td style="max-width:280px">{b.loot || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const table = document.getElementById("boss-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        row.style.display = !query || row.dataset.name.includes(query) ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const index = Array.from(headers).indexOf(th) + 1;
+          const av = a.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const result = numeric ? (Number(av) || 0) - (Number(bv) || 0) : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+  </script>
+</Base>

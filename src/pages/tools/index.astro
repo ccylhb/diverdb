@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const tools = [
+  {
+    title: "Fish Farm Planner",
+    desc: "Filter fish by zone and time, then rank ranch stock by meat per day and breeding rate.",
+    href: "/tools/fish-farm/",
+    badge: "Planner",
+  },
+  {
+    title: "Recipe Filter",
+    desc: "Search recipes by ingredient, taste and dish count to build the strongest menu.",
+    href: "/tools/recipe-filter/",
+    badge: "Filter",
+  },
+  {
+    title: "Staff Compare",
+    desc: "Compare two staff members on base and max stats, then check their strongest role.",
+    href: "/tools/staff-compare/",
+    badge: "Compare",
+  },
+];
+---
+
+<Base
+  title="Dave the Diver Tools & Calculators - DiverDB"
+  description="Free Dave the Diver tools: fish farm planner, recipe filter and staff stat comparison."
+>
+  <h1>Tools</h1>
+  <p class="muted">
+    Practical planning tools for fish farming, restaurant menus and staff training.
+  </p>
+  <div class="grid grid-3">
+    {tools.map((t) => (
+      <a class="card" href={t.href} style="display:block;color:inherit">
+        <span class="tag">{t.badge}</span>
+        <h3 style="margin:0.5rem 0 0.25rem">{t.title}</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">{t.desc}</p>
+      </a>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,61 @@
+---
+import Base from "../../layouts/Base.astro";
+import bosses from "../../data/bosses.json";
+
+const shallow = bosses.filter((b) => (b.categories || []).some((c) => c.includes("Shallow")) || (b.source || "").toLowerCase().includes("shallow"));
+const medium = bosses.filter((b) => (b.categories || []).some((c) => c.includes("Medium")) || (b.source || "").toLowerCase().includes("medium"));
+const depths = bosses.filter((b) => (b.categories || []).some((c) => c.includes("Depth")) || (b.source || "").toLowerCase().includes("depth"));
+const glacier = bosses.filter((b) => (b.categories || []).some((c) => c.includes("Glacier")) || (b.source || "").toLowerCase().includes("glacier"));
+const grouped = [...shallow, ...medium, ...depths, ...glacier];
+const others = bosses.filter((b) => !grouped.includes(b));
+const groups = [
+  ["Shallow", shallow],
+  ["Medium depth", medium],
+  ["Depths", depths],
+  ["Glacier", glacier],
+  ["Other encounters", others],
+];
+---
+
+<Base
+  title="Boss Order & Drops - Dave the Diver - DiverDB"
+  description="Dave the Diver boss order by zone, plus loot drops and recipes unlocked by boss ingredients."
+>
+  <h1>Boss Order &amp; Drops</h1>
+  <p class="muted">
+    Bosses appear as you unlock new dive regions. The list below groups them by zone rather than
+    a fixed chapter order.
+  </p>
+
+  {groups.map(([name, list]) => (
+    <section>
+      <h2>{name}</h2>
+      {list.length ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Boss</th>
+              <th>Recipes</th>
+              <th>Loot</th>
+            </tr>
+          </thead>
+          <tbody>
+            {list.map((b) => (
+              <tr>
+                <td><strong>{b.title}</strong></td>
+                <td>{b.recipes || "—"}</td>
+                <td>{b.loot || "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No bosses grouped in this zone from the current dataset.</p>
+      )}
+    </section>
+  ))}
+
+  <p style="margin-top:1rem">
+    Full boss stats are in the <a href="/bosses/">Boss Database</a>.
+  </p>
+</Base>

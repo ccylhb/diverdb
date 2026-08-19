@@ -1,0 +1,58 @@
+---
+import Base from "../../layouts/Base.astro";
+import staff from "../../data/staff.json";
+
+const top = [...staff].sort((a, b) => Number(b.maxtotal || 0) - Number(a.maxtotal || 0)).slice(0, 12);
+---
+
+<Base
+  title="Staff Training & Role Guide - Dave the Diver - DiverDB"
+  description="Dave the Diver staff guide: hiring, training, role assignment and the best staff by max total stats."
+>
+  <h1>Staff Training &amp; Role Guide</h1>
+  <p class="muted">
+    Staff stats decide how fast the kitchen, floor and procurement run.
+  </p>
+
+  <h2>How staff stats work</h2>
+  <p>
+    <strong>Cooking</strong> speeds up dish preparation, <strong>serving</strong> handles the floor,
+    <strong>procurement</strong> improves ingredient sourcing and <strong>appeal</strong> attracts
+    customers. Special skills such as Tip Master or Cleaning Master add a second layer that can
+    matter more than raw numbers at lower levels.
+  </p>
+
+  <h2>Top staff by max total</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Staff</th>
+          <th>Rating</th>
+          <th>Hire fee</th>
+          <th>Max total</th>
+          <th>Special skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        {top.map((s) => (
+          <tr>
+            <td><strong>{s.title}</strong></td>
+            <td>{s.rating}</td>
+            <td>{s.hiringfee}</td>
+            <td>{s.maxtotal}</td>
+            <td>{s.specialskills}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Training priority</h2>
+  <p>
+    Train the staff who cover your weakest service bottleneck first. If orders stack in the
+    kitchen, invest in cooking; if tables wait, invest in serving. Use the
+    <a href="/tools/staff-compare/">Staff Compare</a> tool to check which member has the highest
+    ceiling for the role you need.
+  </p>
+</Base>

@@ -1,0 +1,104 @@
+---
+import Base from "../../layouts/Base.astro";
+import recipes from "../../data/recipes.json";
+
+const sorted = [...recipes].sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0));
+const maxTaste = Math.max(...recipes.map((r) => Number(r.maxtaste) || 0));
+const maxDish = Math.max(...recipes.map((r) => Number(r.maxdish) || 0));
+---
+
+<Base
+  title="Recipe Filter - Dave the Diver - DiverDB"
+  description="Filter Dave the Diver recipes by ingredient, max taste and dish count to plan the daily restaurant menu."
+>
+  <h1>Recipe Filter</h1>
+  <p class="muted">
+    Build the menu from recipes that match your ingredient supply and target taste.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:200px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Tuna or Sashimi" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Min max taste
+      <input id="minTaste" type="number" min="0" max={maxTaste} style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Max dish count
+      <input id="maxDish" type="number" min="1" max={maxDish} style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="filter-table">
+      <thead>
+        <tr>
+          <th data-key="title">Recipe</th>
+          <th>Ingredients</th>
+          <th data-key="baseprice" data-numeric="true">Base price</th>
+          <th data-key="maxprice" data-numeric="true">Max price</th>
+          <th data-key="maxtaste" data-numeric="true">Max taste</th>
+          <th data-key="maxdish" data-numeric="true">Max dish</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((r) => (
+          <tr data-name={(r.title || "").toLowerCase()} data-taste={Number(r.maxtaste) || 0} data-dish={Number(r.maxdish) || 0}>
+            <td><strong>{r.title}</strong></td>
+            <td style="max-width:280px">{r.ingredients || "—"}</td>
+            <td>{r.baseprice || "—"}</td>
+            <td>{r.maxprice || "—"}</td>
+            <td>{r.maxtaste || "—"}</td>
+            <td>{r.maxdish || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const minTaste = document.getElementById("minTaste");
+    const maxDish = document.getElementById("maxDish");
+    const table = document.getElementById("filter-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      const min = Number(minTaste.value) || 0;
+      const max = Number(maxDish.value) || Infinity;
+      rows.forEach((row) => {
+        const matchQ = !query || row.dataset.name.includes(query);
+        const matchTaste = Number(row.dataset.taste) >= min;
+        const matchDish = Number(row.dataset.dish) <= max;
+        row.style.display = matchQ && matchTaste && matchDish ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const index = Array.from(headers).indexOf(th) + 1;
+          const av = a.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const result = numeric ? (Number(av) || 0) - (Number(bv) || 0) : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+    minTaste.addEventListener("input", render);
+    maxDish.addEventListener("input", render);
+  </script>
+</Base>

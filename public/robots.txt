@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diverdb.pages.dev/sitemap.xml

@@ -1,0 +1,5204 @@
+[
+  {
+    "title": "Agar Tokoroten",
+    "image": "Menu Gelidium Tokoroten.png",
+    "description": "Tokoroten made with agar and mixed with soy sauce.; A cool, low-calorie dish that's good for your health.",
+    "acquired": "Cooksta Bronze Rank",
+    "flame_cost": "3",
+    "ingredients": "3 Agar; 1 Soy Sauce",
+    "baseprice": "51",
+    "basetaste": "68",
+    "basedish": "5",
+    "maxprice": "188",
+    "maxtaste": "266",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Alaska Pollock Sushi",
+    "image": "Sushi Alaska Pollock.png",
+    "description": "Sushi made from Alaska Pollock.",
+    "acquired": "Alaska Pollock",
+    "ingredients": "1 Alaska Pollock",
+    "baseprice": "135",
+    "basetaste": "38",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "380",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Allenypterus Sushi",
+    "image": "Sushi Allenypterus.png",
+    "description": "Sushi made with allenypterus.",
+    "acquired": "Allenypterus",
+    "flame_cost": "",
+    "ingredients": "1 Allenypterus",
+    "baseprice": "125",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "462",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "American Lobster Sushi",
+    "image": "American_Lobster_Sushi.png",
+    "description": "Sushi made from american lobster.",
+    "acquired": "American Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 American Lobster",
+    "baseprice": "129",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "477",
+    "maxtaste": "290",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Antarctic Octopus Carpaccio",
+    "image": "Menu Antarctic Octopus Carpaccio.png",
+    "description": "A blanched fresh Antarctic octopus with olive oil.; With minced onion, it tastes soft, chewy, and fresh at the same time.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "flame_cost": "7",
+    "ingredients": "3 Antarctic Octopus; 2 Onion; 1 Olive Oil",
+    "baseprice": "405",
+    "basetaste": "120",
+    "basedish": "5",
+    "maxprice": "1498",
+    "maxtaste": "408",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Antarctic Octopus Sushi",
+    "image": "Sushi Antarctic Octopus.png",
+    "description": "Sushi made with Antarctic octopus.",
+    "acquired": "Antarctic Octopus",
+    "flame_cost": "",
+    "ingredients": "1 Antarctic Octopus",
+    "baseprice": "120",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Arctic Cod Risotto",
+    "image": "Menu Arctic Cod Rizotto.png",
+    "description": "Cherry tomatoes, garlic, and premium rice simmered for a long time, served with a roasted Arctic cod fillet.; The sweet and sour aroma of tomato covers the entire dish.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "flame_cost": "7",
+    "ingredients": "3 Arctic Cod; 2 Cherry Tomato; 2 Rice; 2 Garlic",
+    "baseprice": "408",
+    "basetaste": "125",
+    "basedish": "6",
+    "maxprice": "1509",
+    "maxtaste": "377",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Arctic Cod Sushi",
+    "image": "Sushi Arctic Cod.png",
+    "description": "Sushi made with Arctic cod fillet.",
+    "acquired": "Arctic Cod",
+    "flame_cost": "",
+    "ingredients": "1 Arctic Cod",
+    "baseprice": "95",
+    "basetaste": "34",
+    "basedish": "1",
+    "maxprice": "351",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Arctic Telescope Fish Sushi",
+    "image": "Sushi Arctic TelescopeFish.png",
+    "description": "Sushi made from arctic telescope fish.",
+    "acquired": "Arctic Telescope Fish",
+    "flame_cost": "",
+    "ingredients": "1 Arctic Telescope Fish",
+    "baseprice": "120",
+    "basetaste": "35",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "350",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Atlantic Anglerfish Sushi",
+    "image": "Sushi AtlanticAnglerfish.png",
+    "description": "Sushi made with Atlantic Angler.",
+    "acquired": "Atlantic Anglerfish",
+    "ingredients": "1 Atlantic Anglerfish",
+    "baseprice": "33",
+    "basetaste": "24",
+    "basedish": "1",
+    "maxprice": "122",
+    "maxtaste": "240",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Atlantic Bonito Curry",
+    "image": "Menu Atlantic Bonito Curry.png",
+    "description": "Japanese curry with rice topped with Atlantic bonito.",
+    "acquired": "Cooksta Platinum Rank",
+    "flame_cost": "12",
+    "event": "curry",
+    "ingredients": "5 Atlantic Bonito; 2 Carrot; 1 Curry Block",
+    "baseprice": "380",
+    "basetaste": "137",
+    "basedish": "5",
+    "maxprice": "1406",
+    "maxtaste": "389",
+    "maxdish": "5",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Atlantic Bonito Sushi",
+    "image": "Sushi AtlanticBonito.png",
+    "description": "Sushi made with Atlantic Bonito.",
+    "acquired": "Atlantic Bonito",
+    "flame_cost": "",
+    "ingredients": "1 Atlantic Bonito",
+    "baseprice": "21",
+    "basetaste": "18",
+    "basedish": "1",
+    "maxprice": "77",
+    "maxtaste": "180",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Atlantic Mackerel Sushi",
+    "image": "Sushi Atlantic Mackerel.png",
+    "description": "Sushi made with Atlantic mackerel fillet.",
+    "acquired": "Atlantic Mackerel",
+    "flame_cost": "",
+    "ingredients": "1 Atlantic Mackerel",
+    "baseprice": "21",
+    "basetaste": "19",
+    "basedish": "1",
+    "maxprice": "77",
+    "maxtaste": "190",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Aurora Jellyfish Sushi",
+    "image": "Aurora Jellyfish Sushi.png",
+    "description": "Sushi made from Aurora Jellyfish.; Regular customers probably won't prefer it.",
+    "acquired": "Aurora Jellyfish",
+    "flame_cost": "",
+    "ingredients": "1 Aurora Jellyfish",
+    "baseprice": "345",
+    "basetaste": "6",
+    "basedish": "1",
+    "maxprice": "345",
+    "maxtaste": "6",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "B&W Snapper Sushi",
+    "image": "Sushi BlackandWhiteSnapper.png",
+    "description": "Sushi made with B&W Snapper.",
+    "acquired": "Black and White Snapper",
+    "ingredients": "1 Black and White Snapper",
+    "baseprice": "9",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "33",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Barbed Eel Sushi",
+    "image": "Barbed Eel Sushi.png",
+    "description": "Sushi made from Barbed Eel.; Regular customers probably won't prefer it.",
+    "acquired": "Barbed Eel",
+    "flame_cost": "",
+    "ingredients": "1 Barbed Eel",
+    "baseprice": "500",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "500",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Barrel Jellyfish Sushi",
+    "image": "Sushi_BarrelJellyfish.png",
+    "description": "Sushi made with Barrel Jellyfish.",
+    "acquired": "Barrel Jellyfish",
+    "event": "jellyfish",
+    "ingredients": "1 Barrel Jellyfish",
+    "baseprice": "15",
+    "basetaste": "16",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "160",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Barreleye Sushi",
+    "image": "Sushi Barreleye.png",
+    "description": "Sushi made with barreleye fillet.",
+    "acquired": "Barreleye",
+    "flame_cost": "",
+    "ingredients": "1 Barreleye",
+    "baseprice": "70",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "259",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Batfish Ricebowl",
+    "image": "Menu LongfinBatFish JuvenileCircularBatFish RiceBowl.png",
+    "description": "Rice topped with meat from the circular batfish as well as mature female longfin batfish.; Soft meat, aged meat, and slightly cooked egg form a warm harmony on the tongue.",
+    "acquired": "Train Mitchell to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 Longfin Batfish; 5 Orbicular Batfish; 2 Rice; 2 Egg",
+    "baseprice": "400",
+    "basetaste": "150",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "447",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Big-Eyed Scad and Soybean Paste Roast",
+    "image": "Menu Bigeye Scad Grilled.png",
+    "description": "A roasted big-eyed scad dish with soybean paste.; The sesame seed and soybean paste meet each other for the ultimate taste.",
+    "acquired": "Cooksta Gold Rank",
+    "flame_cost": "9",
+    "ingredients": "5 Bigeye Scad; 1 Miso; 1 Sesame Seed",
+    "baseprice": "185",
+    "basetaste": "114",
+    "basedish": "5",
+    "maxprice": "684",
+    "maxtaste": "348",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bigeye Scad Sushi",
+    "image": "Sushi BigeyeScad.png",
+    "description": "Sushi made with Bigeye Scad.",
+    "acquired": "Bigeye Scad",
+    "flame_cost": "",
+    "ingredients": "1 Bigeye Scad",
+    "baseprice": "17",
+    "basetaste": "14",
+    "basedish": "1",
+    "maxprice": "62",
+    "maxtaste": "140",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bigeye Trevally Sushi",
+    "image": "Sushi BigeyeTrevally.png",
+    "description": "Sushi made with Bigeye Trevally.",
+    "acquired": "Bigeye Trevally",
+    "flame_cost": "",
+    "ingredients": "1 Bigeye Trevally",
+    "baseprice": "19",
+    "basetaste": "17",
+    "basedish": "1",
+    "maxprice": "70",
+    "maxtaste": "170",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Black Vinegar Braised Parrotfish",
+    "image": "Menu MediterraneanParrotfish Stewed.png",
+    "description": "Parrotfish seasoned with sour black vinegar and boiled down.; The Mediterranean parrotfish and the heavy black sauce form an interesting harmony.",
+    "acquired": "Cooksta Platinum Rank",
+    "flame_cost": "9",
+    "ingredients": "5 Mediterranean Parrotfish; 2 Carrot; 1 Black Vinegar",
+    "baseprice": "385",
+    "basetaste": "136",
+    "basedish": "4",
+    "maxprice": "1424",
+    "maxtaste": "406",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blackfin Barracuda Sushi",
+    "image": "Sushi_Blackfin_Barracuda.png",
+    "description": "Sushi made with Blackfin Barracuda.",
+    "acquired": "Blackfin Barracuda",
+    "ingredients": "1 Blackfin Barracuda",
+    "baseprice": "60",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "222",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blackspot Seabream Sushi",
+    "image": "Sushi BlackspotSeabream.png",
+    "description": "Sushi made with Blackspot Seabream.",
+    "acquired": "Blackspot Seabream",
+    "ingredients": "1 Blackspot Seabream",
+    "baseprice": "5",
+    "basetaste": "11",
+    "basedish": "1",
+    "maxprice": "18",
+    "maxtaste": "110",
+    "maxdish": "1",
+    "categories": [
+      "Recipes",
+      "Cut Content"
+    ]
+  },
+  {
+    "title": "Blacktip Reefshark Sushi",
+    "image": "Sushi BlacktipReefShark.png",
+    "description": "Sushi made with Blacktip Reefshark fillet.",
+    "acquired": "Blacktip Reefshark",
+    "ingredients": "1 Blacktip Shark Meat",
+    "baseprice": "60",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "222",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blanched Lusca Tentacle",
+    "image": "Blanched_Lusca_Tentacle.png",
+    "description": "Blanched and sliced Lusca tentacles.; The fragrant olive oil masks the fishy smell.",
+    "acquired": "Defeat Lusca",
+    "flame_cost": "1",
+    "ingredients": "1 Lusca Tentacle; 1 Salt; 1 Olive Oil",
+    "baseprice": "1350",
+    "basetaste": "250",
+    "basedish": "10",
+    "maxprice": "1350",
+    "maxtaste": "250",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blobfish Spring Roll",
+    "image": "Menu Blobfish SpringRoll.png",
+    "description": "Blobfish is covered with a thin, baked flour dough and fried.; The sesame seeds and mayonnaise sauce go well with the dish.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "flame_cost": "7",
+    "ingredients": "3 Blobfish; 2 Wheat; 1 Mayonnaise; 1 Sesame Seed",
+    "baseprice": "375",
+    "basetaste": "115",
+    "basedish": "7",
+    "maxprice": "1387",
+    "maxtaste": "322",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blobfish Sushi",
+    "image": "Sushi Blobfish.png",
+    "description": "Sushi made with blobfish fillet.",
+    "acquired": "Blobfish",
+    "flame_cost": "",
+    "ingredients": "1 Blobfish",
+    "baseprice": "120",
+    "basetaste": "31",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "310",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blood-belly Comb Jelly Sushi",
+    "image": "Sushi BloodbellyCombJelly.png",
+    "description": "Sushi made with Blood-belly Comb Jellyfish.",
+    "acquired": "Blood-belly Comb Jellyfish",
+    "flame_cost": "",
+    "event": "jellyfish",
+    "ingredients": "1 Blood-belly Comb Jellyfish",
+    "baseprice": "50",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bloodskin Shark Sushi",
+    "image": "Bloodskin Shark Sushi.png",
+    "description": "Sushi made from Bloodskin Shark.; Regular customers probably won't prefer it.",
+    "acquired": "Bloodskin Shark",
+    "flame_cost": "",
+    "ingredients": "1 Bloodskin Shark",
+    "baseprice": "1225",
+    "basetaste": "4",
+    "basedish": "1",
+    "maxprice": "1225",
+    "maxtaste": "4",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blue Lobster Sushi",
+    "image": "Sushi_Blue_Lobster.png",
+    "description": "Sushi made from blue lobster.",
+    "acquired": "Blue Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Blue Lobster",
+    "baseprice": "141",
+    "basetaste": "32",
+    "basedish": "1",
+    "maxprice": "521",
+    "maxtaste": "320",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Blue Tang Sushi",
+    "image": "Sushi Bluetang.png",
+    "description": "Sushi made with Blue Tang.",
+    "acquired": "Blue Tang",
+    "ingredients": "1 Blue Tang",
+    "baseprice": "6",
+    "basetaste": "11",
+    "basedish": "1",
+    "maxprice": "22",
+    "maxtaste": "110",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluefin Tuna Akami Sushi",
+    "image": "Sushi BlueFin Tuna Akami.png",
+    "description": "Sushi made with bluefin tuna akami.",
+    "acquired": "Bluefin Tuna Akami",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Bluefin Tuna Akami",
+    "baseprice": "80",
+    "basetaste": "60",
+    "basedish": "1",
+    "maxprice": "296",
+    "maxtaste": "240",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluefin Tuna Chutoro Sushi",
+    "image": "Sushi BlueFin Tuna Chutoro.png",
+    "description": "Sushi made with bluefin tuna chutoro.",
+    "acquired": "Bluefin Tuna Chutoro",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Bluefin Tuna Chutoro",
+    "baseprice": "95",
+    "basetaste": "61",
+    "basedish": "1",
+    "maxprice": "351",
+    "maxtaste": "241",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluefin Tuna Ootoro Sushi",
+    "image": "Sushi BlueFin Tuna Ootoro.png",
+    "description": "Sushi made with bluefin tuna ootoro.",
+    "acquired": "Bluefin Tuna Ootoro",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Bluefin Tuna Ootoro",
+    "baseprice": "133",
+    "basetaste": "105",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "330",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluefin Tuna Rice Bowl",
+    "image": "Menu Bluefin Tuna RiceBowl.png",
+    "description": "A bowl of rice with bluefin tuna fillets on top.",
+    "acquired": "Seasonal Event: Tuna Party",
+    "flame_cost": "5",
+    "event": "tuna",
+    "ingredients": "3 Bluefin Tuna Akami; 3 Rice; 1 Egg; 1 Sesame Seed",
+    "baseprice": "360",
+    "basetaste": "130",
+    "basedish": "6",
+    "maxprice": "1332",
+    "maxtaste": "400",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluehead Tilefish Sushi",
+    "image": "Sushi BlueheadTilefish.png",
+    "description": "Sushi made with Bluehead Tilefish.",
+    "acquired": "Bluehead Tilefish",
+    "flame_cost": "",
+    "ingredients": "1 Bluehead Tilefish",
+    "baseprice": "15",
+    "basetaste": "14",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "140",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bluespotted Stargazer Sushi",
+    "image": "Sushi BluespottedStargazer.png",
+    "description": "Sushi made with Bluespotted Stargazer.",
+    "acquired": "Bluespotted Stargazer",
+    "flame_cost": "",
+    "ingredients": "1 Bluespotted Stargazer",
+    "baseprice": "55",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "203",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled Asian Sheepshead Wrasse & Truffle",
+    "image": "Boiled_Asian_Sheepshead_Wrasse_&_Truffle.png",
+    "description": "Asian sheepshead wrasse diced in chunks, boiled in kelp broth, and garnished with truffles.; The rich flavor of truffles plays well with the refreshing taste of fish.",
+    "acquired": "Complete Make Jango Warm!",
+    "ingredients": "3 Sheepshead Meat; 3 Kelp; 1 Truffle",
+    "baseprice": "755",
+    "basetaste": "180",
+    "basedish": "2",
+    "maxprice": "1661",
+    "maxtaste": "280",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled Mantis Shrimp with Soy Paste",
+    "image": "Menu Special MantisShrimp ShellMeat Boiled.png",
+    "description": "Mantis shrimp meat is placed on eggplants, seasoned with soy paste, and cooked on low flame for a long time.; The chewy texture of the meat and the soft texture of the eggplants go well together.",
+    "acquired": "Defeat Mantis Shrimp",
+    "flame_cost": "1",
+    "ingredients": "1 Mantis Shrimp Meat; 1 Eggplant; 1 Agar; 1 Miso",
+    "event": "lobster",
+    "baseprice": "650",
+    "basetaste": "150",
+    "basedish": "10",
+    "maxprice": "650",
+    "maxtaste": "150",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled Porbeagle Shark",
+    "image": "Menu Porbeagle Shark Steamed.png",
+    "description": "The meat of a porbeagle shark is sliced into big chunks and cooked on low flame for a long time.; The sprinkled black vinegar and pepper give it more aroma.",
+    "acquired": "Train Raul to Level 15",
+    "flame_cost": "15",
+    "event": "shark",
+    "ingredients": "3 Porbeagle Shark Meat; 1 Black Vinegar; 1 Black Pepper",
+    "baseprice": "400",
+    "basetaste": "143",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "332",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled Sailfish and Seaweed",
+    "image": "Menu Sail Fish Seaweed Boiled.png",
+    "description": "Sailfish and seaweed are boiled with soy sauce.; The deep and blue sea explodes in your mouth.",
+    "acquired": "Seasonal Event: Marlin Party",
+    "flame_cost": "5",
+    "event": "marlin",
+    "ingredients": "3 Sailfish Meat; 2 Southern Bull Kelp; 2 Kajime; 1 Soy Sauce",
+    "baseprice": "425",
+    "basetaste": "138",
+    "basedish": "6",
+    "maxprice": "1572",
+    "maxtaste": "300",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled Yellowback Fusilier",
+    "image": "Menu Yellowback Fusilier Boiled.png",
+    "description": "Yellowback fusilier boiled down in soy sauce.; It looks simple, but it has a deep soy sauce flavor.",
+    "acquired": "Cooksta Bronze Rank",
+    "flame_cost": "3",
+    "event": "",
+    "ingredients": "3 Yellowback Fusilier; 1 Soy Sauce",
+    "baseprice": "50",
+    "basetaste": "75",
+    "basedish": "5",
+    "maxprice": "185",
+    "maxtaste": "255",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Boiled and Deep-Fried White Shrimp",
+    "image": "Menu Whiteleg Shrimp Mayo.png",
+    "description": "Boiled and deep-fried white shrimp are sprinkled with mayonnaise.; It's good on its own, but it gets better with alcoholic beverages.",
+    "acquired": "Train Raptor to Level 5",
+    "flame_cost": "8",
+    "event": "shrimp",
+    "ingredients": "5 Whiteleg Shrimp; 1 Egg; 1 Mayonnaise; 1 Olive Oil",
+    "baseprice": "225",
+    "basetaste": "105",
+    "basedish": "7",
+    "maxprice": "832",
+    "maxtaste": "330",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bony Wreckfish Sushi",
+    "image": "Bony Wreckfish Sushi.png",
+    "description": "Sushi made from Bony Wreckfish.; Regular customers probably won't prefer it.",
+    "acquired": "Bony Wreckfish",
+    "flame_cost": "",
+    "ingredients": "1 Bony Wreckfish",
+    "baseprice": "620",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "620",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Box Jellyfish Sushi",
+    "image": "Sushi BoxJellyfish.png",
+    "description": "Sushi made with Box Jellyfish.",
+    "acquired": "Box Jellyfish",
+    "flame_cost": "",
+    "event": "jellyfish",
+    "ingredients": "1 Box Jellyfish",
+    "baseprice": "55",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "203",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Bursting Anglerfish Sushi",
+    "image": "Bursting Anglerfish Sushi.png",
+    "description": "Sushi made from Bursting Anglerfish.; Regular customers probably won't prefer it.",
+    "acquired": "Bursting Anglerfish",
+    "flame_cost": "",
+    "ingredients": "1 Bursting Anglerfish",
+    "baseprice": "530",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "530",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "California Spiny Lobster Sushi",
+    "image": "California Spiny Lobster Sushi.png",
+    "description": "Sushi made from california spiny lobster.",
+    "acquired": "California Spiny Lobster",
+    "flame_cost": "",
+    "ingredients": "1 California Spiny Lobster",
+    "event": "lobster",
+    "baseprice": "66",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "244",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Capelin Sushi",
+    "image": "Sushi Capelin.png",
+    "description": "Sushi made with capelin.",
+    "acquired": "Capelin",
+    "flame_cost": "",
+    "ingredients": "1 Capelin",
+    "baseprice": "45",
+    "basetaste": "33",
+    "basedish": "1",
+    "maxprice": "166",
+    "maxtaste": "330",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cardinalfish Sushi",
+    "image": "Sushi RubyCardinalFish.png",
+    "description": "Sushi made with Ruby Cardinalfish.",
+    "ingredients": "1 Cardinal Fish",
+    "baseprice": "3",
+    "basetaste": "10",
+    "basedish": "1",
+    "maxprice": "11",
+    "maxtaste": "100",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cerebral Crab Sushi",
+    "image": "Cerebral Crab Sushi.png",
+    "description": "Sushi made from Cerebral Crab.; Regular customers probably won't prefer it.",
+    "acquired": "Cerebral Crab",
+    "flame_cost": "",
+    "ingredients": "1 Cerebral Crab",
+    "baseprice": "515",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "515",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Chambered Nautilus Sushi",
+    "image": "Sushi ChamberedNautilus.png",
+    "description": "Sushi made with Chambered Nautilus.",
+    "acquired": "Chambered Nautilus",
+    "ingredients": "1 Chambered Nautilus",
+    "baseprice": "35",
+    "basetaste": "22",
+    "basedish": "1",
+    "maxprice": "129",
+    "maxtaste": "220",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Chirashi Sushi",
+    "image": "Chirashi Sushi.png",
+    "description": "A premium rice bowl topped with green sea urchin roe, cuttlefish, and bluefin tuna chutoro.; It is known to be singer-songwriter mxmtoon's favorite dish.",
+    "acquired": "Complete Inspirational Chirashi Sushi",
+    "event": "tuna",
+    "ingredients": "3 Green Sea Urchin; 3 Bluefin Tuna Chutoro; 3 Cuttlefish",
+    "baseprice": "690",
+    "basetaste": "150",
+    "basedish": "2",
+    "maxprice": "1518",
+    "maxtaste": "274",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Clearfin Lionfish Sushi",
+    "image": "Clearfin_Lionfish_Sushi.png",
+    "description": "Sushi made from clearfin lionfish.",
+    "acquired": "Clearfin Lionfish",
+    "ingredients": "1 Clearfin Lionfish",
+    "baseprice": "24",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "88",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Clione Queen Soup",
+    "image": "Menu Special ClioneQueen Tentacle Soup.png",
+    "description": "Tentacles of a clione queen sliced into bite-sized pieces simmered in meat stock.; The clear and bright soup warms you up.",
+    "acquired": "Defeat Clione Queen",
+    "flame_cost": "1",
+    "ingredients": "1 Clione Queen Tentacle; 1 Kelp; 1 Miso; 1 Salt",
+    "baseprice": "550",
+    "basetaste": "135",
+    "basedish": "10",
+    "maxprice": "550",
+    "maxtaste": "135",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Clione Sushi",
+    "image": "Sushi Clione.png",
+    "description": "Sushi made with clione.",
+    "acquired": "Clione",
+    "flame_cost": "",
+    "ingredients": "1 Clione",
+    "baseprice": "35",
+    "basetaste": "22",
+    "basedish": "1",
+    "maxprice": "129",
+    "maxtaste": "220",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Clown Frogfish Sushi",
+    "image": "Sushi WartyFrogfish.png",
+    "description": "Sushi made with Clown Frogfish.",
+    "acquired": "Clown Frogfish",
+    "flame_cost": "",
+    "ingredients": "1 Clown Frogfish",
+    "baseprice": "15",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Clownfish Sushi",
+    "description": "Sushi made with Clownfish.; Orange stripes look so tasty.",
+    "ingredients": "1 Clownfish",
+    "baseprice": "2",
+    "basetaste": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cold Jellyfish & Green Sea Urchin Salad",
+    "image": "Cold Jellyfish & Green Sea Urchin Salad.png",
+    "description": "A dish featuring shredded jellyfish topped with green sea urchin roe and sea grapes.; Be careful not to eat the bowl.",
+    "acquired": "Green Sea Urchin",
+    "flame_cost": "9",
+    "event": "jellyfish",
+    "ingredients": "3 Green Sea Urchin; 2 Box Jellyfish; 2 Sea Grape",
+    "baseprice": "685",
+    "basetaste": "145",
+    "basedish": "2",
+    "maxprice": "1507",
+    "maxtaste": "277",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Comb Jelly Sushi",
+    "image": "Sushi_Comb_Jelly.png",
+    "description": "Sushi made with Comb Jellyfish.",
+    "acquired": "Comb Jelly",
+    "event": "jellyfish",
+    "ingredients": "1 Comb Jelly",
+    "baseprice": "45",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "166",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Comber Sandwich",
+    "image": "Menu Comber Sandwich.png",
+    "description": "Deep fried comber and painted comber placed between slices of plain bread.; The egg gives it a rich and nutty taste.",
+    "acquired": "Complete Whose Fried food is the Best?",
+    "flame_cost": "7",
+    "ingredients": "5 Comber; 5 Painted Comber; 2 Egg; 2 Wheat",
+    "baseprice": "390",
+    "basetaste": "150",
+    "basedish": "4",
+    "maxprice": "1443",
+    "maxtaste": "420",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Comber Sushi",
+    "image": "Sushi Comber.png",
+    "description": "Sushi made with Comber.",
+    "ingredients": "1 Comber",
+    "baseprice": "2",
+    "basetaste": "14",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Concertina Barracuda Sushi",
+    "image": "Concertina Barracuda Sushi.png",
+    "description": "Sushi made from Concertina Barracuda.; Regular customers probably won't prefer it.",
+    "acquired": "Concertina Barracuda",
+    "flame_cost": "",
+    "ingredients": "1 Concertina Barracuda",
+    "baseprice": "470",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "470",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cooked Whiteleg Shrimp Sushi",
+    "image": "Sushi Whiteleg Shrimp.png",
+    "description": "Sushi made with cooked whiteleg shrimp.",
+    "acquired": "Whiteleg Shrimp",
+    "flame_cost": "",
+    "ingredients": "1 Whiteleg Shrimp",
+    "baseprice": "35",
+    "basetaste": "22",
+    "basedish": "1",
+    "maxprice": "129",
+    "maxtaste": "220",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cookiecutter Shark Sushi",
+    "image": "Sushi Cookiecutter Shark.png",
+    "description": "Sushi made with Cookiecutter Shark.",
+    "acquired": "Cookiecutter Shark",
+    "ingredients": "1 Cookiecutter Shark",
+    "baseprice": "75",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "277",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Copper shark Sushi",
+    "image": "Sushi_CopperShark.png",
+    "description": "Sushi made with Coppershark fillet.",
+    "acquired": "Copper Shark Meat",
+    "flame_cost": "",
+    "ingredients": "1 Copper Shark Meat",
+    "baseprice": "65",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "240",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Coral Trout Sushi",
+    "image": "Sushi CoralTrout.png",
+    "description": "Sushi made with Coral Trout.",
+    "acquired": "Coral Trout",
+    "flame_cost": "",
+    "ingredients": "1 Coral Trout",
+    "baseprice": "18",
+    "basetaste": "17",
+    "basedish": "1",
+    "maxprice": "66",
+    "maxtaste": "170",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cortex Decorator Sushi",
+    "image": "Cortex Decorator Sushi.png",
+    "description": "Sushi made from Cortex Decorator.; Regular customers probably won't prefer it.",
+    "acquired": "Cortex Decorator",
+    "flame_cost": "",
+    "ingredients": "1 Cortex Decorator",
+    "baseprice": "740",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "740",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Crimson Fish Roll",
+    "image": "Menu_Red_FishRoll.png",
+    "description": "A fish roll that uses only fish meat.; It is so soft that it melts in your mouth like ice cream.",
+    "acquired": "Train Billy to Level 15",
+    "flame_cost": "15",
+    "event": "shark",
+    "ingredients": "3 Clown Frogfish; 3 Red Bream; 3 Rhinochimaeridae Meat",
+    "baseprice": "400",
+    "basetaste": "168",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "258",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Crystal Lobster Roll",
+    "image": "Crystal_Lobster_Roll.png",
+    "description": "A sushi roll made with minced crystal lobster meat.; It looks too good to be eaten.",
+    "acquired": "Complete Chinese Cuisine Contest!; Seasonal Event: Lobster Party",
+    "flame_cost": "9",
+    "event": "lobster",
+    "ingredients": "2 Crystal Lobster; 2 Rice; 2 Bladderwrack",
+    "baseprice": "370",
+    "basetaste": "170",
+    "basedish": "6",
+    "maxprice": "1369",
+    "maxtaste": "305",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Crystal Lobster Sushi",
+    "image": "Crystal_Lobster_Sushi.png",
+    "description": "Sushi made with crystal lobster fillet.",
+    "acquired": "Crystal Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Crystal Lobster",
+    "baseprice": "141",
+    "basetaste": "34",
+    "basedish": "1",
+    "maxprice": "521",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Cuttlefish Sushi",
+    "image": "Sushi CuttleFish.png",
+    "description": "Sushi made with Cuttlefish.",
+    "acquired": "Cuttlefish",
+    "flame_cost": "",
+    "ingredients": "1 Cuttlefish",
+    "baseprice": "20",
+    "basetaste": "20",
+    "basedish": "1",
+    "maxprice": "74",
+    "maxtaste": "200",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep Fish Tempura",
+    "image": "Menu DeepSeaTempura.png",
+    "description": "A deep fish fillet with batter is deep fried to a crisp.",
+    "acquired": "Complete Whose Fried food is the Best?",
+    "event": "shark",
+    "ingredients": "1 Cookiecutter Shark; 1 Vampire Squid; 1 Barreleye; 3 Kelp",
+    "baseprice": "395",
+    "basetaste": "140",
+    "basedish": "5",
+    "maxprice": "1461",
+    "maxtaste": "320",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep Sea Kaiju Ramen",
+    "image": "Deep Sea Kaiju Ramen.png",
+    "description": "A ramen dish depicting Godzilla lying in the deep sea.; The cut seaweed resembles Godzilla, and comb jelly was used instead of ordinary wheat noodles to add more flavor.",
+    "acquired": "Complete Go to Bancho Sushi",
+    "event": "jellyfish",
+    "ingredients": "5 Comb Jelly; 3 Seaweed; 1 Miso",
+    "baseprice": "350",
+    "basetaste": "140",
+    "basedish": "4",
+    "maxprice": "1295",
+    "maxtaste": "410",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep-Fried Eggplant Shrimp Meatballs",
+    "image": "Menu Eggplant Shrimp Fried.png",
+    "description": "An eggplant stuffed with shrimp meat and deep-fried.",
+    "acquired": "Train Yusuke to Level 15",
+    "flame_cost": "15",
+    "event": "shrimp",
+    "ingredients": "3 Black Tiger Shrimp; 3 Whiteleg Shrimp; 3 Eggplant; 1 Olive Oil",
+    "baseprice": "400",
+    "basetaste": "145",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "460",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep-Fried Red Lionfish",
+    "image": "Menu_Red_Lionfish_Fried.png",
+    "description": "Deep-fried lunaDespite the name of this dish being changed to say \"red lionfish\" the description still reflects the original name \"luna lionfish\" lionfish fillet.; Removing all the spines is a hassle, but the taste of its meat makes the effort worthwhile.",
+    "acquired": "Train Cohh to Level 10",
+    "flame_cost": "12",
+    "ingredients": "5 Red Lionfish; 1 Wheat; 1 Olive Oil; 1 Black Pepper",
+    "baseprice": "390",
+    "basetaste": "132",
+    "basedish": "3",
+    "maxprice": "1443",
+    "maxtaste": "366",
+    "maxdish": "4",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep-Fried Sea Urchin",
+    "image": "Deep-Fried Sea Urchin.png",
+    "description": "A dish featuring green sea urchin roe wrapped in seaweed and purple sea urchin wrapped in kajime, fried until crisp.",
+    "acquired": "Green Sea Urchin",
+    "flame_cost": "9",
+    "ingredients": "2 Green Sea Urchin; 2 Purple Sea Urchin; 2 Kajime; 1 Olive Oil",
+    "baseprice": "690",
+    "basetaste": "155",
+    "basedish": "2",
+    "maxprice": "1518",
+    "maxtaste": "275",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Deep-Fried Vegetables",
+    "image": "Menu Vege Fried.png",
+    "description": "A collection of vegetables are chopped, battered, and deep-fried.; The crispy sound that it makes when chewed says everything.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "event": "cucumber",
+    "ingredients": "1 Cucumber; 1 Onion; 1 Carrot; 1 Olive Oil",
+    "baseprice": "312",
+    "basetaste": "153",
+    "basedish": "2",
+    "maxprice": "1154",
+    "maxtaste": "396",
+    "maxdish": "3",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Devil Scorpionfish Sushi",
+    "image": "Sushi Devil ScorpionFish.png",
+    "description": "Sushi made with devil scorpionfish.",
+    "acquired": "Devil Scorpionfish",
+    "flame_cost": "",
+    "ingredients": "1 Devil Scorpionfish",
+    "baseprice": "135",
+    "basetaste": "35",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "350",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dollocaris Ingens Sushi",
+    "image": "Dollocaris_Ingens_Sushi.png",
+    "description": "Sushi made from dollocaris ingens fillet.",
+    "acquired": "Dollocaris Ingens",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Dollocaris Ingens",
+    "baseprice": "135",
+    "basetaste": "41",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "410",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Drepanaspis Sushi",
+    "image": "Sushi Drepanaspis.png",
+    "description": "Sushi made with drepanaspis fillet.",
+    "acquired": "Drepanaspis",
+    "flame_cost": "",
+    "ingredients": "1 Drepanaspis Meat",
+    "baseprice": "150",
+    "basetaste": "40",
+    "basedish": "1",
+    "maxprice": "555",
+    "maxtaste": "400",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dried Stingray",
+    "image": "Menu_Ray_Fin_Grilled.png",
+    "description": "Dried stingray, marbled electric ray, and starry skate are slightly roasted.; One can feel the warm sunlight and cool breeze from this dish.",
+    "acquired": "Train Carolina to Level 15",
+    "flame_cost": "15",
+    "ingredients": "3 Starry Skate; 3 Stingray Meat; 3 Marbled Electric Ray Meat; 1 Salt",
+    "baseprice": "400",
+    "basetaste": "180",
+    "basedish": "8",
+    "maxprice": "1480",
+    "maxtaste": "225",
+    "maxdish": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dumbo Octopus Sushi",
+    "image": "Sushi Dumbo octopus.png",
+    "description": "Sushi made with dumbo octopus.",
+    "acquired": "Dumbo Octopus",
+    "flame_cost": "",
+    "ingredients": "1 Dumbo Octopus",
+    "baseprice": "80",
+    "basetaste": "33",
+    "basedish": "1",
+    "maxprice": "296",
+    "maxtaste": "330",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dumbo Takoyaki",
+    "image": "Menu Dumbo Octopus Takoyaki.png",
+    "description": "A rolled dumbo octopus that is diced and coated with flour and then roasted over fire.; The skin is crispy and the meat is very soft to please the taste buds.",
+    "acquired": "Cooksta Diamond Rank",
+    "flame_cost": "15",
+    "ingredients": "3 Dumbo Octopus; 2 Wheat; 1 Mayonnaise",
+    "baseprice": "420",
+    "basetaste": "156",
+    "basedish": "6",
+    "maxprice": "1554",
+    "maxtaste": "390",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dunkleosteus Sushi",
+    "image": "Sushi Dunkleosteus.png",
+    "description": "Sushi made with dunkleosteus fillet.",
+    "acquired": "Dunkleosteus",
+    "flame_cost": "",
+    "ingredients": "1 Dunkleosteus Meat",
+    "baseprice": "210",
+    "basetaste": "42",
+    "basedish": "1",
+    "maxprice": "777",
+    "maxtaste": "420",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dusky Grouper Steak",
+    "image": "Menu DuskyGrouper Stake.png",
+    "description": "A steak made from the belly of the dusky grouper.; The flesh of the dusky grouper, which has persevered in the rough ocean waters, has a lovely supple texture.",
+    "acquired": "Train El Nino to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 Dusky Grouper; 3 Cherry Tomato; 1 Salt; 1 Olive Oil",
+    "baseprice": "400",
+    "basetaste": "148",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "328",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Dusky Grouper Sushi",
+    "image": "Sushi DuskyGrouper.png",
+    "description": "Sushi made with Dusky Grouper.",
+    "acquired": "Dusky Grouper",
+    "flame_cost": "",
+    "ingredients": "1 Dusky Grouper",
+    "baseprice": "30",
+    "basetaste": "20",
+    "basedish": "1",
+    "maxprice": "111",
+    "maxtaste": "200",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Eastern Rock Lobster Sushi",
+    "image": "Eastern_Rock_Lobster_Sushi.png",
+    "description": "Sushi made with eastern rock lobster fillet.",
+    "acquired": "Eastern Rock Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Eastern Rock Lobster",
+    "baseprice": "141",
+    "basetaste": "39",
+    "basedish": "1",
+    "maxprice": "521",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Ebirah Chasing Sashimi",
+    "image": "Ebirah Chasing Sashimi.png",
+    "description": "Sashimi depicting the moment where the submarine escaped from Ebirah. The giant Ebirah is made of California spiny lobster, and the submarine is made of barreleye.",
+    "acquired": "Complete Go to Bancho Sushi",
+    "event": "lobster",
+    "ingredients": "2 California Spiny Lobster; 3 Barreleye; 2 Sea Grape",
+    "baseprice": "340",
+    "basetaste": "130",
+    "basedish": "6",
+    "maxprice": "1258",
+    "maxtaste": "382",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Eggplant Soba Oyaki",
+    "image": "Menu Eggplant Soba Oyaki.png",
+    "description": "",
+    "acquired": "Train Etsuko to Level 15",
+    "flame_cost": "15",
+    "event": "",
+    "ingredients": "2 Buckwheat; 2 Eggplant; 1 Carrot; 1 Miso",
+    "baseprice": "425",
+    "basetaste": "173",
+    "basedish": "6",
+    "maxprice": "1572",
+    "maxtaste": "236",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Emperor Angelfish Sushi",
+    "image": "Sushi_Emperor_Angelfish.png",
+    "description": "Sushi made with emperor angelfish.",
+    "acquired": "Emperor Angelfish",
+    "flame_cost": "",
+    "ingredients": "1 Emperor Angelfish",
+    "baseprice": "10",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "37",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Entangled Crab Sushi",
+    "image": "Entangled Crab Sushi.png",
+    "description": "Sushi made from Entangled Crab.; Regular customers probably won't prefer it.",
+    "acquired": "Entangled Crab",
+    "flame_cost": "",
+    "ingredients": "1 Entangled Crab",
+    "baseprice": "510",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "510",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Enthralled Stonefish Sushi",
+    "image": "Enthralled Stonefish Sushi.png",
+    "description": "Sushi made from Enthralled Stonefish.; Regular customers probably won't prefer it.",
+    "acquired": "Enthralled Stonefish",
+    "flame_cost": "",
+    "ingredients": "1 Enthralled Stonefish",
+    "baseprice": "465",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "465",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "European Lobster Sushi",
+    "image": "European_Lobster_Sushi.png",
+    "description": "Sushi made with European lobster fillet.",
+    "acquired": "European Lobster",
+    "flame_cost": "",
+    "ingredients": "1 European Lobster",
+    "event": "lobster",
+    "baseprice": "69",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "255",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Falcatus Soybean Paste Soup",
+    "image": "Menu Falcatus MisoSoup.png",
+    "description": "A soybean paste soup with falcatus, minced buckbeans, and seaweed.; The sweet earthly flavor runs through your veins when you eat it.",
+    "acquired": "Seasonal Event: Shark Party",
+    "flame_cost": "15",
+    "event": "shark",
+    "ingredients": "3 Falcatus; 3 Seaweed; 3 Buckbean; 1 Miso",
+    "baseprice": "420",
+    "basetaste": "130",
+    "basedish": "5",
+    "maxprice": "1554",
+    "maxtaste": "382",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Falcatus Sushi",
+    "image": "Sushi_Falcatus.png",
+    "description": "Sushi made with falcatus.",
+    "acquired": "Falcatus",
+    "flame_cost": "",
+    "ingredients": "1 Falcatus",
+    "baseprice": "130",
+    "basetaste": "38",
+    "basedish": "1",
+    "maxprice": "481",
+    "maxtaste": "380",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fan Lobster Sushi",
+    "image": "Fan_Lobster_Sushi.png",
+    "description": "Sushi made from fan lobster.",
+    "acquired": "Fan Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Fan Lobster",
+    "baseprice": "66",
+    "basetaste": "30",
+    "basedish": "1",
+    "maxprice": "244",
+    "maxtaste": "300",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fanged Cod Sushi",
+    "image": "Fanged Cod Sushi.png",
+    "description": "Sushi made from Fanged Cod.; Regular customers probably won't prefer it.",
+    "acquired": "Fanged Cod",
+    "flame_cost": "",
+    "ingredients": "1 Fanged Cod",
+    "baseprice": "380",
+    "basetaste": "6",
+    "basedish": "1",
+    "maxprice": "380",
+    "maxtaste": "6",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fangtooth Sushi",
+    "image": "Sushi Fangtooth.png",
+    "description": "Sushi made with Fangtooth.",
+    "acquired": "Fangtooth",
+    "flame_cost": "",
+    "ingredients": "1 Fangtooth",
+    "baseprice": "45",
+    "basetaste": "26",
+    "basedish": "1",
+    "maxprice": "166",
+    "maxtaste": "260",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Flame Angelfish Sushi",
+    "image": "Sushi_Flame_Angelfish.png",
+    "description": "Sushi made with flame angelfish.",
+    "acquired": "Flame Angelfish",
+    "flame_cost": "",
+    "ingredients": "1 Flame Angelfish",
+    "baseprice": "5",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "18",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Egg Jellyfish Sushi",
+    "image": "Sushi FriedEggJellyfish.png",
+    "description": "Sushi made with Fried Egg Jellyfish.",
+    "acquired": "Fried Egg Jellyfish",
+    "flame_cost": "",
+    "event": "jellyfish",
+    "ingredients": "1 Fried Egg Jellyfish",
+    "baseprice": "15",
+    "basetaste": "16",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "160",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Habanero Fangtooth",
+    "image": "Fried_Habanero_Fangtooth.png",
+    "description": "A fried habanero filled with minced fangtooth meat.; The spicy habanero keeps the drinks coming.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "2 Fangtooth; 2 Habanero; 1 Bladderwrack; 1 Olive Oil",
+    "baseprice": "410",
+    "basetaste": "150",
+    "basedish": "5",
+    "maxprice": "1517",
+    "maxtaste": "420",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Onion Cuttlefish",
+    "image": "Menu CuttleFish Fried.png",
+    "description": "Deep-fried cuttlefish and onion rings.; You won't be able to stop once you get a taste of the crunchy, moist, and sweet onion coupled with chewy and salty cuttlefish.",
+    "acquired": "Train Raptor to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 Cuttlefish; 3 Onion; 1 Olive Oil; 1 Salt",
+    "baseprice": "400",
+    "basetaste": "153",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "360",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Rice with Sally Lightfoot Crab",
+    "image": "Menu_SallyLightfootCrab_FriedRice.png",
+    "description": "The scraped-off meat of a sally lightfoot crab is stir-fried with premium rice and egg.; The egg covering the rice gives off a rich aroma.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "flame_cost": "7",
+    "ingredients": "2 Sally Lightfoot Crab; 2 Rice; 1 Grade A Egg; 1 Black Pepper",
+    "baseprice": "385",
+    "basetaste": "125",
+    "basedish": "7",
+    "maxprice": "1424",
+    "maxtaste": "305",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Seahorses",
+    "image": "Sushi_SeahorseFry.png",
+    "description": "Seahorses are lightly fried.; The black vinegar sauce provides a fresh starting taste and a savory finishing touch.",
+    "acquired": "Train Cohh to Level 5",
+    "flame_cost": "8",
+    "ingredients": "3 Long-Snouted Seahorse; 1 Olive Oil; 1 Black Vinegar",
+    "baseprice": "220",
+    "basetaste": "110",
+    "basedish": "3",
+    "maxprice": "814",
+    "maxtaste": "362",
+    "maxdish": "4",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Fried Tomato and Snailfish",
+    "image": "Menu_Snailfish_StirFried.png",
+    "description": "Gelatinous snailfish and pink snailfish are diced and stir-fried with tomatoes.; The sweet and sour taste of tomato and the simple taste of snailfish meat are dangerously addictive.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "flame_cost": "7",
+    "ingredients": "3 Gelatinous Snailfish; 3 Salmon Snailfish; 2 Bean; 2 Cherry Tomato",
+    "baseprice": "390",
+    "basetaste": "110",
+    "basedish": "8",
+    "maxprice": "1443",
+    "maxtaste": "335",
+    "maxdish": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Frilled Shark Sushi",
+    "image": "Sushi FrilledShark.png",
+    "description": "Sushi made with Frilled Shark fillet.",
+    "ingredients": "1 Frilled Shark Meat",
+    "baseprice": "85",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "314",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Gazing Shark Sushi",
+    "image": "Gazing Shark Sushi.png",
+    "description": "Sushi made from Gazing Shark.; Regular customers probably won't prefer it.",
+    "acquired": "Gazing Shark",
+    "flame_cost": "",
+    "ingredients": "1 Gazing Shark",
+    "baseprice": "1250",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "1250",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Gelatinous Snailfish Sushi",
+    "image": "Sushi_Gelatinous_Snailfish.png",
+    "description": "Sushi made with gelatinous snailfish fillet.",
+    "acquired": "Gelatinous Snailfish",
+    "flame_cost": "",
+    "ingredients": "1 Gelatinous Snailfish",
+    "baseprice": "85",
+    "basetaste": "33",
+    "basedish": "1",
+    "maxprice": "314",
+    "maxtaste": "330",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Gelatinous Stonefish Sushi",
+    "image": "Gelatinous Stonefish Sushi.png",
+    "description": "Sushi made from Gelatinous Stonefish.; Regular customers probably won't prefer it.",
+    "acquired": "Gelatinous Stonefish",
+    "flame_cost": "",
+    "ingredients": "1 Gelatinous Stonefish",
+    "baseprice": "385",
+    "basetaste": "6",
+    "basedish": "1",
+    "maxprice": "385",
+    "maxtaste": "6",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Giant Trevally Sushi",
+    "image": "Sushi_GiantTrevally.png",
+    "description": "Sushi made with Giant Trevally.",
+    "acquired": "Giant Trevally",
+    "flame_cost": "",
+    "ingredients": "1 Giant Trevally Meat",
+    "baseprice": "30",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "111",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Gnashing Perch Sushi",
+    "image": "Gnashing Perch Sushi.png",
+    "description": "Sushi made from Gnashing Perch.; Regular customers probably won't prefer it.",
+    "acquired": "Gnashing Perch",
+    "flame_cost": "",
+    "ingredients": "1 Gnashing Perch",
+    "baseprice": "420",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "420",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Goblin Shark Belly Roast",
+    "image": "Menu_Special_GoblinShark_BellyMeat_Grilled.png",
+    "description": "The fatty meat of a goblin shark is aged with olive oil and cooked on low flame.; Despite its ugly appearance, its meat is soft and tender.",
+    "acquired": "Defeat Goblin Shark",
+    "flame_cost": "1",
+    "event": "shark",
+    "ingredients": "1 Goblin Shark's Fatty Meat; 1 Sea Grape; 1 Olive Oil; 1 Salt",
+    "baseprice": "600",
+    "basetaste": "135",
+    "basedish": "10",
+    "maxprice": "600",
+    "maxtaste": "135",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Godzilla vs. Ebirah Curry",
+    "image": "Godzilla vs. Ebirah Curry.png",
+    "description": "Curry depicting the fierce battle between Godzilla and Ebirah. Godzilla is made of Moray eel, and Ebirah is made of fried European lobster.",
+    "acquired": "Complete Go to Bancho Sushi",
+    "event": "curry lobster",
+    "ingredients": "2 European Lobster; 2 Moray Eel; 1 Turmeric; 1 Olive Oil",
+    "baseprice": "370",
+    "basetaste": "140",
+    "basedish": "6",
+    "maxprice": "1369",
+    "maxtaste": "365",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Golden King Crab Sushi",
+    "image": "Sushi_Golden_King_Crab.png",
+    "description": "Sushi made from golden king crab",
+    "acquired": "Golden King Crab",
+    "flame_cost": "",
+    "ingredients": "1 Golden King Crab",
+    "baseprice": "135",
+    "basetaste": "37",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "370",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Great Barracuda Canape",
+    "image": "Menu Great Barracuda Canape.png",
+    "description": "Cheese and cherry tomatoes plated on a piece of great barracuda meat.; It's bize-sized for convenience and the three ingredients will mix in your mouth.",
+    "acquired": "Cooksta Diamond Rank",
+    "flame_cost": "12",
+    "ingredients": "5 Great Barracuda; 1 Cherry Tomato; 1 Onion; 1 Mayonnaise",
+    "baseprice": "425",
+    "basetaste": "147",
+    "basedish": "4",
+    "maxprice": "1572",
+    "maxtaste": "372",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Great Barracuda Sushi",
+    "image": "Sushi GreatBarracuda.png",
+    "description": "Sushi made with Great Barracuda.",
+    "ingredients": "1 Great Barracuda",
+    "baseprice": "20",
+    "basetaste": "22",
+    "basedish": "1",
+    "maxprice": "74",
+    "maxtaste": "220",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Great Spider Crab Curry",
+    "image": "Menu_Spider_Crab_Curry.png",
+    "description": "A curry with the meat of a great spider crab and egg.; The high quality egg gives this dish a creamy texture.",
+    "acquired": "Train Charlie to Level 15",
+    "flame_cost": "15",
+    "event": "curry",
+    "ingredients": "1 Spider Crab; 1 Grade A Egg; 1 Curry Block",
+    "baseprice": "400",
+    "basetaste": "155",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "290",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Great Spider Crab and Cucumber Sushi",
+    "image": "Sushi_Great_Spider_Crab_Cucumber.png",
+    "description": "Sushi made with great spider crab and cucumber.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "flame_cost": "5",
+    "event": "cucumber",
+    "ingredients": "1 Spider Crab; 1 Cucumber",
+    "baseprice": "324",
+    "basetaste": "160",
+    "basedish": "1",
+    "maxprice": "1198",
+    "maxtaste": "385",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Green Humphead Parrotfish Sushi",
+    "image": "Sushi GreenHumpheadParrotfish.png",
+    "description": "Sushi made with Green Humphead Parrotfish fillet.",
+    "acquired": "Green Humphead Parrotfish",
+    "flame_cost": "",
+    "ingredients": "1 Green Humphead Parrotfish",
+    "baseprice": "16",
+    "basetaste": "23",
+    "basedish": "1",
+    "maxprice": "59",
+    "maxtaste": "230",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Green Sea Urchin & Cucumber Salad",
+    "image": "Green Sea Urchin & Cucumber Salad.png",
+    "description": "A cucumber salad with a generous amount of green sea urchin and buckbean topping.; The long-sliced cucumber is the point of this dish.",
+    "acquired": "Jango Secret Recipe",
+    "event": "cucumber",
+    "ingredients": "3 Green Sea Urchin; 2 Cucumber; 2 Buckbean",
+    "baseprice": "700",
+    "basetaste": "150",
+    "basedish": "2",
+    "maxprice": "1540",
+    "maxtaste": "282",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Greenland Shark Sushi",
+    "image": "Sushi_Greenland_Shark.png",
+    "description": "Sushi made with Greenland shark fillet.",
+    "acquired": "Greenland Shark",
+    "ingredients": "1 Greenland Shark Meat",
+    "baseprice": "186",
+    "basetaste": "37",
+    "basedish": "1",
+    "maxprice": "688",
+    "maxtaste": "370",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Grey Triggerfish Sushi",
+    "image": "Sushi_GreyTriggerfish.png",
+    "description": "Sushi made with Grey Triggerfish.",
+    "acquired": "Grey Triggerfish",
+    "flame_cost": "",
+    "ingredients": "1 Grey Triggerfish",
+    "baseprice": "17",
+    "basetaste": "17",
+    "basedish": "1",
+    "maxprice": "62",
+    "maxtaste": "170",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Grilled Antarctic Octopus & Truffle",
+    "image": "Grilled_Antarctic_Octopus_&_Truffle.png",
+    "description": "Assorted grilled Antarctic octopus arms, grilled paddle weed, and truffles.; It's the flavors of the ocean and land in harmony.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "3 Antarctic Octopus; 3 Kajime; 1 Truffle",
+    "baseprice": "770",
+    "basetaste": "185",
+    "basedish": "2",
+    "maxprice": "1694",
+    "maxtaste": "253",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Grilled Eel with Habanero",
+    "image": "Grilled_Eel_with_Habanero.png",
+    "description": "A grilled snub-nosed spiny eel marinated in habanero and soy sauce.; Just a single bite is enough to fill you with energy.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "2 Snub-nosed Spiny Eel; 2 Habanero; 1 Kajime; 1 Soy Sauce",
+    "baseprice": "425",
+    "basetaste": "155",
+    "basedish": "6",
+    "maxprice": "1572",
+    "maxtaste": "335",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Grotesque Mackerel Sushi",
+    "image": "Grotesque Mackerel Sushi.png",
+    "description": "Sushi made from Grotesque Mackerel.; Regular customers probably won't prefer it.",
+    "acquired": "Grotesque Mackerel",
+    "flame_cost": "",
+    "ingredients": "1 Grotesque Mackerel",
+    "baseprice": "383",
+    "basetaste": "4",
+    "basedish": "1",
+    "maxprice": "383",
+    "maxtaste": "4",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Haddock Acqua Pazza",
+    "image": "Menu Haddock Aquapazza.png",
+    "description": "Haddock is covered with olive oil and cooked on low flame. The rest of the ingredients are added later.; It offers a deep and rich taste.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "flame_cost": "7",
+    "ingredients": "3 Haddock; 2 Cherry Tomato; 2 Carrot; 1 Olive Oil",
+    "baseprice": "405",
+    "basetaste": "130",
+    "basedish": "6",
+    "maxprice": "1498",
+    "maxtaste": "400",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Haddock Sushi",
+    "image": "Sushi_Haddock.png",
+    "description": "Sushi made with haddock fillet.",
+    "acquired": "Haddock",
+    "flame_cost": "",
+    "ingredients": "1 Haddock",
+    "baseprice": "110",
+    "basetaste": "34",
+    "basedish": "1",
+    "maxprice": "407",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Harlequin Hind Sushi",
+    "image": "Sushi HarlequinHind.png",
+    "description": "",
+    "acquired": "Harlequin Hind",
+    "flame_cost": "",
+    "ingredients": "1 Harlequin Hind",
+    "baseprice": "18",
+    "basetaste": "18",
+    "basedish": "1",
+    "maxprice": "66",
+    "maxtaste": "180",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Hawaiian Poke",
+    "image": "Menu_YellowFin_Tuna_Poke.png",
+    "description": "A bowl of rice with assorted vegetables and yellowfin tuna akami fillets on top.; Popular in Hawaii.",
+    "acquired": "Seasonal Event: Tuna Party",
+    "flame_cost": "5",
+    "event": "tuna",
+    "ingredients": "3 Yellowfin Tuna Akami; 3 Rice; 1 Mayonnaise; 1 Sesame Seed",
+    "baseprice": "263",
+    "basetaste": "123",
+    "basedish": "6",
+    "maxprice": "980",
+    "maxtaste": "348",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Horsehair Crab Sushi",
+    "image": "Horsehair_Crab_Sushi.png",
+    "description": "Sushi made from horsehair crab.",
+    "acquired": "Horsehair Crab",
+    "ingredients": "1 Horsehair Crab",
+    "maxprice": "555",
+    "maxtaste": "450",
+    "maxdish": "1",
+    "baseprice": "150",
+    "basetaste": "45",
+    "basedish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Host Eel Sushi",
+    "image": "Host Eel Sushi.png",
+    "description": "Sushi made from Host Eel.; Regular customers probably won't prefer it.",
+    "acquired": "Host Eel",
+    "flame_cost": "",
+    "ingredients": "1 Host Eel",
+    "baseprice": "610",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "610",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Hot Pepper Tuna",
+    "image": "Hot_Pepper_Tuna.png",
+    "description": "Sliced and stir-fried tuna meat with habanero sauce.; Inspired by MC Sammy's song.",
+    "acquired": "Complete Spicy Pepper Seeds!",
+    "event": "tuna",
+    "ingredients": "3 Bluefin Tuna Chutoro; 2 Habanero; 2 Sea Grape; 1 Sesame Seed",
+    "baseprice": "395",
+    "basetaste": "170",
+    "basedish": "5",
+    "maxprice": "1461",
+    "maxtaste": "350",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Humboldt Ink Pasta",
+    "image": "Menu_Humboldt_Squid_Ink_Pasta.png",
+    "description": "The thick ink of Humboldt squids make this pasta rich.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "event": "shrimp",
+    "ingredients": "1 Humboldt Squid Meat; 3 White Shrimp; 3 Wheat; 3 Garlic",
+    "baseprice": "420",
+    "basetaste": "150",
+    "basedish": "7",
+    "maxprice": "1554",
+    "maxtaste": "375",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Humboldt Squid Sushi",
+    "image": "Sushi_Humboldt_Squid.png",
+    "description": "",
+    "acquired": "Humboldt Squid",
+    "flame_cost": "",
+    "ingredients": "1 Humboldt Squid Meat",
+    "baseprice": "145",
+    "basetaste": "35",
+    "basedish": "1",
+    "maxprice": "536",
+    "maxtaste": "350",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Humphead Parrotfish Curry",
+    "image": "Menu Green Humphead Parrotfish Curry.png",
+    "description": "Curry with a whole humphead parrotfish head.",
+    "acquired": "Cooksta Platinum Rank",
+    "flame_cost": "12",
+    "event": "curry",
+    "ingredients": "5 Green Humphead Parrotfish; 2 Onion; 1 Turmeric",
+    "baseprice": "375",
+    "basetaste": "140",
+    "basedish": "4",
+    "maxprice": "1387",
+    "maxtaste": "347",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Hyalonema Tuna Sashimi",
+    "image": "Hyalonema_Tuna_Sashimi.png",
+    "description": "Sashimi consisting of only the finest pink fatty cuts of bluefin and yellowfin tuna.; The dish is decorated with a white hyalonema in the center, adding to its aesthetics.",
+    "acquired": "Complete Trapped in the Glacial Cave",
+    "flame_cost": "15",
+    "event": "tuna",
+    "ingredients": "3 Bluefin Tuna Ootoro; 3 Yellowfin Tuna Ootoro; 2 Hyalonema",
+    "baseprice": "765",
+    "basetaste": "185",
+    "basedish": "1",
+    "maxprice": "1683",
+    "maxtaste": "265",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Ice Fish Curry",
+    "image": "Menu IceFish Curry.png",
+    "description": "Curry with well-prepared ice fish.; The mild taste of ice fish and the nutty taste of beans go well with the curry.",
+    "acquired": "Train Drae to Level 15",
+    "flame_cost": "15",
+    "event": "curry",
+    "ingredients": "3 Ice Fish; 2 Bean; 1 Curry Block",
+    "baseprice": "400",
+    "basetaste": "155",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "317",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Ice Fish Sushi",
+    "image": "Sushi_Ice_Fish.png",
+    "description": "",
+    "acquired": "Ice Fish",
+    "flame_cost": "",
+    "ingredients": "1 Ice Fish",
+    "baseprice": "95",
+    "basetaste": "32",
+    "basedish": "1",
+    "maxprice": "351",
+    "maxtaste": "320",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Imperious Lobster Sushi",
+    "image": "Imperious Lobster Sushi.png",
+    "description": "Sushi made from Imperious Lobster.; Regular customers probably won't prefer it.",
+    "acquired": "Imperious Lobster",
+    "flame_cost": "",
+    "ingredients": "1 Imperious Lobster",
+    "baseprice": "945",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "945",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Lagoon Triggerfish Sushi",
+    "image": "Sushi_ReefTriggerfish.png",
+    "description": "",
+    "acquired": "Lagoon Triggerfish",
+    "ingredients": "Lagoon Triggerfish",
+    "baseprice": "7",
+    "basetaste": "12",
+    "basedish": "1",
+    "maxprice": "25",
+    "maxtaste": "120",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Latok Omelet",
+    "image": "Menu Egg Tenshinhan.png",
+    "description": "Scrambled egg on fried rice.; The soft texture of scrambled eggs and poppy latok make a perfect combination.",
+    "acquired": "Train Masayoshi to Level 15",
+    "flame_cost": "15",
+    "ingredients": "1 Grade A Egg; 2 Rice; 2 Sea Grape; 1 Soy Sauce",
+    "baseprice": "400",
+    "basetaste": "170",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "260",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Lobster Platter",
+    "image": "Lobster_Platter.png",
+    "description": "A seafood platter consisting of American lobster, tropical rock lobster, and tokummia katalepsis.; The best gift a lobster fanatic could ask for.",
+    "acquired": "Jango Secret Recipe",
+    "event": "lobster",
+    "ingredients": "2 American Lobster; 2 Tropical Rock Lobster; 2 Tokummia Katalepsis",
+    "baseprice": "435",
+    "basetaste": "195",
+    "basedish": "4",
+    "maxprice": "1609",
+    "maxtaste": "375",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Longfin Batfish Sushi",
+    "image": "Sushi LongfinBatFish.png",
+    "description": "Sushi made with Longfin Batfish.",
+    "acquired": "Longfin Batfish",
+    "ingredients": "1 Longfin Batfish",
+    "baseprice": "10",
+    "basetaste": "13",
+    "basedish": "1",
+    "maxprice": "37",
+    "maxtaste": "130",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Longnose Sawshark Sushi",
+    "image": "Sushi LongnoseSawShark.png",
+    "description": "Sushi made with Longnose Sawshark fillet.",
+    "acquired": "Longnose Sawshark",
+    "ingredients": "1 Longnose Sawshark Meat",
+    "baseprice": "35",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "129",
+    "maxtaste": "290",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Longspine Squirrelfish Sushi",
+    "image": "Sushi_Longspine_Squirrelfish.png",
+    "description": "Sushi made from longspine squirrelfish .",
+    "acquired": "Longspine Squirrelfish",
+    "ingredients": "1 Longspine Squirrelfish",
+    "baseprice": "9",
+    "basetaste": "26",
+    "basedish": "1",
+    "maxprice": "33",
+    "maxtaste": "260",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Lumpfish sushi",
+    "image": "Sushi_LumpFish.png",
+    "description": "",
+    "acquired": "Lumpfish",
+    "flame_cost": "",
+    "ingredients": "1 Lumpfish",
+    "baseprice": "120",
+    "basetaste": "37",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "370",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Lusca Neck Tadaki",
+    "image": "Lusca_Neck_Tadaki.png",
+    "description": "Sliced and slightly grilled Lusca neck meat.; The skin is crispy, and the meat is chewy. You can't ask for a better combination.",
+    "acquired": "Defeat Lusca",
+    "flame_cost": "1",
+    "event": "shark",
+    "ingredients": "1 Lusca Neck Meat; 1 Mayonnaise; 1 Soy Sauce; 1 Sesame Seed",
+    "baseprice": "1350",
+    "basetaste": "250",
+    "basedish": "10",
+    "maxprice": "1350",
+    "maxtaste": "250",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Mackerel Scad Hotdog",
+    "image": "Menu Mackerel Scad HotDog.png",
+    "description": "Grilled mackerel scad and mayonnaise sandwiched between layers of bread.; The fish are used whole, creating a crunchy and superb flavor.",
+    "acquired": "Train Cohh to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 Mackerel Scad; 2 Wheat; 1 Mayonnaise",
+    "baseprice": "400",
+    "basetaste": "160",
+    "basedish": "4",
+    "maxprice": "1480",
+    "maxtaste": "340",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Mackerel Scad Sushi",
+    "image": "Sushi_MackerelScad.png",
+    "description": "",
+    "acquired": "Mackerel Scad",
+    "flame_cost": "",
+    "ingredients": "1 Mackerel Scad",
+    "baseprice": "15",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Malignant Pincer Sushi",
+    "image": "Malignant Pincer Sushi.png",
+    "description": "Sushi made from Malignant Pincer.; Regular customers probably won't prefer it.",
+    "acquired": "Malignant Pincer",
+    "flame_cost": "",
+    "ingredients": "1 Malignant Pincer",
+    "baseprice": "880",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "880",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Many Eyed Mackerel Sushi",
+    "image": "Many Eyed Mackerel Sushi.png",
+    "description": "Sushi made from Many Eyed Mackerel.; Regular customers probably won't prefer it.",
+    "acquired": "Many Eyed Mackerel",
+    "flame_cost": "",
+    "ingredients": "1 Many Eyed Mackerel",
+    "baseprice": "453",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "453",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Marbled Electric Ray Sushi",
+    "image": "Sushi_Marbled_Electric_Ray.png",
+    "description": "",
+    "acquired": "Marbled Electric Ray",
+    "flame_cost": "",
+    "ingredients": "1 Marbled Electric Ray Meat",
+    "baseprice": "90",
+    "basetaste": "30",
+    "basedish": "1",
+    "maxprice": "333",
+    "maxtaste": "300",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Marlin Sushi",
+    "image": "Sushi_Striped_Marlin.png",
+    "description": "Sushi made with marlin fillet.",
+    "acquired": "Marlin",
+    "flame_cost": "",
+    "event": "marlin",
+    "ingredients": "1 Marlin Meat",
+    "baseprice": "135",
+    "basetaste": "37",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "370",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Marlin and Soybean Paste Roast",
+    "image": "Menu_Striped_Marlin_Miso_Grilled.png",
+    "description": "The marlin meat is seasoned with a special garlic and soy paste sauce and roasted.; Its delicate and sweet flavor is quite something.",
+    "acquired": "Seasonal Event: Marlin Party",
+    "flame_cost": "5",
+    "event": "marlin",
+    "ingredients": "3 Marlin Meat; 2 Garlic; 1 Miso",
+    "baseprice": "380",
+    "basetaste": "137",
+    "basedish": "6",
+    "maxprice": "1406",
+    "maxtaste": "272",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Mediterranean Parrotfish Sushi",
+    "image": "Sushi MediterraneanParrotfish.png",
+    "description": "Sushi made with Mediterranean Parrotfish.",
+    "acquired": "Mediterranean Parrotfish",
+    "ingredients": "1 Mediterranean Parrotfish",
+    "baseprice": "10",
+    "basetaste": "14",
+    "basedish": "1",
+    "maxprice": "37",
+    "maxtaste": "140",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Megalograptus Sushi",
+    "image": "Sushi_Megalograptus.png",
+    "description": "",
+    "acquired": "Megalograptus",
+    "flame_cost": "",
+    "ingredients": "1 Megalograptus",
+    "baseprice": "140",
+    "basetaste": "40",
+    "basedish": "1",
+    "maxprice": "518",
+    "maxtaste": "400",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Megamouth Shark Sushi",
+    "image": "Sushi MegamouthShark.png",
+    "description": "Sushi made with Megamouth Shark fillet.",
+    "acquired": "Megamouth Shark",
+    "ingredients": "1 Megamouth Shark Meat",
+    "baseprice": "95",
+    "basetaste": "30",
+    "basedish": "1",
+    "maxprice": "351",
+    "maxtaste": "300",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Mianbao Xia",
+    "image": "Menu_Shrimp_Menbosha.png",
+    "description": "Fried minced shrimp placed between slices of square bread.; Boiled white shrimp and black shrimp give it a rich taste.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "flame_cost": "7",
+    "event": "shrimp",
+    "ingredients": "5 Black Tiger Shrimp; 5 Whiteleg Shrimp; 2 Wheat; 1 Olive Oil",
+    "baseprice": "375",
+    "basetaste": "125",
+    "basedish": "7",
+    "maxprice": "1387",
+    "maxtaste": "305",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Moonlight Bladderwrack Roll",
+    "image": "Moonlight_Bladderwrack_Roll.png",
+    "description": "Sushi filled with fish meat and wrapped in bladderwrack.; It tastes as fresh as fresh can be.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "3 Longspine Squirrelfish; 3 Clearfin Lionfish; 3 Blackfin Barracuda; 1 Bladderwrack",
+    "baseprice": "405",
+    "basetaste": "135",
+    "basedish": "6",
+    "maxprice": "1498",
+    "maxtaste": "360",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Moray Eel Curry",
+    "image": "Menu Moray Eel Curry.png",
+    "description": "A curry made with moray eel.",
+    "acquired": "Cooksta Silver Rank",
+    "flame_cost": "6",
+    "event": "curry",
+    "ingredients": "2 Moray Eel; 1 Turmeric",
+    "baseprice": "95",
+    "basetaste": "93",
+    "basedish": "4",
+    "maxprice": "351",
+    "maxtaste": "273",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Moray Eel Sushi",
+    "image": "Sushi MorayEel.png",
+    "description": "",
+    "acquired": "Moray Eel",
+    "flame_cost": "",
+    "ingredients": "1 Moray Eel",
+    "baseprice": "50",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Narrow-barred Spanish Mackerel Arancini",
+    "image": "Menu Spanish Mackerel Arancini.png",
+    "description": "Narrow-barred Spanish mackerel is shaped like a ball with garlic sauce and rice and fried.; It's convenient to eat and loved by children.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "flame_cost": "7",
+    "ingredients": "5 Narrow-Barred Spanish Mackerel; 2 Egg; 2 Rice; 2 Garlic",
+    "baseprice": "390",
+    "basetaste": "130",
+    "basedish": "5",
+    "maxprice": "1443",
+    "maxtaste": "364",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Narrow-barred Spanish mackerel Sushi",
+    "image": "Sushi Narrow barred Spanish mackerel.png",
+    "description": "Sushi made with Narrow-barred Spanish mackerel.",
+    "acquired": "Narrow-Barred Spanish Mackerel",
+    "flame_cost": "",
+    "ingredients": "1 Narrow-Barred Spanish Mackerel",
+    "baseprice": "30",
+    "basetaste": "19",
+    "basedish": "1",
+    "maxprice": "111",
+    "maxtaste": "190",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Narwhal Miso Soup",
+    "image": "Menu_Stargazer_MisoSoup.png",
+    "description": "A bowl of miso soup with narwhal meat.; The meat of narwhal gives off a rich aroma and chewy texture while miso gives a soft and filling taste.",
+    "acquired": "Train Davina to Level 15",
+    "flame_cost": "15",
+    "ingredients": "3 Narwhal Meat; 2 Carrot; 2 Buckbean; 1 Miso",
+    "baseprice": "400",
+    "basetaste": "150",
+    "basedish": "8",
+    "maxprice": "1480",
+    "maxtaste": "420",
+    "maxdish": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Narwhal Sushi",
+    "image": "Sushi Narwhales.png",
+    "description": "",
+    "acquired": "Narwhal",
+    "flame_cost": "",
+    "ingredients": "1 Narwhal Meat",
+    "baseprice": "140",
+    "basetaste": "40",
+    "basedish": "1",
+    "maxprice": "518",
+    "maxtaste": "400",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Nasu Dengaku",
+    "image": "Menu Eggplant NasuDengaku.png",
+    "description": "Grilled eggplant with Japanese miso sauce.",
+    "acquired": "Cooksta Diamond Rank",
+    "flame_cost": "12",
+    "ingredients": "1 Eggplant; 1 Garlic; 1 Olive Oil; 1 Miso",
+    "baseprice": "415",
+    "basetaste": "155",
+    "basedish": "3",
+    "maxprice": "1535",
+    "maxtaste": "317",
+    "maxdish": "4",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "image": "Sushi_Gim.png",
+    "description": "Sushi made with seaweed, vinegar and wasabi.",
+    "acquired": "Default",
+    "ingredients": "n/a",
+    "baseprice": "1",
+    "maxprice": "1",
+    "basetaste": "0",
+    "maxtaste": "0",
+    "basedish": "1",
+    "maxdish": "1",
+    "title": "Norimaki",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Norway Lobster Sushi",
+    "image": "Norway_Lobster_Sushi.png",
+    "description": "Sushi made with norway lobster.",
+    "acquired": "Norway Lobster",
+    "flame_cost": "",
+    "ingredients": "1 Norway Lobster",
+    "event": "lobster",
+    "baseprice": "75",
+    "basetaste": "33",
+    "basedish": "1",
+    "maxprice": "277",
+    "maxtaste": "330",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Orbicular Batfish Fry",
+    "image": "Sushi JuvenileCircularBatFishFry.png",
+    "description": "Deep-fried Orbicular Batfish.",
+    "acquired": "Orbicular Batfish",
+    "flame_cost": "",
+    "ingredients": "1 Orbicular Batfish",
+    "baseprice": "5",
+    "basetaste": "11",
+    "basedish": "1",
+    "maxprice": "18",
+    "maxtaste": "110",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Ornate Wrasse Sushi",
+    "image": "Sushi OrnateWrasse.png",
+    "description": "Sushi made with Ornate Wrasse.",
+    "acquired": "Ornate Wrasse",
+    "flame_cost": "",
+    "ingredients": "1 Ornate Wrasse",
+    "baseprice": "8",
+    "basetaste": "13",
+    "basedish": "1",
+    "maxprice": "29",
+    "maxtaste": "130",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pacific Fanfish Sushi",
+    "image": "Sushi Pacificfanfish.png",
+    "description": "Sushi made with Pacific Fanfish.",
+    "acquired": "Pacific Fanfish",
+    "flame_cost": "",
+    "ingredients": "1 Pacific Fanfish",
+    "baseprice": "65",
+    "basetaste": "24",
+    "basedish": "1",
+    "maxprice": "240",
+    "maxtaste": "240",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Painted Comber Sushi",
+    "image": "Sushi PaintedComber.png",
+    "description": "Sushi made with Painted Comber.",
+    "acquired": "Painted Comber",
+    "flame_cost": "",
+    "ingredients": "1 Painted Comber",
+    "baseprice": "17",
+    "basetaste": "14",
+    "basedish": "1",
+    "maxprice": "62",
+    "maxtaste": "140",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Parhelion Jellyfish Sushi",
+    "image": "Parhelion Jellyfish Sushi.png",
+    "description": "Sushi made from Parhelion Jellyfish.; Regular customers probably won't prefer it.",
+    "acquired": "Parhelion Jellyfish",
+    "flame_cost": "",
+    "ingredients": "1 Parhelion Jellyfish",
+    "baseprice": "390",
+    "basetaste": "5",
+    "basedish": "1",
+    "maxprice": "390",
+    "maxtaste": "5",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Peacock Squid Ripieni",
+    "image": "Menu Peacock Squid Ripieni.png",
+    "description": "The body of a peacock squid is filled with minced garlic and scrambled egg and then roasted.; The chewy texture of the squid supports the other ingredients as well.",
+    "acquired": "Complete Let Us Begin the Contest",
+    "flame_cost": "7",
+    "ingredients": "3 Peacock Squid; 2 Egg; 2 Garlic; 1 Black Pepper",
+    "baseprice": "410",
+    "basetaste": "135",
+    "basedish": "5",
+    "maxprice": "1517",
+    "maxtaste": "360",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Peacock Squid Sushi",
+    "image": "Sushi Peacock Squid.png",
+    "description": "",
+    "acquired": "Peacock Squid",
+    "flame_cost": "",
+    "ingredients": "1 Peacock Squid",
+    "baseprice": "75",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "277",
+    "maxtaste": "290",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pelican Eel Jelly",
+    "image": "Menu Pelican Eel Jelly.png",
+    "description": "The chopped meat of a pelican eel and agar are simmered and cooled for a nice representation.; Some prefer having it warm.",
+    "acquired": "Complete Whose Fried food is the Best?",
+    "flame_cost": "7",
+    "ingredients": "3 Pelican Eel; 1 Black Vinegar; 1 Agar",
+    "baseprice": "373",
+    "basetaste": "151",
+    "basedish": "6",
+    "maxprice": "1380",
+    "maxtaste": "439",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pelican Eel Sushi",
+    "image": "Sushi Pelican Eel.png",
+    "description": "Sushi made with pelican eel.",
+    "acquired": "Pelican Eel",
+    "flame_cost": "",
+    "ingredients": "1 Pelican Eel",
+    "baseprice": "180",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "666",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Perished Loosejaw Sushi",
+    "image": "Perished Loosejaw Sushi.png",
+    "description": "Sushi made from Perished Loosejaw.; Regular customers probably won't prefer it.",
+    "acquired": "Perished Loosejaw",
+    "flame_cost": "",
+    "ingredients": "1 Perished Loosejaw",
+    "baseprice": "395",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "395",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Phantom Jellyfish Jelly",
+    "image": "Menu Special PhantomJelly Fillet Jelly.png",
+    "description": "Jelly made by boiling the meat of a phantom jellyfish and agar, then cooling.; It is not visually pleasing, but its chewy texture makes you feel good.",
+    "acquired": "Defeat Phantom Jellyfish",
+    "flame_cost": "1",
+    "event": "jellyfish",
+    "ingredients": "1 Phantom Jellyfish Meat; 3 Agar; 3 Buckbean",
+    "baseprice": "700",
+    "basetaste": "165",
+    "basedish": "10",
+    "maxprice": "700",
+    "maxtaste": "165",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pickled Vegetables",
+    "image": "Menu Vege Tsukemono.png",
+    "description": "Various vegetables are pickled in vinegar and soy sauce.; The tang felt at the end of the tongue whets the appetite.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "event": "cucumber",
+    "ingredients": "1 Cucumber; 1 Eggplant; 1 Carrot; 1 Black Vinegar",
+    "baseprice": "316",
+    "basetaste": "157",
+    "basedish": "2",
+    "maxprice": "1169",
+    "maxtaste": "364",
+    "maxdish": "3",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pikaia Ramen",
+    "image": "Menu Pikaia Ramen.png",
+    "description": "Ramen made with pikaia.; The ancient creature gives a peculiar but rich flavor.",
+    "acquired": "Complete Check the Control Room Entrance (last device)",
+    "flame_cost": "15",
+    "ingredients": "3 Pikaia; 1 Grade A Egg; 2 Wheat; 3 Southern Bull Kelp",
+    "baseprice": "420",
+    "basetaste": "135",
+    "basedish": "7",
+    "maxprice": "1554",
+    "maxtaste": "360",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pikaia Sushi",
+    "image": "Sushi Pikaia.png",
+    "description": "",
+    "acquired": "Pikaia",
+    "flame_cost": "",
+    "ingredients": "1 Pikaia",
+    "baseprice": "115",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "425",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Plotosid Pie",
+    "image": "Menu Striped Catfish Pie.png",
+    "description": "A carefully prepared plotosid and minced onion are baked to make this rice pie.; The dish looks like a fish staring into the night skies.",
+    "acquired": "Complete Whose Fried food is the Best?",
+    "flame_cost": "7",
+    "ingredients": "5 Striped Catfish; 2 Wheat; 2 Onion; 2 Bean",
+    "baseprice": "385",
+    "basetaste": "150",
+    "basedish": "5",
+    "maxprice": "1424",
+    "maxtaste": "420",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Polar Eelpout Sushi",
+    "image": "Sushi Polar Eelpout.png",
+    "description": "",
+    "acquired": "Polar Eelpout",
+    "flame_cost": "",
+    "ingredients": "1 Polar Eelpout",
+    "baseprice": "90",
+    "basetaste": "32",
+    "basedish": "1",
+    "maxprice": "333",
+    "maxtaste": "320",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Porbeagle Shark Sushi",
+    "image": "Sushi Porbeagle Shark.png",
+    "description": "",
+    "acquired": "Porbeagle Shark",
+    "flame_cost": "",
+    "ingredients": "1 Porbeagle Shark Meat",
+    "baseprice": "165",
+    "basetaste": "38",
+    "basedish": "1",
+    "maxprice": "610",
+    "maxtaste": "380",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pufferfish Dumpling Soup",
+    "image": "Pufferfish_Dumpling_Soup.png",
+    "description": "Dumpling soup made with detoxified long-spine porcupinefish and starry puffer flesh.; Bladderwrack broth adds a healthy flavor to the dish.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "3 Longspine Porcupinefish; 3 Starry Puffer; 1 Egg; 1 Bladderwrack",
+    "baseprice": "420",
+    "basetaste": "150",
+    "basedish": "6",
+    "maxprice": "1554",
+    "maxtaste": "420",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Purple Sea Urchin Sushi",
+    "image": "Sushi Purple Sea Urchin.png",
+    "description": "Sushi made with purple sea urchin.",
+    "acquired": "Purple Sea Urchin",
+    "flame_cost": "",
+    "ingredients": "1 Purple Sea Urchin",
+    "baseprice": "60",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "222",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Pyramid Butterflyfish Sushi",
+    "image": "Sushi PyramidButterflyFish.png",
+    "description": "Sushi made with Pyramid Butterflyfish.",
+    "acquired": "Pyramid Butterflyfish",
+    "ingredients": "Pyramid Butterflyfish",
+    "baseprice": "4",
+    "basetaste": "10",
+    "basedish": "1",
+    "maxprice": "14",
+    "maxtaste": "100",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Qingmendous Sushi",
+    "image": "Sushi Qingmendous.png",
+    "description": "Sushi made with qingmendous.",
+    "acquired": "Qingmendous",
+    "flame_cost": "",
+    "ingredients": "1 Qingmendous",
+    "baseprice": "120",
+    "basetaste": "38",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "380",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Radiant Squid Sushi",
+    "image": "Radiant Squid Sushi.png",
+    "description": "Sushi made from Radiant Squid.; Regular customers probably won't prefer it.",
+    "acquired": "Radiant Squid",
+    "flame_cost": "",
+    "ingredients": "1 Radiant Squid",
+    "baseprice": "365",
+    "basetaste": "8",
+    "basedish": "1",
+    "maxprice": "365",
+    "maxtaste": "8",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rainbow Cap Eel Skewers",
+    "image": "Rainbow_Cap_Eel_Skewers.png",
+    "description": "Grilled rainbow cap and snub-nosed spiny eel skewers.; A single dish that captures a multitude of flavors.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "2 Snub-nosed Spiny Eel; 1 Rainbow Cap; 1 Soy Sauce",
+    "baseprice": "730",
+    "basetaste": "195",
+    "basedish": "2",
+    "maxprice": "1606",
+    "maxtaste": "295",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rainbow Cap Pacific Fanfish Ochazuke",
+    "image": "Rainbow Cap Pacific Fanfish Ochazuke.png",
+    "description": "An ochazuke adorned with carefully grilled Pacific fanfish and colorful rainbow cap.; The salty, crispy fish fillet and the fluffy, flavorful rainbow cap go together as if they were meant to be.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "3 Pacific Fanfish; 1 Rainbow Cap; 1 Rice; 1 Kelp",
+    "baseprice": "710",
+    "basetaste": "190",
+    "basedish": "2",
+    "maxprice": "1562",
+    "maxtaste": "290",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rainbow Cap Triggerfish Fishcake",
+    "image": "Rainbow Cap Triggerfish Fishcake.png",
+    "description": "",
+    "acquired": "Complete Fellow Alchemist and Magic Cauldron",
+    "flame_cost": "",
+    "ingredients": "3 Lagoon Triggerfish; 3 Grey Triggerfish; 1 Rainbow Cap; 1 Seaweed",
+    "baseprice": "705",
+    "basetaste": "180",
+    "basedish": "2",
+    "maxprice": "1551",
+    "maxtaste": "268",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rainbow Wrasse Sushi",
+    "image": "Sushi MediterraneanRainbowWrasse.png",
+    "description": "Sushi made with Rainbow Wrasse.",
+    "ingredients": "1 Rainbow Wrasse",
+    "baseprice": "6",
+    "basetaste": "13",
+    "basedish": "1",
+    "acquired": "Rainbow Wrasse",
+    "maxprice": "22",
+    "maxtaste": "130",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Raw Black Tiger Shrimp Sushi",
+    "image": "Sushi BlackTiger Shrimp.png",
+    "description": "Sushi made with raw black tiger shrimp.",
+    "acquired": "Black Tiger Shrimp",
+    "flame_cost": "",
+    "ingredients": "1 Black Tiger Shrimp",
+    "baseprice": "50",
+    "basetaste": "24",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "240",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Red Lionfish Sushi",
+    "image": "Sushi RedLionfish.png",
+    "description": "Sushi made with Lionfish.",
+    "acquired": "Red Lionfish",
+    "ingredients": "1 Red Lionfish",
+    "baseprice": "10",
+    "basetaste": "20",
+    "basedish": "1",
+    "maxprice": "37",
+    "maxtaste": "200",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Red bream Sushi",
+    "image": "Sushi RedBream.png",
+    "description": "Sushi made with Redbream.",
+    "acquired": "Red Bream",
+    "flame_cost": "",
+    "ingredients": "1 Red Bream",
+    "baseprice": "35",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "129",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Red-banded Lobster Sushi",
+    "image": "Sushi_Red-Banded_Lobster.png",
+    "description": "Sushi made from red-banded lobster.",
+    "acquired": "Red-banded Lobster",
+    "flame_cost": "",
+    "ingredients": "1 Red-banded Lobster",
+    "event": "lobster",
+    "baseprice": "75",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "277",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Redtoothed Triggerfish Sushi",
+    "image": "Sushi RedtoothedTriggerfish.png",
+    "description": "Sushi made with Redtoothed Triggerfish.",
+    "acquired": "Redtoothed Triggerfish",
+    "ingredients": "Redtoothed Triggerfish",
+    "baseprice": "9",
+    "basetaste": "15",
+    "basedish": "1",
+    "maxprice": "33",
+    "maxtaste": "150",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rhinochimaeridae Sushi",
+    "image": "Sushi Rhinochimaeridae.png",
+    "description": "Sushi made with Rhinochimaerdae fillet.",
+    "acquired": "Rhinochimaeridae",
+    "ingredients": "1 Rhinochimaeridae Meat",
+    "baseprice": "90",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "333",
+    "maxtaste": "290",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rice with Great Spider Crab Meat",
+    "image": "Menu_Spider_Crab_Ricebowl.png",
+    "description": "Cooked rice with a generous amount of great spider crab meat.; The crab meat is soft and crisp at the same time.",
+    "acquired": "Cooksta Diamond Rank",
+    "flame_cost": "12",
+    "ingredients": "1 Spider Crab; 2 Rice; 2 Bean",
+    "baseprice": "410",
+    "basetaste": "150",
+    "basedish": "5",
+    "maxprice": "1517",
+    "maxtaste": "330",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rice with Purple Sea Urchin Sushi",
+    "image": "Menu_Purple_Sea_Urchin_Ricebowl.png",
+    "description": "A bowl of rice covered with a generous amount of purple sea urchins.; The fancy and strong aroma of sea urchins will please your palate.",
+    "acquired": "Train Raptor to Level 10",
+    "flame_cost": "12",
+    "ingredients": "2 Purple Sea Urchin; 2 Rice; 1 Sesame Seed",
+    "baseprice": "385",
+    "basetaste": "140",
+    "basedish": "3",
+    "maxprice": "1424",
+    "maxtaste": "320",
+    "maxdish": "4",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Rice with White Shrimp Meat",
+    "image": "Menu White Shrimp Ricebowl.png",
+    "description": "Rice covered with white shrimp meat pickled in soy sauce.; Add raw yolk to mix with it and the world is yours.",
+    "acquired": "Train Kyoko to Level 15",
+    "flame_cost": "15",
+    "event": "shrimp",
+    "ingredients": "3 White Shrimp; 2 Rice; 2 Egg; 1 Soy Sauce",
+    "baseprice": "400",
+    "basetaste": "148",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "400",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Roasted Capelin",
+    "image": "Menu Capelin Turmeric Grilled.png",
+    "description": "Capelin is covered with turmeric powder and then roasted to brown by a weak flame.; The aromatic and savory taste goes well with beer.",
+    "acquired": "Train Drae to Level 10",
+    "flame_cost": "12",
+    "event": "curry",
+    "ingredients": "5 Capelin; 1 Black Coral; 1 Turmeric",
+    "baseprice": "390",
+    "basetaste": "138",
+    "basedish": "5",
+    "maxprice": "1443",
+    "maxtaste": "345",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Roasted Helicoprion Tail",
+    "image": "Menu Special Helicoprion Tail Grilled.png",
+    "description": "The thick slices of helicoprion meat are roasted over a strong fire and seasoned with seaweed.; The juicy tail meat and seaweed make a fantastic combination.",
+    "acquired": "Defeat Helicoprion",
+    "flame_cost": "1",
+    "event": "shark",
+    "ingredients": "1 Helicoprion Tail; 1 Kajime; 1 Seaweed; 1 Black Vinegar",
+    "baseprice": "710",
+    "basetaste": "170",
+    "basedish": "10",
+    "maxprice": "710",
+    "maxtaste": "170",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Roasted Tropical Fish and Garlic",
+    "image": "Menu_Tropical_Fish_Grilled.png",
+    "description": "Pyramid butterflyfish, clownfish, and blue tang are seasoned with minced garlic and roasted.; The roasted garlic gives a fabulous flavor.",
+    "acquired": "Train Tohoku to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 Clownfish; 5 Pyramid Butterflyfish; 5 Blue Tang; 3 Garlic",
+    "baseprice": "400",
+    "basetaste": "173",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "236",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sailfish Sushi",
+    "image": "Sushi Sail Fish.png",
+    "description": "",
+    "acquired": "Sailfish",
+    "flame_cost": "",
+    "event": "marlin",
+    "ingredients": "1 Sailfish Meat",
+    "baseprice": "195",
+    "basetaste": "40",
+    "basedish": "1",
+    "maxprice": "721",
+    "maxtaste": "400",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Salema Porgy Sushi",
+    "image": "Sushi_Salema_Porgy.png",
+    "description": "Sushi made with Salema Porgy.",
+    "acquired": "Salema Porgy",
+    "ingredients": "1 Salema Porgy",
+    "baseprice": "5",
+    "basetaste": "11",
+    "basedish": "1",
+    "maxprice": "18",
+    "maxtaste": "110",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sallow Sailfish Sushi",
+    "image": "Sallow Sailfish Sushi.png",
+    "description": "Sushi made from Sallow Sailfish.; Regular customers probably won't prefer it.",
+    "acquired": "Sallow Sailfish",
+    "flame_cost": "",
+    "ingredients": "1 Sallow Sailfish",
+    "baseprice": "1000",
+    "basetaste": "5",
+    "basedish": "1",
+    "maxprice": "1000",
+    "maxtaste": "5",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sally Lightfoot Crab Sushi",
+    "image": "Sushi Sally Lightfoot Crab.png",
+    "description": "",
+    "acquired": "Sally Lightfoot Crab",
+    "flame_cost": "",
+    "ingredients": "1 Sally Lightfoot Crab",
+    "baseprice": "50",
+    "basetaste": "32",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "320",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Salmon Snailfish Sushi",
+    "image": "Sushi SalmonSnailfish.png",
+    "description": "Sushi made with Salmon Snailfish.",
+    "ingredients": "1 Salmon Snailfish",
+    "acquired": "Salmon Snailfish",
+    "baseprice": "60",
+    "basetaste": "23",
+    "basedish": "1",
+    "maxprice": "222",
+    "maxtaste": "230",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Salt-grilled Redtoothed Triggerfish",
+    "image": "Menu RedtoothedTriggerfish Grilled.png",
+    "description": "Salted and grilled redtoothed triggerfish.; The sweet flavor unique to triggerfish is prominent in this dish.",
+    "acquired": "Cooksta Bronze Rank",
+    "flame_cost": "3",
+    "event": "",
+    "ingredients": "2 Redtoothed Triggerfish; 1 Salt",
+    "baseprice": "48",
+    "basetaste": "70",
+    "basedish": "4",
+    "maxprice": "177",
+    "maxtaste": "241",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Savage Barracuda Sushi",
+    "image": "Savage Barracuda Sushi.png",
+    "description": "Sushi made from Savage Barracuda.; Regular customers probably won't prefer it.",
+    "acquired": "Savage Barracuda",
+    "flame_cost": "",
+    "ingredients": "1 Savage Barracuda",
+    "baseprice": "440",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "440",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Scouring Bass Sushi",
+    "image": "Scouring Bass Sushi.png",
+    "description": "Sushi made from Scouring Bass.; Regular customers probably won't prefer it.",
+    "acquired": "Scouring Bass",
+    "flame_cost": "",
+    "ingredients": "1 Scouring Bass",
+    "baseprice": "375",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "375",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sea Goldie Sushi",
+    "image": "Sushi SquareSpotAnthias.png",
+    "description": "Sushi made with Sea Goldie.",
+    "ingredients": "1 Sea Goldie",
+    "baseprice": "3",
+    "basetaste": "13",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sea Toad and Cucumber Gunkan Sushi",
+    "image": "Sushi SeaToad Cucumber.png",
+    "description": "Gunkan sushi made with sea toad fillet and cucumber.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "flame_cost": "5",
+    "event": "cucumber",
+    "ingredients": "1 Sea Toad; 1 Cucumber",
+    "baseprice": "320",
+    "basetaste": "160",
+    "basedish": "1",
+    "maxprice": "1184",
+    "maxtaste": "367",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sea toad Sushi",
+    "image": "Sushi SeaToad.png",
+    "description": "Sushi made with Seatoad.",
+    "acquired": "Sea Toad",
+    "ingredients": "1 Sea Toad",
+    "baseprice": "55",
+    "basetaste": "23",
+    "basedish": "1",
+    "maxprice": "203",
+    "maxtaste": "230",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seadragon Onigiri",
+    "image": "Menu Seadragon Onigiri.png",
+    "description": "A dish filled with lightly grilled sea dragons sandwiched between triangular shaped rice.; The crispy taste of the sea dragon blends well with the rice grains.",
+    "acquired": "Seadragon",
+    "ingredients": "1 Seadragon",
+    "baseprice": "105",
+    "basetaste": "47",
+    "basedish": "1",
+    "maxprice": "388",
+    "maxtaste": "470",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seagrapes Jellyfish Sushi",
+    "image": "Sushi Caulerpa Racemosa Jellyfish Name.png",
+    "description": "A sushi lined with latok and topped with jellyfish.; Take a bite to taste the sea.",
+    "acquired": "Complete Gourmet Vincent's Challenge",
+    "event": "jellyfish",
+    "ingredients": "1 Sea Grape; 1 White Spotted Jellyfish; 1 Salt",
+    "baseprice": "225",
+    "basetaste": "100",
+    "basedish": "1",
+    "maxprice": "832",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seagrapes Special Sushi",
+    "image": "Sushi SeaGrapes Special.png",
+    "description": "Gunkan maki made from high-quality rice and topped with latok.; The latok's scent mixes well with its crunchy texture.",
+    "acquired": "Cooksta Gold Rank",
+    "flame_cost": "6",
+    "ingredients": "1 Sea Grape; 1 Rice",
+    "baseprice": "200",
+    "basetaste": "120",
+    "basedish": "1",
+    "maxprice": "740",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seahorse Salad",
+    "image": "Menu_Seahorse_Salad.png",
+    "description": "A salad topped with deep-fried seahorse.; Seahorses are not considered suitable for consumption, but they have been turned into a crunchy, flavorful dish through Bancho's skilled hands. They go splendidly with the crunchy salad.",
+    "acquired": "Train Yone to Level 15",
+    "flame_cost": "15",
+    "ingredients": "3 Long-Snouted Seahorse; 2 Cherry Tomato; 2 Sea Grape; 1 Olive Oil",
+    "baseprice": "400",
+    "basetaste": "160",
+    "basedish": "4",
+    "maxprice": "1480",
+    "maxtaste": "295",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seahorse Skewers",
+    "image": "Menu Seahorse Roasted.png",
+    "description": "Seahorses salted and roasted on a skewer.; The crisp, salty taste makes it a perfect match for drinks, or as a snack.",
+    "acquired": "Long-Snouted Seahorse",
+    "flame_cost": "",
+    "ingredients": "1 Long-Snouted Seahorse",
+    "baseprice": "30",
+    "basetaste": "22",
+    "basedish": "1",
+    "maxprice": "111",
+    "maxtaste": "220",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seahorse Udon",
+    "image": "Menu SpinySeahorse Udon.png",
+    "description": "This is udon with deep-fried seahorse on top.; It offers a refreshing mix of soft noodles and coarse seahorse.",
+    "acquired": "Cooksta Platinum Rank",
+    "flame_cost": "9",
+    "ingredients": "3 Long-Snouted Seahorse; 2 Wheat; 1 Miso",
+    "baseprice": "375",
+    "basetaste": "128",
+    "basedish": "3",
+    "maxprice": "1387",
+    "maxtaste": "353",
+    "maxdish": "4",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seasoned Jellyfish",
+    "image": "Menu Jellyfish Salad.png",
+    "description": "Barrel jellyfish and fried egg jellyfish are shredded and seasoned with garlic sauce.; It's a fresh and savory meal.",
+    "acquired": "Train James to Level 15",
+    "flame_cost": "15",
+    "event": "jellyfish",
+    "ingredients": "5 Barrel Jellyfish; 5 Fried Egg Jellyfish; 2 Garlic; 2 Black Coral",
+    "baseprice": "400",
+    "basetaste": "163",
+    "basedish": "4",
+    "maxprice": "1480",
+    "maxtaste": "298",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seasoned Kajime",
+    "image": "Menu Kajime Seasoned.png",
+    "description": "Kajime mixed with black vinegar.; The sour and bitter flavor will refresh your palate.",
+    "acquired": "Cooksta Bronze Rank",
+    "flame_cost": "3",
+    "ingredients": "2 Kajime; 1 Black Vinegar",
+    "baseprice": "50",
+    "basetaste": "65",
+    "basedish": "4",
+    "maxprice": "185",
+    "maxtaste": "245",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seasoned Long-spine Porcupinefish Skin",
+    "image": "Menu_Seasoned_Long-Spine_Porcupinefish_Skin.png",
+    "description": "Thinly sliced long-spine porcupinefish skin blanched then mixed with sour seasoning.; It's like a chewy jelly you can't get enough of.",
+    "acquired": "Complete Otto's Gift?",
+    "flame_cost": "6",
+    "ingredients": "3 Longspine Porcupinefish; 1 Kelp; 1 Black Vinegar",
+    "baseprice": "180",
+    "basetaste": "140",
+    "basedish": "5",
+    "maxprice": "666",
+    "maxtaste": "410",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seasoned Waptia Fieldensis",
+    "image": "Menu Waptia Fieldensis Seasoned.png",
+    "description": "Waptia is sliced like shrimp and seasoned with thin-sliced cucumber.; Its fresh taste is a good way to end a laborious day.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "flame_cost": "15",
+    "event": "cucumber shrimp",
+    "ingredients": "3 Waptia Fieldensis; 2 Cucumber; 3 Black Coral; 1 Black Vinegar",
+    "baseprice": "425",
+    "basetaste": "150",
+    "basedish": "5",
+    "maxprice": "1572",
+    "maxtaste": "420",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seaweed Rolled Omelet",
+    "image": "Menu Egg Tamago.png",
+    "description": "Egg is scrambled, spread thin, and rolled to complete the dish.; The nutty taste of kelp and seaweed is blended with moist scrambled egg. It is like having a piece of tasty cloud.",
+    "acquired": "Train Pai to Level 15",
+    "flame_cost": "15",
+    "ingredients": "1 Grade A Egg; 3 Seaweed; 3 Kelp",
+    "baseprice": "400",
+    "basetaste": "165",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "300",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Seizing Snailfish Sushi",
+    "image": "Seizing Snailfish Sushi.png",
+    "description": "Sushi made from Seizing Snailfish.; Regular customers probably won't prefer it.",
+    "acquired": "Seizing Snailfish",
+    "flame_cost": "",
+    "ingredients": "1 Seizing Snailfish",
+    "baseprice": "455",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "455",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Shark Karaage",
+    "image": "Menu ElephantFish Fried.png",
+    "description": "Blacktip reef shark and copper shark meat are batter-fried.; The dish is both crunchy and soft.",
+    "acquired": "Train Itsuki to Level 15",
+    "flame_cost": "15",
+    "event": "shark",
+    "ingredients": "3 Blacktip Shark Meat; 3 Copper Shark Meat; 1 Wheat; 1 Olive Oil",
+    "baseprice": "400",
+    "basetaste": "155",
+    "basedish": "6",
+    "maxprice": "1480",
+    "maxtaste": "380",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Shattered Wreckfish Sushi",
+    "image": "Shattered Wreckfish Sushi.png",
+    "description": "Sushi made from Shattered Wreckfish.; Regular customers probably won't prefer it.",
+    "acquired": "Shattered Wreckfish",
+    "flame_cost": "",
+    "ingredients": "1 Shattered Wreckfish",
+    "baseprice": "560",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "560",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sheepshead Sushi",
+    "image": "Sushi Asian Sheepshead.png",
+    "description": "",
+    "acquired": "Sheepshead",
+    "flame_cost": "",
+    "ingredients": "1 Sheepshead Meat",
+    "baseprice": "15",
+    "basetaste": "24",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "40",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Shortfin Mako Sushi",
+    "image": "Sushi Shortfin Mako.png",
+    "description": "Sushi made with Shortfin Mako",
+    "acquired": "Shortfin Mako",
+    "event": "shark",
+    "ingredients": "1 Mako Meat",
+    "baseprice": "105",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "388",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Skewered Cucumber",
+    "image": "Menu Cucumber Stick.png",
+    "description": "Skinned cucumber is skewered.; The ice under the dish preserves the crisp texture of cucumber for a long time.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "event": "cucumber",
+    "ingredients": "3 Cucumber",
+    "baseprice": "320",
+    "basetaste": "160",
+    "basedish": "1",
+    "maxprice": "1184",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Smallspotted Dart Kajime Soup",
+    "image": "Menu Smallspotted Dart Kajime Soup.png",
+    "description": "Smallspotted dart boiled with kajime.; The fragrant and warm dish will freshen you up on the inside. It's also healthy.",
+    "acquired": "Train Maki, Liu, Mitchell, or El Nino to Level 5",
+    "flame_cost": "8",
+    "ingredients": "3 Small Spotted Dart; 1 Kajime; 1 Soy Sauce",
+    "baseprice": "150",
+    "basetaste": "115",
+    "basedish": "5",
+    "maxprice": "555",
+    "maxtaste": "367",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Smallspotted Dart Sushi",
+    "image": "Sushi SmallspottedDart.png",
+    "description": "Sushi made with Smallspotted Dart.",
+    "acquired": "Small Spotted Dart",
+    "ingredients": "1 Small Spotted Dart",
+    "baseprice": "8",
+    "basetaste": "12",
+    "basedish": "1",
+    "maxprice": "29",
+    "maxtaste": "120",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Smoked Atlantic Mackerel Scramble",
+    "image": "Menu Atlantic Mackerel Scramble.png",
+    "description": "A smoked, shredded Atlantic mackerel stir-fried with scrambled egg. It is served on bread.; Good for a light meal.",
+    "acquired": "Complete Whose Fried food is the Best?",
+    "flame_cost": "7",
+    "ingredients": "5 Atlantic Mackerel; 2 Wheat; 2 Egg",
+    "baseprice": "387",
+    "basetaste": "145",
+    "basedish": "4",
+    "maxprice": "1431",
+    "maxtaste": "460",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Smooth Hammerhead Sushi",
+    "image": "Sushi Smooth Hammershark.png",
+    "description": "",
+    "acquired": "Smooth Hammerhead",
+    "flame_cost": "",
+    "event": "shark",
+    "ingredients": "1 Hammerhead Meat",
+    "baseprice": "141",
+    "basetaste": "39",
+    "basedish": "1",
+    "maxprice": "521",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Snow Crab Sushi",
+    "image": "Sushi_Snow_Crab.png",
+    "description": "Sushi made from snow crab.",
+    "acquired": "Snow Crab",
+    "flame_cost": "",
+    "ingredients": "1 Snow Crab",
+    "baseprice": "120",
+    "basetaste": "42",
+    "basedish": "1",
+    "maxprice": "444",
+    "maxtaste": "420",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Snub-nosed Spiny Eel Sushi",
+    "image": "Sushi SnubNosedSpiny Eel.png",
+    "description": "",
+    "acquired": "Snub-nosed Spiny Eel",
+    "flame_cost": "",
+    "ingredients": "1 Snub-nosed Spiny Eel",
+    "baseprice": "180",
+    "basetaste": "39",
+    "basedish": "1",
+    "maxprice": "666",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Soy Sauce Marinated Crab",
+    "image": "Soy_Sauce_Marinated_Crab.png",
+    "description": "Horsehair crab, snow crab, and yellow king crab marinated in boiling soy sauce.",
+    "acquired": "Jango Secret Recipe",
+    "ingredients": "2 Golden King Crab; 2 Snow Crab; 2 Horsehair Crab; 1 Soy Sauce",
+    "baseprice": "435",
+    "basetaste": "190",
+    "basedish": "4",
+    "maxprice": "1609",
+    "maxtaste": "505",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Spear Squid Soba Futomaki",
+    "image": "Menu SpearSquid Soba Futomaki.png",
+    "description": "",
+    "acquired": "Train Chitose to Level 15",
+    "flame_cost": "15",
+    "event": "",
+    "ingredients": "3 Spear Squid; 2 Buckwheat; 1 Egg; 1 Carrot",
+    "baseprice": "425",
+    "basetaste": "166",
+    "basedish": "6",
+    "maxprice": "1572",
+    "maxtaste": "292",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Spear Squid Sushi",
+    "image": "Sushi_Spear_Squid.png",
+    "description": "Sushi made from spear squid.",
+    "acquired": "Spear Squid",
+    "ingredients": "1 Spear Squid",
+    "baseprice": "51",
+    "basetaste": "30",
+    "basedish": "1",
+    "maxprice": "188",
+    "maxtaste": "300",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Special Fried Shrimp Sushi",
+    "image": "Menu Fried Shrimp Special.png",
+    "description": "A special sushi made with boiled and fried whiteleg shrimp and fried black tiger shrimp.; The huge fried shrimp of a generous size with premium rice can't go wrong.",
+    "acquired": "Train Drae to Level 5",
+    "flame_cost": "8",
+    "event": "shrimp",
+    "ingredients": "2 Black Tiger Shrimp; 2 Whiteleg Shrimp; 1 Rice; 1 Olive Oil",
+    "baseprice": "380",
+    "basetaste": "110",
+    "basedish": "1",
+    "maxprice": "1406",
+    "maxtaste": "317",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Spider Crab Sushi",
+    "image": "Sushi GreatSpiderCrab.png",
+    "description": "Sushi made with Great Spider Crab.",
+    "acquired": "Spider Crab",
+    "flame_cost": "",
+    "ingredients": "1 Spider Crab",
+    "baseprice": "50",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "290",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Splintered Crab Sushi",
+    "image": "Splintered Crab Sushi.png",
+    "description": "Sushi made from Splintered Crab.; Regular customers probably won't prefer it.",
+    "acquired": "Splintered Crab",
+    "flame_cost": "",
+    "ingredients": "1 Splintered Crab",
+    "baseprice": "405",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "405",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sprouting Eel Sushi",
+    "image": "Sprouting Eel Sushi.png",
+    "description": "Sushi made from Sprouting Eel.; Regular customers probably won't prefer it.",
+    "acquired": "Sprouting Eel",
+    "flame_cost": "",
+    "ingredients": "1 Sprouting Eel",
+    "baseprice": "1040",
+    "basetaste": "4",
+    "basedish": "1",
+    "maxprice": "1040",
+    "maxtaste": "4",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Starry Skate Sushi",
+    "image": "Sushi Antarctic Starry Skate.png",
+    "description": "",
+    "acquired": "Starry Skate",
+    "flame_cost": "",
+    "ingredients": "1 Starry Skate",
+    "baseprice": "130",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "481",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Steamed Eastern Rock Lobster & Egg",
+    "image": "Steamed Eastern Rock Lobster & Egg.png",
+    "description": "Eastern rock lobster and egg steamed with kelp broth.; The meaty lobster looks delicious.",
+    "acquired": "Complete Chinese Cuisine Contest!; Seasonal Event: Lobster Party",
+    "flame_cost": "9",
+    "event": "lobster",
+    "ingredients": "2 Eastern Rock Lobster; 2 Egg; 2 Kelp",
+    "baseprice": "380",
+    "basetaste": "140",
+    "basedish": "5",
+    "maxprice": "1406",
+    "maxtaste": "455",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Steamed Hyalonema Angler Fish",
+    "image": "Steamed Hyalonema Angler Fish.png",
+    "description": "Angler fish offal steamed with soy sauce.; The angler fish's liver melts in your mouth with a buttery texture.",
+    "acquired": "Complete Trapped in the Glacial Cave",
+    "flame_cost": "12",
+    "ingredients": "3 Atlantic Anglerfish; 2 Hyalonema; 1 Soy Sauce",
+    "baseprice": "750",
+    "basetaste": "180",
+    "basedish": "1",
+    "maxprice": "1650",
+    "maxtaste": "248",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Steamed Kronosaurus Tongue",
+    "image": "Menu Special Kronosaurus Tongue Steamed.png",
+    "description": "The well-prepared Kronosaurus tongue is steamed with various seaweeds.; Its texture is soft and it gives a somewhat spicy aftertaste.",
+    "acquired": "Defeat Kronosaurus",
+    "flame_cost": "1",
+    "ingredients": "1 Kronosaurus Tongue; 3 Seaweed; 3 Agar; 3 Southern Bull Kelp",
+    "baseprice": "724",
+    "basetaste": "180",
+    "basedish": "10",
+    "maxprice": "724",
+    "maxtaste": "180",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Steamed Wolf Eel",
+    "image": "Menu Special Wolffish TailMeat Steamed.png",
+    "description": "The fluorescent tail of a wolf eel is cut and steamed for a long time.; The sharp taste of this dish is energizing.",
+    "acquired": "Defeat Giant Wolf Eel",
+    "flame_cost": "1",
+    "ingredients": "1 Wolf Eel Tail Meat; 1 Agar; 1 Salt; 1 Black Vinegar",
+    "baseprice": "550",
+    "basetaste": "120",
+    "basedish": "10",
+    "maxprice": "550",
+    "maxtaste": "120",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stellate Puffer Nicogori",
+    "image": "Menu Stellate Puffer Nicogori.png",
+    "description": "Agar and pufferfish skin mixed and hardened.; Looks beautiful and features a dense flavor of pufferfish.",
+    "acquired": "Train specific Sushi Staff to Level 5",
+    "flame_cost": "8",
+    "ingredients": "3 Starry Puffer; 1 Agar; 1 Soy Sauce",
+    "baseprice": "180",
+    "basetaste": "120",
+    "basedish": "5",
+    "maxprice": "666",
+    "maxtaste": "381",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stellate Puffer Special Sushi",
+    "image": "Sushi Stellate Puffer Special.png",
+    "description": "A sushi made with expensive rice and pufferfish meat.; The clean flavor of pufferfish melds with high-quality rice.",
+    "acquired": "Cooksta Gold Rank",
+    "flame_cost": "6",
+    "ingredients": "1 Starry Puffer; 1 Rice",
+    "baseprice": "220",
+    "basetaste": "115",
+    "basedish": "1",
+    "maxprice": "814",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stingray Sashimi Cold Noodles",
+    "image": "Menu Stingray Cold Noodles.png",
+    "description": "",
+    "acquired": "Complete Deliver Cold Noodles to Bartender",
+    "flame_cost": "",
+    "event": "",
+    "ingredients": "3 Stingray Meat; 3 Buckwheat; 1 Egg",
+    "baseprice": "430",
+    "basetaste": "160",
+    "basedish": "6",
+    "maxprice": "1590",
+    "maxtaste": "331",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stingray Sushi",
+    "image": "Sushi Red Stingray.png",
+    "description": "Sushi made with stingray fillet.",
+    "acquired": "Stingray",
+    "flame_cost": "",
+    "ingredients": "1 Stingray Meat",
+    "baseprice": "51",
+    "basetaste": "26",
+    "basedish": "1",
+    "maxprice": "188",
+    "maxtaste": "260",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stir-Fried Hermit Crab and Seaweed",
+    "image": "Menu Special HermitCrab Leg Roastered.png",
+    "description": "The meat of a truck hermit crab is stir-fried with chopped kajime and presented on the skin.; The chewy and savory flavor of the crab meat is complemented by sea trumpet.",
+    "acquired": "Defeat Truck Hermit Crab",
+    "flame_cost": "1",
+    "ingredients": "1 Truck Hermit Crab Legs; 1 Kajime; 1 Seaweed; 1 Black Vinegar",
+    "baseprice": "550",
+    "basetaste": "150",
+    "basedish": "10",
+    "maxprice": "550",
+    "maxtaste": "150",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Stir-fried Habanero Lobster",
+    "image": "Stir-fried Habanero Lobster.png",
+    "description": "Lobster stir-fried with habanero sauce.; Always wear gloves when breaking the shell, or your hands will burn!",
+    "acquired": "Complete Make Jango Warm!",
+    "flame_cost": "7",
+    "ingredients": "2 Norway Lobster; 2 Habanero; 1 Olive Oil",
+    "baseprice": "390",
+    "basetaste": "140",
+    "basedish": "4",
+    "maxprice": "1443",
+    "maxtaste": "320",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Striped Catfish Sushi",
+    "image": "Sushi Striped Catfish.png",
+    "description": "",
+    "acquired": "Striped Catfish",
+    "flame_cost": "",
+    "ingredients": "1 Striped Catfish",
+    "baseprice": "5",
+    "basetaste": "26",
+    "basedish": "1",
+    "maxprice": "18",
+    "maxtaste": "260",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Striped Red Mullet Sushi",
+    "image": "Sushi RedMullet.png",
+    "description": "Sushi made with Red Mullet.",
+    "acquired": "Striped Red Mullet",
+    "flame_cost": "",
+    "ingredients": "1 Striped Red Mullet",
+    "baseprice": "16",
+    "basetaste": "14",
+    "basedish": "1",
+    "maxprice": "59",
+    "maxtaste": "140",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Striped Red Mullet Tangle Roll",
+    "image": "Menu Red Mullet Tangle Roll.png",
+    "description": "Red mullet wrapped in kelp.; The fragrance of the kelp seeps into the fish, and the taste gets better and better as you chew.",
+    "acquired": "Cooksta Silver Rank",
+    "flame_cost": "6",
+    "ingredients": "3 Striped Red Mullet; 1 Kelp",
+    "baseprice": "80",
+    "basetaste": "90",
+    "basedish": "5",
+    "maxprice": "296",
+    "maxtaste": "270",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Sweet and Sour Stargazer",
+    "image": "Menu BlueSpottedStargazer SweetAndSourFish.png",
+    "description": "Deep-fried stargazer meat with sweet and sour sauce.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "ingredients": "1 Bluespotted Stargazer; 1 Wheat; 1 Egg; 1 Olive Oil",
+    "baseprice": "390",
+    "basetaste": "125",
+    "basedish": "4",
+    "maxprice": "1443",
+    "maxtaste": "395",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Three-Colored Squid Roast",
+    "image": "Menu_Squid_Grilled.png",
+    "description": "The meat of peacock squid, vampire squid, and cuttlefish carefully roasted over a charcoal fire.; Its texture is as diverse as its colorful look.",
+    "acquired": "Train Liu to Level 15",
+    "flame_cost": "15",
+    "ingredients": "3 Peacock Squid; 3 Vampire Squid; 3 Cuttlefish; 1 Salt",
+    "baseprice": "400",
+    "basetaste": "155",
+    "basedish": "8",
+    "maxprice": "1480",
+    "maxtaste": "334",
+    "maxdish": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Three-Headed Cod Sushi",
+    "image": "Three-Headed Cod Sushi.png",
+    "description": "Sushi made from Three-Headed Cod.; Regular customers probably won't prefer it.",
+    "acquired": "Three-Headed Cod",
+    "flame_cost": "",
+    "ingredients": "1 Three-Headed Cod",
+    "baseprice": "450",
+    "basetaste": "1",
+    "basedish": "1",
+    "maxprice": "450",
+    "maxtaste": "1",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Threetooth Puffer Sushi",
+    "image": "Sushi ThreetoothPuffer.png",
+    "description": "Sushi made with Threetooth Puffer.",
+    "acquired": "Threetooth Puffer",
+    "flame_cost": "",
+    "ingredients": "1 Threetooth Puffer",
+    "baseprice": "70",
+    "basetaste": "25",
+    "basedish": "1",
+    "maxprice": "259",
+    "maxtaste": "250",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Thresher Shark Sushi",
+    "image": "Sushi Thresher Shark.png",
+    "description": "Sushi made with Thresher Shark.",
+    "acquired": "Thresher Shark",
+    "flame_cost": "",
+    "event": "shark",
+    "ingredients": "1 Thresher Shark Meat",
+    "baseprice": "159",
+    "basetaste": "39",
+    "basedish": "1",
+    "maxprice": "588",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tiger shark Sushi",
+    "image": "Sushi TigerShark.png",
+    "description": "Sushi made with Tigershark fillet.",
+    "acquired": "Tiger Shark",
+    "ingredients": "1 Tiger Shark Meat",
+    "baseprice": "50",
+    "basetaste": "29",
+    "basedish": "1",
+    "maxprice": "185",
+    "maxtaste": "290",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "description": "Sushi made with Titan Triggerfish.",
+    "ingredients": "1 Titan Triggerfish",
+    "acquired": "Titan Triggerfish",
+    "baseprice": "15",
+    "basetaste": "20",
+    "basedish": "1",
+    "maxprice": "55",
+    "maxtaste": "200",
+    "maxdish": "1",
+    "title": "Titan Triggerfish Sushi",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tokummia Katalepsis Sushi",
+    "image": "Tokummia_Katalepsi_Sushi.png",
+    "description": "Sushi made from tokummia katalepsis fillet.",
+    "acquired": "Tokummia Katalepsis",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Tokummia Katalepsis",
+    "baseprice": "165",
+    "basetaste": "46",
+    "basedish": "1",
+    "maxprice": "610",
+    "maxtaste": "460",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tomato Egg Soup",
+    "image": "Menu Tomato Egg Soup.png",
+    "description": "Tomatoes and eggs are boiled together.; It's good for a hangover.",
+    "acquired": "Complete Chinese Cuisine Contest!",
+    "flame_cost": "7",
+    "ingredients": "2 Grade A Egg; 2 Cherry Tomato; 1 Black Pepper",
+    "baseprice": "380",
+    "basetaste": "120",
+    "basedish": "8",
+    "maxprice": "1406",
+    "maxtaste": "309",
+    "maxdish": "12",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Translucent Sturgeon Sushi",
+    "image": "Translucent Sturgeon Sushi.png",
+    "description": "Sushi made from Translucent Sturgeon.; Regular customers probably won't prefer it.",
+    "acquired": "Translucent Sturgeon",
+    "flame_cost": "",
+    "ingredients": "1 Translucent Sturgeon",
+    "baseprice": "1235",
+    "basetaste": "3",
+    "basedish": "1",
+    "maxprice": "1235",
+    "maxtaste": "3",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Trevally Nanbanzuke",
+    "image": "Menu GiantTrevally Pickled.png",
+    "description": "A Japanese pickled dish made from white trevallies.; The crispy white trevally young fried in sour sauce can be eaten whole because of their small size.",
+    "acquired": "Train Maki to Level 15",
+    "flame_cost": "15",
+    "ingredients": "5 White Trevally; 3 Onion; 1 Soy Sauce; 1 Olive Oil",
+    "baseprice": "400",
+    "basetaste": "145",
+    "basedish": "5",
+    "maxprice": "1480",
+    "maxtaste": "343",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Trevally Sandwich",
+    "image": "Menu Trevally Sand.png",
+    "description": "A cucumber is placed between the bigeye trevally and yellowfin jack, generously cut, and mixed.; The watery and fresh taste of cucumber glides gently down the throat.",
+    "acquired": "Seasonal Event: Cucumber Party",
+    "flame_cost": "5",
+    "event": "cucumber",
+    "ingredients": "5 Giant Trevally Meat; 5 Bigeye Trevally; 2 Cucumber",
+    "baseprice": "312",
+    "basetaste": "170",
+    "basedish": "5",
+    "maxprice": "1154",
+    "maxtaste": "260",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tropical Fish Sushi Set",
+    "image": "Menu TropicalFish Sashimi.png",
+    "description": "A fancy sushi set resembling a colorful explosion.",
+    "acquired": "Complete Michael Bang's Inspiration",
+    "ingredients": "3 Titan Triggerfish; 3 Harlequin Hind; 3 Coral Trout; 3 Rice",
+    "baseprice": "375",
+    "basetaste": "130",
+    "basedish": "6",
+    "maxprice": "1387",
+    "maxtaste": "346",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tropical Rock Lobster Sushi",
+    "image": "Tropical_Rock_Lobster_Sushi.png",
+    "description": "Sushi made with tropical rock lobster fillet.",
+    "acquired": "Tropical Rock Lobster",
+    "flame_cost": "",
+    "event": "lobster",
+    "ingredients": "1 Tropical Rock Lobster",
+    "baseprice": "135",
+    "basetaste": "30",
+    "basedish": "1",
+    "maxprice": "499",
+    "maxtaste": "300",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Trout Sea Grapes Ricebowl",
+    "image": "Menu Coral Trout SeaGrapes RiceBowl.png",
+    "description": "Rice topped with coral trout meat and latok.; The scent of fresh seafood and the heavy flavor of the trout will excite your taste buds.",
+    "acquired": "Cooksta Gold Rank",
+    "flame_cost": "9",
+    "ingredients": "3 Coral Trout; 1 Sea Grape; 1 Rice; 1 Soy Sauce",
+    "baseprice": "175",
+    "basetaste": "110",
+    "basedish": "5",
+    "maxprice": "647",
+    "maxtaste": "290",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Truffle Blue Lobster Tail Sushi",
+    "image": "Truffle Blue Lobster Tail Sushi.png",
+    "description": "Blue lobster's tail with truffle sauce.; The powerful aroma of the truffle sauce goes well with the smooth taste of the lobster.",
+    "acquired": "Jango Secret Recipe",
+    "event": "lobster",
+    "ingredients": "2 Blue Lobster; 1 Truffle",
+    "baseprice": "780",
+    "basetaste": "190",
+    "basedish": "2",
+    "maxprice": "1716",
+    "maxtaste": "282",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Truffle Sailfish Tartare",
+    "image": "Truffle_Sailfish_Tartare.png",
+    "description": "A sushi-shaped dish made with minced sailfish instead of rice.; The addition of truffles and sea urchin roe results in a rich combination of flavors.",
+    "acquired": "Jango Secret Recipe",
+    "event": "marlin",
+    "ingredients": "3 Sailfish Meat; 3 Purple Sea Urchin; 1 Truffle",
+    "baseprice": "785",
+    "basetaste": "195",
+    "basedish": "2",
+    "maxprice": "1727",
+    "maxtaste": "295",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Truffle Shark Sandwich",
+    "image": "Truffle_Shark_Sandwich.png",
+    "description": "Frilled shark and megamouth shark meat stacked with truffle pieces like a sandwich.; It tastes just as enticing as it looks.",
+    "acquired": "Jango Secret Recipe",
+    "event": "shark",
+    "ingredients": "3 Frilled Shark Meat; 3 Megamouth Shark Meat; 1 Truffle",
+    "baseprice": "775",
+    "basetaste": "185",
+    "basedish": "2",
+    "maxprice": "1705",
+    "maxtaste": "273",
+    "maxdish": "2",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Tusked Grouper Sushi",
+    "image": "Tusked Grouper Sushi.png",
+    "description": "Sushi made from Tusked Grouper.; Regular customers probably won't prefer it.",
+    "acquired": "Tusked Grouper",
+    "flame_cost": "",
+    "ingredients": "1 Tusked Grouper",
+    "baseprice": "425",
+    "basetaste": "2",
+    "basedish": "1",
+    "maxprice": "425",
+    "maxtaste": "2",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Vampire Squid Sushi",
+    "image": "Sushi Vampire Squid.png",
+    "description": "Sushi made with vampire squid.",
+    "acquired": "Vampire Squid",
+    "flame_cost": "",
+    "ingredients": "1 Vampire Squid",
+    "baseprice": "115",
+    "basetaste": "34",
+    "basedish": "1",
+    "maxprice": "425",
+    "maxtaste": "340",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Vegetable Sushi",
+    "image": "Menu vegetable Sushi.png",
+    "description": "Sushi made with fresh carrot and eggplant.",
+    "acquired": "Complete Good Ol' Vegetable Sushi!",
+    "flame_cost": "",
+    "ingredients": "1 Rice; 1 Carrot; 1 Eggplant",
+    "baseprice": "375",
+    "basetaste": "120",
+    "basedish": "1",
+    "maxprice": "1387",
+    "maxtaste": "390",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Voltaic Grouper Sushi",
+    "image": "Voltaic Grouper Sushi.png",
+    "description": "Sushi made from Voltaic Grouper.; Regular customers probably won't prefer it.",
+    "acquired": "Voltaic Grouper",
+    "flame_cost": "",
+    "ingredients": "1 Voltaic Grouper",
+    "baseprice": "515",
+    "basetaste": "7",
+    "basedish": "1",
+    "maxprice": "515",
+    "maxtaste": "7",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Waptia Sushi",
+    "image": "Sushi Waptia fieldensis.png",
+    "description": "Sushi made with waptia fillet.",
+    "acquired": "Waptia Fieldensis",
+    "flame_cost": "",
+    "ingredients": "1 Waptia Fieldensis",
+    "baseprice": "103",
+    "basetaste": "40",
+    "basedish": "1",
+    "maxprice": "381",
+    "maxtaste": "400",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Warm Atlantic Mackerel Soba",
+    "image": "Menu Atlantic Mackerel Soba.png",
+    "description": "",
+    "acquired": "Train Hamako to Level 15",
+    "flame_cost": "15",
+    "event": "",
+    "ingredients": "3 Atlantic Mackerel; 2 Buckwheat; 1 Seaweed; 1 Soy Sauce",
+    "baseprice": "425",
+    "basetaste": "170",
+    "basedish": "6",
+    "maxprice": "1572",
+    "maxtaste": "260",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "White Shark Omelet",
+    "image": "Menu Special Klaus FinMeat Ricebowl.png",
+    "description": "A unique omelet dish topped with great white shark meat.; The cushiony, top-grade egg and tough shark meat complement each other.",
+    "acquired": "Defeat Klaus",
+    "flame_cost": "1",
+    "event": "shark",
+    "ingredients": "1 Klaus's Fin; 3 Grade A Egg",
+    "baseprice": "650",
+    "basetaste": "150",
+    "basedish": "10",
+    "maxprice": "650",
+    "maxtaste": "150",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "White Shrimp Sushi",
+    "image": "Sushi White Shrimp.png",
+    "description": "Sushi made with white shrimp.",
+    "acquired": "White Shrimp",
+    "flame_cost": "",
+    "ingredients": "1 White Shrimp",
+    "baseprice": "53",
+    "basetaste": "28",
+    "basedish": "1",
+    "maxprice": "196",
+    "maxtaste": "280",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "White Spotted Jellyfish Sushi",
+    "image": "Sushi AustralianSpottedJellyfish.png",
+    "description": "Sushi made with Australian Spotted jellyfish.",
+    "acquired": "White Spotted Jellyfish",
+    "flame_cost": "",
+    "event": "jellyfish",
+    "ingredients": "1 White Spotted Jellyfish",
+    "baseprice": "18",
+    "basetaste": "18",
+    "basedish": "1",
+    "maxprice": "66",
+    "maxtaste": "180",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "White Trevally Kombu Ochazuke",
+    "image": "Menu White Trevally Tangle Ochazuke.png",
+    "description": "Rice mixed with kelp broth and topped with grilled white trevally.; The thick scent of kelp and grilled fish will ease your stomach.",
+    "acquired": "Cooksta Silver Rank",
+    "flame_cost": "6",
+    "ingredients": "3 White Trevally; 1 Kelp; 1 Soy Sauce",
+    "baseprice": "93",
+    "basetaste": "95",
+    "basedish": "5",
+    "maxprice": "344",
+    "maxtaste": "266",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "White Trevally Sushi",
+    "image": "Sushi WhiteTrevally.png",
+    "description": "Sushi made with White Tevally.",
+    "acquired": "White Trevally",
+    "flame_cost": "",
+    "ingredients": "1 White Trevally",
+    "baseprice": "22",
+    "basetaste": "19",
+    "basedish": "1",
+    "maxprice": "81",
+    "maxtaste": "190",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Whitetip Reefshark Sushi",
+    "image": "Sushi WhitetipReefshark.png",
+    "description": "Sushi made with Whitetip Reefshark fillet.",
+    "acquired": "Whitetip Reefshark",
+    "flame_cost": "",
+    "event": "shark",
+    "ingredients": "1 Whitetip Reefshark Meat",
+    "baseprice": "24",
+    "basetaste": "27",
+    "basedish": "1",
+    "maxprice": "88",
+    "maxtaste": "270",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Whole-Roasted Shark Head",
+    "image": "Menu Whitetip Reefshark Roast.png",
+    "description": "The head of a white reef shark that's been deep-fried whole.",
+    "acquired": "Complete A Scolding from Yoshie",
+    "flame_cost": "3",
+    "event": "shark",
+    "ingredients": "1 Whitetip Reefshark Head; 1 Olive Oil",
+    "baseprice": "75",
+    "basetaste": "70",
+    "basedish": "5",
+    "maxprice": "277",
+    "maxtaste": "295",
+    "maxdish": "7",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Withered Ray Sushi",
+    "image": "Withered Ray Sushi.png",
+    "description": "Sushi made from Withered Ray.; Regular customers probably won't prefer it.",
+    "acquired": "Withered Ray",
+    "flame_cost": "",
+    "ingredients": "1 Withered Ray",
+    "baseprice": "995",
+    "basetaste": "5",
+    "basedish": "1",
+    "maxprice": "995",
+    "maxtaste": "5",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Wrasse Curry",
+    "image": "Menu_Wrasse_Curry.png",
+    "description": "Curry with ornate wrasse and rainbowfish meat.; The ground beans on top make this dish look like a fresh pasture.",
+    "acquired": "Train Jandi to Level 15",
+    "flame_cost": "15",
+    "event": "curry",
+    "ingredients": "5 Rainbow Wrasse; 5 Ornate Wrasse; 1 Bean; 1 Curry Block",
+    "baseprice": "400",
+    "basetaste": "150",
+    "basedish": "3",
+    "maxprice": "1480",
+    "maxtaste": "330",
+    "maxdish": "6",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Xenacanthus Sushi",
+    "image": "Sushi Xenacanthus.png",
+    "description": "Sushi made from the meat of xenacanthus.",
+    "acquired": "Xenacanthus Meat",
+    "flame_cost": "",
+    "ingredients": "1 Xenacanthus Meat",
+    "baseprice": "160",
+    "basetaste": "43",
+    "basedish": "1",
+    "maxprice": "592",
+    "maxtaste": "430",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yawie Steamed Meat",
+    "image": "Menu Special Anomalocaris ShellMeat Steamed.png",
+    "description": "A dish made from the steamed flesh of the gigantic Anomalocaris.; The taste is intriguingly delicious with a lobster-like texture.",
+    "acquired": "Defeat Yawie",
+    "flame_cost": "1",
+    "event": "lobster",
+    "ingredients": "1 Yawie's Inner Flesh; 1 Salt",
+    "baseprice": "750",
+    "basetaste": "180",
+    "basedish": "10",
+    "maxprice": "750",
+    "maxtaste": "180",
+    "maxdish": "10",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellow Tang Sushi",
+    "image": "Sushi_YellowTang.png",
+    "description": "Sushi made with Yellow Tang.",
+    "acquired": "Yellow Tang",
+    "flame_cost": "",
+    "ingredients": "1 Yellow Tang",
+    "baseprice": "4",
+    "basetaste": "10",
+    "basedish": "1",
+    "maxprice": "14",
+    "maxtaste": "100",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellowback Fusilier Sushi",
+    "image": "Sushi YellowbackFusilier.png",
+    "description": "Sushi made with Yellowback Fusilier.",
+    "ingredients": "1 Yellowback Fusilier",
+    "baseprice": "7",
+    "basetaste": "12",
+    "basedish": "1",
+    "acquired": "Yellowback Fusilier",
+    "maxprice": "25",
+    "maxtaste": "120",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellowfin Tuna Akami Sushi",
+    "image": "Sushi YellowFin Tuna Akami.png",
+    "description": "Sushi made with yellowfin tuna akami.",
+    "acquired": "Yellowfin Tuna Akami",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Yellowfin Tuna Akami",
+    "baseprice": "73",
+    "basetaste": "55",
+    "basedish": "1",
+    "maxprice": "270",
+    "maxtaste": "235",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellowfin Tuna Chutoro Sushi",
+    "image": "Sushi YellowFin Tuna Chutoro.png",
+    "description": "Sushi made with yellowfin tuna chutoro.",
+    "acquired": "Yellowfin Tuna Chutoro",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Yellowfin Tuna Chutoro",
+    "baseprice": "90",
+    "basetaste": "58",
+    "basedish": "1",
+    "maxprice": "333",
+    "maxtaste": "238",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellowfin Tuna Ootoro Sushi",
+    "image": "Sushi YellowFin Tuna Ootoro.png",
+    "description": "Sushi made with yellowfin tuna ootoro.",
+    "acquired": "Yellowfin Tuna Ootoro",
+    "flame_cost": "",
+    "event": "tuna",
+    "ingredients": "1 Yellowfin Tuna Ootoro",
+    "baseprice": "125",
+    "basetaste": "90",
+    "basedish": "1",
+    "maxprice": "462",
+    "maxtaste": "315",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Yellowfin Tuna Steak",
+    "image": "Menu YellowFin Tuna Stake.png",
+    "description": "Fried yellowfin tuna chutoro over low heat.; The soft and tender tuna easily contests with the taste of real beef.",
+    "acquired": "Seasonal Event: Tuna Party",
+    "flame_cost": "5",
+    "event": "tuna",
+    "ingredients": "3 Yellowfin Tuna Chutoro; 3 Cherry Tomato; 1 Olive Oil",
+    "baseprice": "305",
+    "basetaste": "125",
+    "basedish": "6",
+    "maxprice": "1128",
+    "maxtaste": "332",
+    "maxdish": "9",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Young Anomalocaris Sushi",
+    "image": "Sushi Anomalocaris.png",
+    "description": "Sushi made with young anomalocaris fillet.",
+    "acquired": "Anomalocaris",
+    "flame_cost": "",
+    "ingredients": "1 Anomalocaris",
+    "baseprice": "224",
+    "basetaste": "125",
+    "basedish": "1",
+    "maxprice": "224",
+    "maxtaste": "125",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  },
+  {
+    "title": "Zebra Shark Sushi",
+    "image": "Sushi Zebra Shark.png",
+    "description": "Sushi made with Zebra Shark.",
+    "acquired": "Zebra Shark",
+    "flame_cost": "",
+    "event": "shark",
+    "ingredients": "1 Zebra Shark Meat",
+    "baseprice": "88",
+    "basetaste": "36",
+    "basedish": "1",
+    "maxprice": "399",
+    "maxtaste": "360",
+    "maxdish": "1",
+    "categories": [
+      "Recipes"
+    ]
+  }
+]

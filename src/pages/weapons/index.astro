@@ -1,0 +1,99 @@
+---
+import Base from "../../layouts/Base.astro";
+import weapons from "../../data/weapons.json";
+
+const types = [...new Set(weapons.map((w) => w.type).filter(Boolean))].sort();
+const sorted = [...weapons].sort((a, b) => (a.type || "").localeCompare(b.type || ""));
+---
+
+<Base
+  title="Weapons Database - Dave the Diver - DiverDB"
+  description="Searchable Dave the Diver weapons database: type, damage, effects, magazine size and source."
+>
+  <h1>Weapons Database</h1>
+  <p class="muted">
+    Every weapon and tool from the Blue Hole, with type, damage, effects and unlock source.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:200px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Net Gun" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Type
+      <select id="type" style="display:block;width:100%;margin-top:0.3rem">
+        <option value="">All types</option>
+        {types.map((t) => <option value={t}>{t}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="weapon-table">
+      <thead>
+        <tr>
+          <th data-key="title">Weapon</th>
+          <th>Type</th>
+          <th data-key="dmg" data-numeric="true">Damage</th>
+          <th>Effects</th>
+          <th data-key="magazine" data-numeric="true">Magazine</th>
+          <th>Source</th>
+          <th>Depth</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((w) => (
+          <tr data-name={(w.title || "").toLowerCase()} data-type={w.type || ""}>
+            <td><strong>{w.title}</strong></td>
+            <td>{w.type || "—"}</td>
+            <td>{w.dmg || "—"}</td>
+            <td style="max-width:240px">{w.effects || "—"}</td>
+            <td>{w.magazine || "—"}</td>
+            <td>{w.source || "—"}</td>
+            <td>{w.depth || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const type = document.getElementById("type");
+    const table = document.getElementById("weapon-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const matchQ = !query || row.dataset.name.includes(query);
+        const matchType = !type.value || row.dataset.type === type.value;
+        row.style.display = matchQ && matchType ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const index = Array.from(headers).indexOf(th) + 1;
+          const av = a.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const result = numeric ? (Number(av) || 0) - (Number(bv) || 0) : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+    type.addEventListener("change", render);
+  </script>
+</Base>

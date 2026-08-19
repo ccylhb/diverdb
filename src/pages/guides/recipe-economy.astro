@@ -1,0 +1,58 @@
+---
+import Base from "../../layouts/Base.astro";
+import recipes from "../../data/recipes.json";
+
+const byTaste = [...recipes].sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0)).slice(0, 10);
+---
+
+<Base
+  title="Recipe Economy & Menu Planning - Dave the Diver - DiverDB"
+  description="Dave the Diver recipe economy guide: how max taste, price and dish count shape the nightly menu."
+>
+  <h1>Recipe Economy &amp; Menu Planning</h1>
+  <p class="muted">
+    A strong menu balances taste, price, ingredient availability and dish count.
+  </p>
+
+  <h2>Reading the recipe stats</h2>
+  <p>
+    <strong>Max taste</strong> is the ceiling after enhancement. <strong>Max price</strong> is the
+    gold value at level 10. <strong>Dish count</strong> controls how many plates one recipe can fill
+    in a service. A high-taste recipe with low ingredient pressure is better for rating, while a
+    high-dish recipe is better when you need volume.
+  </p>
+
+  <h2>Highest max taste recipes</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Recipe</th>
+          <th>Ingredients</th>
+          <th>Max price</th>
+          <th>Max taste</th>
+          <th>Max dish</th>
+        </tr>
+      </thead>
+      <tbody>
+        {byTaste.map((r) => (
+          <tr>
+            <td><strong>{r.title}</strong></td>
+            <td style="max-width:260px">{r.ingredients}</td>
+            <td>{r.maxprice}</td>
+            <td>{r.maxtaste}</td>
+            <td>{r.maxdish}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Menu planning rules</h2>
+  <ul>
+    <li>Keep at least one cheap, high-volume dish for normal nights.</li>
+    <li>Reserve rare-ingredient recipes for VIP nights and special requests.</li>
+    <li>Enhance the recipes your farm can actually supply every day.</li>
+    <li>Use the <a href="/tools/recipe-filter/">Recipe Filter</a> to match the menu to current stock.</li>
+  </ul>
+</Base>

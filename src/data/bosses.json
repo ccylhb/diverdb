@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Clione Queen",
+    "image": "Boss_ClioneQueen_PU.png",
+    "icon": "Boss_Clione_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Clione_Card_Img.png",
+    "source": "depths",
+    "active_time": "day",
+    "recipes": "Clione Queen Soup",
+    "loot": "Clione Queen Tentacle; Clione Queen Poison Sack",
+    "card_number": "1002",
+    "length": "999cm",
+    "categories": [
+      "Depths Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "name": "Ebirah",
+    "image": "Dtd Boss Ebirah.jpg",
+    "species": "Crustacean",
+    "gender": "Male",
+    "title": "Ebirah",
+    "categories": [
+      "Characters",
+      "Bosses"
+    ]
+  },
+  {
+    "species": "Gadon",
+    "appearsin": "Dave the Diver",
+    "title": "Giant Gadon",
+    "categories": [
+      "Bosses"
+    ]
+  },
+  {
+    "title": "Giant Squid",
+    "image": "Boss_Giant_Squid_PU.png",
+    "icon": "Boss_Giant_Squid_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Giant_Squid_Card_Img.png",
+    "source": "medium",
+    "active_time": "day",
+    "recipes": "",
+    "loot": "Giant Squid Tooth",
+    "card_number": "1001",
+    "length": "???",
+    "categories": [
+      "Medium Depth Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "title": "Giant Wolf Eel",
+    "image": "Boss_Wolffish_PU.png",
+    "icon": "Boss_Wolffish_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Wolffish_Card_Img.png",
+    "source": "depths",
+    "active_time": "day",
+    "recipes": "Steamed Wolf Eel",
+    "loot": "Wolf Eel Tail Meat; Wolf Eel Gill",
+    "card_number": "1003",
+    "categories": [
+      "Depths Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "title": "Goblin Shark",
+    "image": "Boss_GoblinShark_PU.png",
+    "icon": "Boss_Goblin_Shark_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Goblin_Shark_Card_Img.png",
+    "source": "depths",
+    "active_time": "day",
+    "recipes": "Goblin Shark Belly Roast",
+    "loot": "Goblin Shark's Fatty Meat; Goblin Shark Nasal Bone",
+    "card_number": "1005",
+    "length": "700cm",
+    "categories": [
+      "Depths Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "title": "Great White Shark Klaus",
+    "image": "Boss Klaus PU.png",
+    "icon": "Boss Great White Shark Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss Great White Shark Card Img.png",
+    "source": "shallows",
+    "active_time": "night",
+    "recipes": "White Shark Omelet",
+    "loot": "Klaus's Fin",
+    "card_number": "1007",
+    "length": "???",
+    "categories": [
+      "Shallows Fish",
+      "Bosses",
+      "Nocturnal Fish"
+    ]
+  },
+  {
+    "title": "Helicoprion",
+    "image": "Boss_Helicoprion_PU.png",
+    "icon": "Boss_Helicoprion_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Helicoprion_Card_Img.png",
+    "source": "glacial 3",
+    "active_time": "day",
+    "recipes": "Roasted Helicoprion Tail",
+    "loot": "Helicoprion Tail; Helicoprion Sawblade",
+    "card_number": "1009",
+    "length": "???",
+    "categories": [
+      "Hydrothermal Vents Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "name": "John Watson",
+    "affiliation": "Sea Blue",
+    "occupation": "Leader of Sea Blue",
+    "species": "Human",
+    "gender": "Male",
+    "appearsin": "Dave the Diver",
+    "title": "John Watson",
+    "categories": [
+      "Bosses",
+      "Characters"
+    ]
+  },
+  {
+    "title": "Kronosaurus",
+    "image": "Boss_Kronosaurus_PU.png",
+    "icon": "Boss_Kronosaurus_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Kronosaurus_Card_Img.png",
+    "source": "Vents",
+    "active_time": "Day",
+    "recipes": "Steamed Kronosaurus Tongue",
+    "card_number": "1010",
+    "length": "???",
+    "categories": [
+      "Hydrothermal Vents Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "title": "Lusca",
+    "image": "Boss_Lusca_PU.png",
+    "icon": "Lusca Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "",
+    "source": "medium",
+    "active_time": "night",
+    "recipes": "Blanched Lusca Tentacle; Lusca Neck Tadaki",
+    "loot": "Lusca Tentacle; Lusca Neck Meat",
+    "card_number": "1012",
+    "length": "???",
+    "categories": [
+      "Medium Depth Fish",
+      "Bosses",
+      "Nocturnal Fish"
+    ]
+  },
+  {
+    "title": "Mantis Shrimp",
+    "image": "Boss MantisShrimp PU.png",
+    "icon": "Boss MantisShrimp Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss MantisShrimp Card Img.png",
+    "source": "shallows",
+    "active_time": "night",
+    "recipes": "Boiled Mantis Shrimp with Soy Paste",
+    "loot": "Mantis Shrimp Meat; Mantis Shrimp Tail",
+    "card_number": "1006",
+    "length": "???",
+    "categories": [
+      "Shallows Fish",
+      "Bosses",
+      "Nocturnal Fish"
+    ]
+  },
+  {
+    "title": "Phantom Jellyfish",
+    "image": "Boss_PhantomJelly_PU.png",
+    "icon": "Boss_Phantom_Jellyfish_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Phantom_Jellyfish_Card_Img.png",
+    "source": "glacial 2",
+    "active_time": "Day",
+    "recipes": "Phantom Jellyfish Jelly",
+    "card_number": "1008",
+    "length": "???",
+    "categories": [
+      "Glacier Zone Fish",
+      "Bosses"
+    ]
+  },
+  {
+    "name": "Torben",
+    "occupation": "Scientist",
+    "species": "Human",
+    "gender": "Male",
+    "hair": "Black",
+    "title": "Torben",
+    "categories": [
+      "Bosses",
+      "Characters"
+    ]
+  },
+  {
+    "title": "Truck Hermit Crab",
+    "image": "Boss_Crab_Hermit_PU.png",
+    "icon": "Boss_Crab_Hermit_Thumbnail.png",
+    "rank": "99",
+    "weight": "1kg",
+    "meat3": "1",
+    "marinca_image": "Boss_Crab_Hermit_Card_Img.png",
+    "source": "shallows",
+    "active_time": "night",
+    "recipes": "Stir-Fried Hermit Crab and Seaweed",
+    "loot": "Truck Hermit Crab Legs; Hermit Crab Pincer Piece",
+    "card_number": "1004",
+    "length": "???",
+    "categories": [
+      "Shallows Fish",
+      "Bosses",
+      "Nocturnal Fish"
+    ]
+  },
+  {
+    "title": "Yawie",
+    "image": "Boss_Anomalocaris_PU.png",
+    "icon": "Boss_Anomalocaris_Thumbnail.png",
+    "rank": "99",
+    "weight": "",
+    "meat3": "1",
+    "marinca_image": "Boss_Anomalocaris_Card_Img.png",
+    "source": "control room",
+    "active_time": "day",
+    "recipes": "Yawie Steamed Meat",
+    "card_number": "1011",
+    "length": "???",
+    "categories": [
+      "Hydrothermal Vents Fish",
+      "Bosses"
+    ]
+  }
+]

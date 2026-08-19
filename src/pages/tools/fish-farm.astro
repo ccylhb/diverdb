@@ -1,0 +1,115 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
+  .filter((z) => z && !["Fish", "Bosses"].includes(z))
+  .sort();
+const sorted = [...fish].sort((a, b) => Number(b.meat_per_day || 0) - Number(a.meat_per_day || 0));
+const maxMeat = Math.max(...fish.map((f) => Number(f.meat_per_day) || 0));
+---
+
+<Base
+  title="Fish Farm Planner - Dave the Diver - DiverDB"
+  description="Rank Dave the Diver fish by meat per day, farm meat average and breeding rate to plan the most profitable ranch."
+>
+  <h1>Fish Farm Planner</h1>
+  <p class="muted">
+    Sort the ranch roster by farming output, then filter by zone and active time.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:200px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Tuna" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Zone
+      <select id="zone" style="display:block;width:100%;margin-top:0.3rem">
+        <option value="">All zones</option>
+        {zones.map((z) => <option value={z}>{z}</option>)}
+      </select>
+    </label>
+    <label style="min-width:180px">
+      Min meat / day
+      <input id="minMeat" type="number" min="0" max={maxMeat} step="0.1" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="farm-table">
+      <thead>
+        <tr>
+          <th data-key="title">Fish</th>
+          <th>Zone</th>
+          <th>Time</th>
+          <th data-key="meat_per_day" data-numeric="true">Meat / day</th>
+          <th data-key="farm_meat_avg" data-numeric="true">Farm meat avg</th>
+          <th data-key="fish_per_day" data-numeric="true">Fish / day</th>
+          <th data-key="breed_cap" data-numeric="true">Breed cap</th>
+          <th data-key="breed_rate">Breed rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((f) => {
+          const zone = (f.categories || []).find((c) => c !== "Fish" && c !== "Bosses") || f.source || "Unknown";
+          return (
+            <tr data-name={(f.title || "").toLowerCase()} data-zone={zone} data-meat={Number(f.meat_per_day) || 0}>
+              <td><strong>{f.title}</strong></td>
+              <td>{zone}</td>
+              <td>{f.active_time || "—"}</td>
+              <td>{f.meat_per_day || "—"}</td>
+              <td>{f.farm_meat_avg || "—"}</td>
+              <td>{f.fish_per_day || "—"}</td>
+              <td>{f.breed_cap || "—"}</td>
+              <td>{f.breed_rate || "—"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const zone = document.getElementById("zone");
+    const minMeat = document.getElementById("minMeat");
+    const table = document.getElementById("farm-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      const min = Number(minMeat.value) || 0;
+      rows.forEach((row) => {
+        const matchQ = !query || row.dataset.name.includes(query);
+        const matchZone = !zone.value || row.dataset.zone === zone.value;
+        const matchMeat = Number(row.dataset.meat) >= min;
+        row.style.display = matchQ && matchZone && matchMeat ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const index = Array.from(headers).indexOf(th) + 1;
+          const av = a.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${index})`).textContent.trim();
+          const result = numeric ? (Number(av) || 0) - (Number(bv) || 0) : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+    zone.addEventListener("change", render);
+    minMeat.addEventListener("input", render);
+  </script>
+</Base>

@@ -1,0 +1,116 @@
+---
+import Base from "../layouts/Base.astro";
+import fish from "../data/fish.json";
+import recipes from "../data/recipes.json";
+import staff from "../data/staff.json";
+import weapons from "../data/weapons.json";
+import bosses from "../data/bosses.json";
+
+const tools = [
+  {
+    title: "Fish Farm Planner",
+    desc: "Rank ranch stock by meat per day and breeding rate.",
+    href: "/tools/fish-farm/",
+    badge: "Planner",
+  },
+  {
+    title: "Recipe Filter",
+    desc: "Search the menu by ingredient, taste and dish count.",
+    href: "/tools/recipe-filter/",
+    badge: "Filter",
+  },
+  {
+    title: "Staff Compare",
+    desc: "Compare base and max stats for two staff members.",
+    href: "/tools/staff-compare/",
+    badge: "Compare",
+  },
+];
+
+const sections = [
+  { title: "Fish Database", desc: `${fish.length} fish with zones, rank and farm value.`, href: "/fish/" },
+  { title: "Recipe Database", desc: `${recipes.length} recipes with price, taste and dish count.`, href: "/recipes/" },
+  { title: "Staff Database", desc: `${staff.length} staff members with stats and skills.`, href: "/staff/" },
+  { title: "Weapons Database", desc: `${weapons.length} weapons and tools with damage and effects.`, href: "/weapons/" },
+  { title: "Boss Database", desc: `${bosses.length} bosses with loot and recipes.`, href: "/bosses/" },
+];
+---
+
+<Base
+  title="DiverDB - Dave the Diver Fish, Recipe & Staff Database"
+  description="DiverDB is the Dave the Diver database hub: fish farming stats, recipe filters, staff comparison, weapon and boss guides."
+>
+  <section>
+    <h1>Dave the Diver database &amp; restaurant hub</h1>
+    <p class="muted" style="max-width:760px">
+      Data-first fish, recipe, staff, weapon and boss resources for Dave the Diver.
+      Built for the Marinca, Bancho and Blue Hole players who want numbers, not filler.
+    </p>
+    <div class="stats" style="margin-top:1rem">
+      <div class="stat"><strong>{fish.length}</strong><span>Fish & creatures</span></div>
+      <div class="stat"><strong>{recipes.length}</strong><span>Recipes</span></div>
+      <div class="stat"><strong>{staff.length}</strong><span>Staff</span></div>
+      <div class="stat"><strong>{weapons.length}</strong><span>Weapons</span></div>
+      <div class="stat"><strong>{bosses.length}</strong><span>Bosses</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <div class="grid grid-3">
+      {tools.map((t) => (
+        <a class="card" href={t.href} style="display:block;color:inherit">
+          <span class="tag hot">{t.badge}</span>
+          <h3 style="margin:0.5rem 0 0.25rem">{t.title}</h3>
+          <p class="muted" style="margin:0;font-size:0.92rem">{t.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>Databases</h2>
+    <div class="grid grid-3">
+      {sections.map((s) => (
+        <a class="card" href={s.href} style="display:block;color:inherit">
+          <h3 style="margin:0 0 0.25rem">{s.title}</h3>
+          <p class="muted" style="margin:0;font-size:0.92rem">{s.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2>Guides</h2>
+    <div class="grid grid-2">
+      <a class="card" href="/guides/beginner/" style="color:inherit">
+        <span class="tag">Guide</span>
+        <h3 style="margin:0.5rem 0 0.25rem">Dave the Diver Beginner Roadmap</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">
+          What to upgrade first, which fish to keep and how to turn early dives into steady restaurant income.
+        </p>
+      </a>
+      <a class="card" href="/guides/fish-farming/" style="color:inherit">
+        <span class="tag">Guide</span>
+        <h3 style="margin:0.5rem 0 0.25rem">Best Fish to Farm for the Ranch</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">
+          A data-backed ranch strategy based on meat per day, breeding rate and farm capacity.
+        </p>
+      </a>
+      <a class="card" href="/guides/recipe-economy/" style="color:inherit">
+        <span class="tag">Guide</span>
+        <h3 style="margin:0.5rem 0 0.25rem">Recipe Economy &amp; Menu Planning</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">
+          How to read price, taste and dish count when building the nightly menu.
+        </p>
+      </a>
+      <a class="card" href="/guides/weapon-progression/" style="color:inherit">
+        <span class="tag">Guide</span>
+        <h3 style="margin:0.5rem 0 0.25rem">Weapon Upgrade Progression</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">
+          Early, mid and late dive loadouts plus the upgrade materials that matter.
+        </p>
+      </a>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const guides = [
+  { title: "Beginner Roadmap", desc: "First-day upgrades, money loop and what to keep.", href: "/guides/beginner/" },
+  { title: "Best Fish to Farm", desc: "Ranch strategy backed by meat-per-day data.", href: "/guides/fish-farming/" },
+  { title: "Recipe Economy", desc: "How price, taste and dish count shape the menu.", href: "/guides/recipe-economy/" },
+  { title: "Staff Training", desc: "Hiring, training and role assignment.", href: "/guides/staff-training/" },
+  { title: "Weapon Progression", desc: "Early to late dive loadouts.", href: "/guides/weapon-progression/" },
+  { title: "Boss Order", desc: "Boss encounters by zone and their rewards.", href: "/guides/boss-order/" },
+  { title: "Achievement Guide", desc: "Full achievement checklist strategy.", href: "/guides/achievements/" },
+];
+---
+
+<Base
+  title="Dave the Diver Guides - DiverDB"
+  description="Dave the Diver guides: beginner roadmap, fish farming, recipe economy, staff training, weapon progression and boss order."
+>
+  <h1>Guides</h1>
+  <div class="grid grid-3">
+    {guides.map((g) => (
+      <a class="card" href={g.href} style="display:block;color:inherit">
+        <h3 style="margin:0 0 0.25rem">{g.title}</h3>
+        <p class="muted" style="margin:0;font-size:0.92rem">{g.desc}</p>
+      </a>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,57 @@
+---
+import Base from "../../layouts/Base.astro";
+import weapons from "../../data/weapons.json";
+
+const melee = weapons.filter((w) => (w.type || "").includes("Melee"));
+const ranged = weapons.filter((w) => (w.type || "").includes("Rifle") || (w.type || "").includes("Gun"));
+const consumables = weapons.filter((w) => (w.type || "").toLowerCase().includes("consumable"));
+---
+
+<Base
+  title="Weapon Upgrade Progression - Dave the Diver - DiverDB"
+  description="Dave the Diver weapon progression guide: early melee tools, reliable rifles and special weapons for bosses."
+>
+  <h1>Weapon Upgrade Progression</h1>
+  <p class="muted">
+    Match your weapon class to the dive: kill for loot, net for farm stock and bombs for crowd control.
+  </p>
+
+  <h2>Early game</h2>
+  <p>
+    The dive knife and cheap melee tools cover early shallow dives. Add a net weapon as soon as
+    possible because live catches feed the farm and reduce repeat dives for ingredients.
+  </p>
+
+  <h2>Mid game</h2>
+  <p>
+    Ranged rifles and harpoon upgrades let you take down fast or armored targets before they close
+    distance. Upgrade the weapon you use for boss prep first, then add utility weapons for special
+    encounters.
+  </p>
+
+  <h2>Late game</h2>
+  <p>
+    Special weapons such as bombs, traps and elemental tools solve specific fights. Keep one
+    reliable single-target weapon, one area weapon and one non-lethal tool in rotation.
+  </p>
+
+  <h2>Weapon classes in the database</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem">
+    <div class="card">
+      <h3>Melee tools ({melee.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{melee.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+    <div class="card">
+      <h3>Rifles & guns ({ranged.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{ranged.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+    <div class="card">
+      <h3>Consumables & tools ({consumables.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{consumables.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+  </div>
+
+  <p style="margin-top:1rem">
+    Browse every weapon in the <a href="/weapons/">Weapons Database</a>.
+  </p>
+</Base>

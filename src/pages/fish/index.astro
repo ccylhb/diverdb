@@ -1,0 +1,123 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
+  .filter((z) => z && !["Fish", "Bosses"].includes(z))
+  .sort();
+
+const times = [...new Set(fish.map((f) => f.active_time).filter(Boolean))].sort();
+
+const sorted = [...fish].sort((a, b) => Number(a.rank || 999) - Number(b.rank || 999));
+---
+
+<Base
+  title="All Fish Database - Dave the Diver - DiverDB"
+  description="Searchable Dave the Diver fish database: zone, rank, weight, meat yield, breeding rate, fish per day and farm value."
+>
+  <h1>Fish Database</h1>
+  <p class="muted">
+    Every fish and catchable creature from the Marinca database, with farming stats for ranch planning.
+  </p>
+
+  <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
+    <label style="flex:1;min-width:180px">
+      Search
+      <input id="q" type="search" placeholder="e.g. Bluefin Tuna" style="display:block;width:100%;margin-top:0.3rem" />
+    </label>
+    <label style="min-width:180px">
+      Zone
+      <select id="zone" style="display:block;width:100%;margin-top:0.3rem">
+        <option value="">All zones</option>
+        {zones.map((z) => <option value={z}>{z}</option>)}
+      </select>
+    </label>
+    <label style="min-width:160px">
+      Active time
+      <select id="time" style="display:block;width:100%;margin-top:0.3rem">
+        <option value="">Any time</option>
+        {times.map((t) => <option value={t}>{t}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <div style="margin-top:1rem;overflow-x:auto">
+    <table id="fish-table">
+      <thead>
+        <tr>
+          <th data-key="title">Fish</th>
+          <th data-key="rank" data-numeric="true">Rank</th>
+          <th>Zone</th>
+          <th>Time</th>
+          <th data-key="weight">Weight</th>
+          <th data-key="meat_per_day" data-numeric="true">Meat / day</th>
+          <th data-key="farm_meat_avg" data-numeric="true">Farm avg</th>
+          <th data-key="breed_rate">Breed rate</th>
+          <th>Used in</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((f) => {
+          const zone = (f.categories || []).find((c) => c !== "Fish" && c !== "Bosses") || f.source || "Unknown";
+          return (
+            <tr data-name={(f.title || "").toLowerCase()} data-zone={zone} data-time={f.active_time || ""}>
+              <td><strong>{f.title}</strong></td>
+              <td>{f.rank || "—"}</td>
+              <td>{zone}</td>
+              <td>{f.active_time || "—"}</td>
+              <td>{f.weight || "—"}</td>
+              <td>{f.meat_per_day || "—"}</td>
+              <td>{f.farm_meat_avg || "—"}</td>
+              <td>{f.breed_rate || "—"}</td>
+              <td style="max-width:240px">{f.recipes || "—"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    const q = document.getElementById("q");
+    const zone = document.getElementById("zone");
+    const time = document.getElementById("time");
+    const table = document.getElementById("fish-table");
+    const tbody = table.querySelector("tbody");
+    const headers = table.querySelectorAll("th[data-key]");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    function render() {
+      const query = q.value.trim().toLowerCase();
+      rows.forEach((row) => {
+        const matchQ = !query || row.dataset.name.includes(query);
+        const matchZone = !zone.value || row.dataset.zone === zone.value;
+        const matchTime = !time.value || row.dataset.time === time.value;
+        row.style.display = matchQ && matchZone && matchTime ? "" : "none";
+      });
+    }
+
+    headers.forEach((th) => {
+      let asc = true;
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const key = th.dataset.key;
+        const numeric = th.dataset.numeric === "true";
+        const visible = rows.filter((r) => r.style.display !== "none");
+        visible.sort((a, b) => {
+          const av = a.querySelector(`td:nth-child(${Array.from(headers).indexOf(th) + 1})`).textContent.trim();
+          const bv = b.querySelector(`td:nth-child(${Array.from(headers).indexOf(th) + 1})`).textContent.trim();
+          const na = Number(av) || 0;
+          const nb = Number(bv) || 0;
+          const result = numeric ? na - nb : av.localeCompare(bv);
+          return asc ? result : -result;
+        });
+        visible.forEach((r) => tbody.appendChild(r));
+        asc = !asc;
+      });
+    });
+
+    q.addEventListener("input", render);
+    zone.addEventListener("change", render);
+    time.addEventListener("change", render);
+  </script>
+</Base>

@@ -1,0 +1,67 @@
+---
+import Base from "../../layouts/Base.astro";
+import staff from "../../data/staff.json";
+
+const sorted = [...staff].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+---
+
+<Base
+  title="Staff Compare - Dave the Diver - DiverDB"
+  description="Compare two Dave the Diver staff members on base and max cooking, serving, procurement and appeal stats."
+>
+  <h1>Staff Compare</h1>
+  <p class="muted">
+    Pick two staff members and compare their stat totals and strongest role.
+  </p>
+
+  <div class="card grid" style="gap:1rem;max-width:720px">
+    <label>
+      Staff member 1
+      <select id="staff1" style="display:block;width:100%;margin-top:0.3rem">
+        {sorted.map((s) => <option value={s.title}>{s.title}</option>)}
+      </select>
+    </label>
+    <label>
+      Staff member 2
+      <select id="staff2" style="display:block;width:100%;margin-top:0.3rem">
+        {sorted.map((s) => <option value={s.title}>{s.title}</option>)}
+      </select>
+    </label>
+    <div id="result"></div>
+  </div>
+
+  <script is:inline define:vars={{ staffData: sorted }}>
+    const data = staffData;
+    const staff1 = document.getElementById("staff1");
+    const staff2 = document.getElementById("staff2");
+    const result = document.getElementById("result");
+
+    function statRows(name, s) {
+      const stats = [
+        ["Cooking", s.basecooking, s.maxcooking],
+        ["Serving", s.baseserving, s.maxserving],
+        ["Procurement", s.baseprocure, s.maxprocure],
+        ["Appeal", s.baseappeal, s.maxappeal],
+      ];
+      const role = stats.reduce((best, row) => (Number(row[2]) > Number(best[2]) ? row : best), stats[0])[0];
+      const rows = stats
+        .map(([label, base, max]) => `<tr><td>${label}</td><td>${base || "—"}</td><td>${max || "—"}</td></tr>`)
+        .join("");
+      return `<div class="card" style="background:var(--bg-soft)">
+        <h3 style="margin:0 0 0.35rem">${name}</h3>
+        <p class="muted" style="margin:0 0 0.5rem;font-size:0.9rem">Rating: ${s.rating || "—"} · Hire: ${s.hiringfee || "—"} · Best role: ${role}</p>
+        <table><thead><tr><th>Stat</th><th>Base</th><th>Max</th></tr></thead><tbody>${rows}</tbody></table>
+      </div>`;
+    }
+
+    function render() {
+      const a = data.find((s) => s.title === staff1.value);
+      const b = data.find((s) => s.title === staff2.value);
+      result.innerHTML = `<div class="grid grid-2">${statRows(staff1.value, a)}${statRows(staff2.value, b)}</div>`;
+    }
+
+    staff1.addEventListener("change", render);
+    staff2.addEventListener("change", render);
+    render();
+  </script>
+</Base>
