@@ -1,0 +1,72 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const tuna = fish
+  .filter((f) => (f.title || "").toLowerCase().includes("tuna"))
+  .sort((a, b) => Number(a.rank || 99) - Number(b.rank || 99));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Tuna Party & Salvage Drone Unlock Guide",
+  description: "How the Tuna Party works in Dave the Diver and how Cobra unlocks the Salvage Drone.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Tuna Party & Salvage Drone Unlock - Dave the Diver - DiverDB"
+  description="Tuna Party event guide for Dave the Diver, including the Salvage Drone unlock and tuna recipes."
+  schema={articleSchema}
+>
+  <h1>Tuna Party &amp; Salvage Drone Unlock</h1>
+  <p class="muted">
+    Tuna becomes available after the seasonal Tuna Party, which also gives you access to the Salvage Drone.
+  </p>
+
+  <h2>How the event unlocks</h2>
+  <p>
+    Seasonal events are calendar-driven and appear after the Jellyfish Party around October 12.
+    The Tuna Party arrives through the Mail app after the Jellyfish Party. Cobra gives access to the
+    Salvage Drone, which is useful for transporting large fish like tuna.
+  </p>
+  <p>
+    The event marks qualifying dishes with a pink bow tie icon. Stock tuna ingredients before the
+    party and save the right recipes so the menu can run through the event night.
+  </p>
+
+  <h2>Tuna species in the database</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Fish</th>
+          <th>Rank</th>
+          <th>Weight</th>
+          <th>Meat / day</th>
+          <th>Recipes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {tuna.map((f) => (
+          <tr>
+            <td><strong>{f.title}</strong></td>
+            <td>{f.rank || "—"}</td>
+            <td>{f.weight || "—"}</td>
+            <td>{f.meat_per_day || "—"}</td>
+            <td>{f.recipes || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>After the party</h2>
+  <p>
+    Cobra's shop can sell the Steel Net Sensor Trap once the Tuna Party is announced. Net weapons and
+    the drone make tuna farming much easier, so upgrade the drone and net gun before the next event.
+  </p>
+</Base>

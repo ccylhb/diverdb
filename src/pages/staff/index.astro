@@ -3,11 +3,22 @@ import Base from "../../layouts/Base.astro";
 import staff from "../../data/staff.json";
 
 const sorted = [...staff].sort((a, b) => Number(b.maxtotal || 0) - Number(a.maxtotal || 0));
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dave the Diver Staff Database",
+  itemListElement: staff.slice(0, 20).map((s, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: s.title,
+  })),
+};
 ---
 
 <Base
   title="Staff Database - Dave the Diver - DiverDB"
   description="Searchable Dave the Diver staff database: hiring fee, cooking, serving, procurement, appeal stats and special skills."
+  schema={listSchema}
 >
   <h1>Staff Database</h1>
   <p class="muted">

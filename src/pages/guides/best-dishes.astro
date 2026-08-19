@@ -1,0 +1,68 @@
+---
+import Base from "../../layouts/Base.astro";
+import recipes from "../../data/recipes.json";
+
+const ranks = ["Cooksta Bronze Rank", "Cooksta Silver Rank", "Cooksta Gold Rank", "Cooksta Platinum Rank", "Cooksta Diamond Rank"];
+const byRank = ranks.map((rank) => {
+  const list = recipes
+    .filter((r) => (r.acquired || "").includes(rank))
+    .sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0))
+    .slice(0, 8);
+  return { rank, list };
+});
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best Dishes by Cooksta Rank in Dave the Diver",
+  description: "Best Dave the Diver recipes for each Cooksta rank by max taste and price.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Best Dishes by Cooksta Rank - Dave the Diver - DiverDB"
+  description="Best Dave the Diver dishes for Bronze, Silver, Gold, Platinum and Diamond Cooksta ranks."
+  schema={articleSchema}
+>
+  <h1>Best Dishes by Cooksta Rank</h1>
+  <p class="muted">
+    Recipe acquisition is tied to restaurant rank, so use the best available dish at each stage.
+  </p>
+
+  {byRank.map(({ rank, list }) => (
+    <section>
+      <h2>{rank.replace("Cooksta ", "").replace(" Rank", "")}</h2>
+      {list.length ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Recipe</th>
+              <th>Max price</th>
+              <th>Max taste</th>
+              <th>Max dish</th>
+            </tr>
+          </thead>
+          <tbody>
+            {list.map((r) => (
+              <tr>
+                <td><strong>{r.title}</strong></td>
+                <td>{r.maxprice}</td>
+                <td>{r.maxtaste}</td>
+                <td>{r.maxdish}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p class="muted">No ranked recipes found in the current dataset.</p>
+      )}
+    </section>
+  ))}
+
+  <p>
+    Search the full menu with the <a href="/tools/recipe-filter/">Recipe Filter</a>.
+  </p>
+</Base>

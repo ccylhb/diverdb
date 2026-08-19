@@ -3,11 +3,22 @@ import Base from "../../layouts/Base.astro";
 import bosses from "../../data/bosses.json";
 
 const sorted = [...bosses].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dave the Diver Boss Database",
+  itemListElement: bosses.slice(0, 20).map((b, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: b.title,
+  })),
+};
 ---
 
 <Base
   title="Boss Database - Dave the Diver - DiverDB"
   description="Dave the Diver boss database: source zone, rank, recipes and loot drops for every major boss encounter."
+  schema={listSchema}
 >
   <h1>Boss Database</h1>
   <p class="muted">

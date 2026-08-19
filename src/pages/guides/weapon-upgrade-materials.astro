@@ -1,0 +1,68 @@
+---
+import Base from "../../layouts/Base.astro";
+import weapons from "../../data/weapons.json";
+
+const melee = weapons.filter((w) => (w.type || "").toLowerCase().includes("melee"));
+const guns = weapons.filter((w) => (w.type || "").toLowerCase().includes("weapon"));
+const consumables = weapons.filter((w) => (w.type || "").toLowerCase().includes("consumable"));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Weapon Upgrade Materials & Priority in Dave the Diver",
+  description: "Dave the Diver weapon upgrade guide with iDiver and Duff unlock requirements.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Weapon Upgrade Materials & Priority - Dave the Diver - DiverDB"
+  description="Dave the Diver weapon upgrade guide: iDiver, Weaponsmith Duff, enhancement and upgrade priority."
+  schema={articleSchema}
+>
+  <h1>Weapon Upgrade Materials &amp; Priority</h1>
+  <p class="muted">
+    Weapon upgrades come from Duff's Weapon Shop, while diving gear upgrades come from iDiver.
+  </p>
+
+  <h2>Upgrade systems</h2>
+  <p>
+    <strong>Weapon Shop</strong> unlocks after the Prologue sub mission Weaponsmith Duff. It upgrades
+    guns and other weapons with components collected during dives.
+  </p>
+  <p>
+    <strong>iDiver</strong> unlocks after the Prologue and upgrades the air tank, diving suit,
+    weapons and other equipment. Enhancement upgrades for elemental effects unlock after starting the
+    Chapter 2 mission Speak with the Sea People.
+  </p>
+
+  <h2>Upgrade priority</h2>
+  <ol>
+    <li>Air tank and diving suit first so deeper dives become safe.</li>
+    <li>Harpoon gun for reliable single-target damage.</li>
+    <li>Net gun once the farm becomes important.</li>
+    <li>Boss-specific weapons before major fights.</li>
+  </ol>
+
+  <h2>Weapon classes in the database</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem">
+    <div class="card">
+      <h3>Melee ({melee.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{melee.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+    <div class="card">
+      <h3>Rifles & guns ({guns.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{guns.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+    <div class="card">
+      <h3>Consumables ({consumables.length})</h3>
+      <p class="muted" style="font-size:0.92rem">{consumables.slice(0, 8).map((w) => w.title).join(", ")}</p>
+    </div>
+  </div>
+
+  <p>
+    Browse every weapon in the <a href="/weapons/">Weapons Database</a>.
+  </p>
+</Base>

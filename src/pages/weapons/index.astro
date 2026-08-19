@@ -4,11 +4,22 @@ import weapons from "../../data/weapons.json";
 
 const types = [...new Set(weapons.map((w) => w.type).filter(Boolean))].sort();
 const sorted = [...weapons].sort((a, b) => (a.type || "").localeCompare(b.type || ""));
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dave the Diver Weapons Database",
+  itemListElement: weapons.slice(0, 20).map((w, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: w.title,
+  })),
+};
 ---
 
 <Base
   title="Weapons Database - Dave the Diver - DiverDB"
   description="Searchable Dave the Diver weapons database: type, damage, effects, magazine size and source."
+  schema={listSchema}
 >
   <h1>Weapons Database</h1>
   <p class="muted">

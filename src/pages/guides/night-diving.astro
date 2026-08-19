@@ -1,0 +1,76 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const nightFish = fish
+  .filter((f) => (f.active_time || "").toLowerCase().includes("night") || (f.categories || []).includes("Nocturnal Fish"))
+  .sort((a, b) => Number(b.rank || 99) - Number(a.rank || 99))
+  .slice(0, 16);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Night Diving & Nocturnal Fish Guide for Dave the Diver",
+  description: "How to unlock night diving and which nocturnal fish to target.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Night Diving & Nocturnal Fish - Dave the Diver - DiverDB"
+  description="Dave the Diver night diving guide: unlock steps and nocturnal fish locations."
+  schema={articleSchema}
+>
+  <h1>Night Diving &amp; Nocturnal Fish</h1>
+  <p class="muted">
+    Night diving unlocks through A Noisy Customer and is required for many nocturnal catches.
+  </p>
+
+  <h2>How to unlock night diving</h2>
+  <p>
+    Start the Chapter 2 sub mission A Noisy Customer. Bancho asks for Moray Eel Curry, and moray
+    eels only appear at night. Starting this mission opens the night dive option in the evening
+    schedule.
+  </p>
+
+  <h2>Why night fish matter</h2>
+  <p>
+    Several high-rank fish, recipe ingredients and Marinca cards only spawn at night. Plan night
+    dives around specific targets instead of general farming.
+  </p>
+
+  <h2>Nocturnal fish in the database</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Fish</th>
+          <th>Rank</th>
+          <th>Zone</th>
+          <th>Weight</th>
+          <th>Recipes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {nightFish.map((f) => {
+          const zone = (f.categories || []).find((c) => c !== "Fish" && c !== "Bosses") || f.source || "Unknown";
+          return (
+            <tr>
+              <td><strong>{f.title}</strong></td>
+              <td>{f.rank || "—"}</td>
+              <td>{zone}</td>
+              <td>{f.weight || "—"}</td>
+              <td>{f.recipes || "—"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Full zone and time filters are in the <a href="/fish/">Fish Database</a>.
+  </p>
+</Base>

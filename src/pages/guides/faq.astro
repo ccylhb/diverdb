@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const faqs = [
+  {
+    q: "How do I unlock the Fish Farm in Dave the Diver?",
+    a: "Complete the Chapter 2 sub mission A Noisy Customer, which requires serving Moray Eel Curry.",
+    href: "/guides/fish-farm-unlock/",
+  },
+  {
+    q: "When do tuna fish appear?",
+    a: "Tuna becomes available after the seasonal Tuna Party is announced through the Mail app.",
+    href: "/guides/tuna-party-salvage-drone/",
+  },
+  {
+    q: "What is the best fish to farm?",
+    a: "Species with high meat per day and a reasonable breed cap are best. Use the Fish Farm Planner to rank them.",
+    href: "/tools/fish-farm/",
+  },
+  {
+    q: "How do I upgrade weapons?",
+    a: "Use Duff's Weapon Shop for guns and the iDiver app for diving equipment.",
+    href: "/guides/weapon-upgrade-materials/",
+  },
+  {
+    q: "How do I start the Jungle DLC?",
+    a: "In the Jungle adds Sato and Marinca Bloom, which tracks jungle fish cards.",
+    href: "/guides/jungle-dlc/",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+
+<Base
+  title="Dave the Diver FAQ - DiverDB"
+  description="Dave the Diver FAQ: Fish Farm unlock, tuna party, best farm fish, weapon upgrades and Jungle DLC."
+  schema={faqSchema}
+>
+  <h1>Dave the Diver FAQ</h1>
+  <p class="muted">
+    Fast answers to the most common Dave the Diver questions.
+  </p>
+
+  {faqs.map((f) => (
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">{f.q}</h3>
+      <p style="margin:0 0 0.35rem">{f.a}</p>
+      <a href={f.href}>Full guide</a>
+    </div>
+  ))}
+</Base>

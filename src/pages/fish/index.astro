@@ -9,11 +9,22 @@ const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
 const times = [...new Set(fish.map((f) => f.active_time).filter(Boolean))].sort();
 
 const sorted = [...fish].sort((a, b) => Number(a.rank || 999) - Number(b.rank || 999));
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dave the Diver Fish Database",
+  itemListElement: fish.slice(0, 20).map((f, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: f.title,
+  })),
+};
 ---
 
 <Base
   title="All Fish Database - Dave the Diver - DiverDB"
   description="Searchable Dave the Diver fish database: zone, rank, weight, meat yield, breeding rate, fish per day and farm value."
+  schema={listSchema}
 >
   <h1>Fish Database</h1>
   <p class="muted">

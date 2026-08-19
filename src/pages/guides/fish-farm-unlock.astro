@@ -1,0 +1,78 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const topFarm = [...fish]
+  .filter((f) => Number(f.meat_per_day) > 0)
+  .sort((a, b) => Number(b.meat_per_day || 0) - Number(a.meat_per_day || 0))
+  .slice(0, 10);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "How to Unlock the Fish Farm in Dave the Diver",
+  description: "Fish Farm unlock steps, Otto's tank upgrades and the best farm strategy.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="How to Unlock the Fish Farm - Dave the Diver - DiverDB"
+  description="How to unlock the Fish Farm in Dave the Diver, complete A Noisy Customer and use Otto's tanks."
+  schema={articleSchema}
+>
+  <h1>How to Unlock the Fish Farm</h1>
+  <p class="muted">
+    The Fish Farm opens after the Chapter 2 sub mission A Noisy Customer.
+  </p>
+
+  <h2>Unlock steps</h2>
+  <ol>
+    <li>Reach Chapter 2 and wait for Bancho's call about a noisy customer.</li>
+    <li>Dive at night to catch a moray eel.</li>
+    <li>Research and serve Moray Eel Curry.</li>
+    <li>Talk to Otto after the restaurant closes.</li>
+    <li>Meet Otto at the empty lot behind Bancho Sushi.</li>
+  </ol>
+  <p>
+    Starting this mission also unlocks <strong>Night Diving</strong>, which is required for nocturnal
+    fish and several achievements.
+  </p>
+
+  <h2>What the farm does</h2>
+  <p>
+    The farm has sections for each Blue Hole biome. Otto sells tank upgrades and new area unlocks.
+    Two fish of the same species can breed, and caught eggs or roe can be sent to the farm when tank
+    space is available.
+  </p>
+
+  <h2>Top farm stock after unlock</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Fish</th>
+          <th>Meat / day</th>
+          <th>Breed cap</th>
+          <th>Breed rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {topFarm.map((f) => (
+          <tr>
+            <td><strong>{f.title}</strong></td>
+            <td>{f.meat_per_day}</td>
+            <td>{f.breed_cap || "—"}</td>
+            <td>{f.breed_rate || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Filter and rank candidates with the <a href="/tools/fish-farm/">Fish Farm Planner</a>.
+  </p>
+</Base>

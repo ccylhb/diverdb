@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const earlyCandidates = fish
+  .filter((f) => {
+    const zone = (f.categories || []).join(" ");
+    return zone.includes("Shallow") && Number(f.meat_per_day) > 0;
+  })
+  .sort((a, b) => Number(b.meat_per_day || 0) - Number(a.meat_per_day || 0))
+  .slice(0, 12);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best Fish for Early Game in Dave the Diver",
+  description: "Best shallow-water fish for the early Dave the Diver restaurant and farm.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Best Fish for Early Game - Dave the Diver - DiverDB"
+  description="Best early game Dave the Diver fish: shallow-water catches that feed the restaurant and build the farm."
+  schema={articleSchema}
+>
+  <h1>Best Fish for Early Game</h1>
+  <p class="muted">
+    Early game success comes from consistent catches, not rare drops. These shallow-water fish give
+    solid meat output and appear in recipes that keep the menu full.
+  </p>
+
+  <h2>Why shallow fish matter</h2>
+  <p>
+    Shallow dives are fast, cheap and repeatable. Fish from this zone feed early recipes, fill the
+    farm and build the Cooksta rank that unlocks restaurant upgrades. Prioritize species with high
+    meat per day once the farm opens.
+  </p>
+
+  <h2>Top shallow-water producers</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Fish</th>
+          <th>Rank</th>
+          <th>Weight</th>
+          <th>Meat / day</th>
+          <th>Farm avg</th>
+          <th>Breed rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {earlyCandidates.map((f) => (
+          <tr>
+            <td><strong>{f.title}</strong></td>
+            <td>{f.rank || "—"}</td>
+            <td>{f.weight || "—"}</td>
+            <td>{f.meat_per_day || "—"}</td>
+            <td>{f.farm_meat_avg || "—"}</td>
+            <td>{f.breed_rate || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Restaurant priority</h2>
+  <p>
+    Keep a mix of high-volume fish and event fish. The farm should feed daily recipes, while the
+    dive should chase VIP ingredients and boss drops. Use the
+    <a href="/tools/fish-farm/">Fish Farm Planner</a> when deciding what to stock.
+  </p>
+  <p>
+    Full stats are in the <a href="/fish/">Fish Database</a>.
+  </p>
+</Base>

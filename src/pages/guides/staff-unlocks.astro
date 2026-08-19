@@ -1,0 +1,70 @@
+---
+import Base from "../../layouts/Base.astro";
+import staff from "../../data/staff.json";
+
+const top = [...staff]
+  .filter((s) => Number(s.maxtotal) > 0)
+  .sort((a, b) => Number(b.maxtotal || 0) - Number(a.maxtotal || 0))
+  .slice(0, 12);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Staff Unlocks & Recruitment in Dave the Diver",
+  description: "How to recruit, train and assign Dave the Diver staff by stats and skills.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Staff Unlocks & Recruitment - Dave the Diver - DiverDB"
+  description="Dave the Diver staff recruitment guide: hiring fees, training levels, special skills and best roles."
+  schema={articleSchema}
+>
+  <h1>Staff Unlocks &amp; Recruitment</h1>
+  <p class="muted">
+    Staff members arrive through contracts, mission progress and restaurant ranks.
+  </p>
+
+  <h2>How recruitment works</h2>
+  <p>
+    New employees become available as the story and Cooksta rank progress. Hiring costs vary by
+    staff member, and each employee can be trained to raise Cooking, Serving, Procurement and
+    Appeal. Some staff unlock new recipes at specific training levels.
+  </p>
+
+  <h2>Highest max total staff</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Staff</th>
+          <th>Rating</th>
+          <th>Hire fee</th>
+          <th>Max total</th>
+          <th>Special skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        {top.map((s) => (
+          <tr>
+            <td><strong>{s.title}</strong></td>
+            <td>{s.rating || "—"}</td>
+            <td>{s.hiringfee || "—"}</td>
+            <td>{s.maxtotal}</td>
+            <td>{s.specialskills || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Training priority</h2>
+  <p>
+    Train the staff member with the highest max ceiling for the bottleneck role. If the kitchen
+    stacks up, prioritize Cooking; if tables wait, prioritize Serving. Use the
+    <a href="/tools/staff-compare/">Staff Compare</a> tool to test two candidates.
+  </p>
+</Base>

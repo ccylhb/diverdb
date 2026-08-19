@@ -5,11 +5,22 @@ import recipes from "../../data/recipes.json";
 const sorted = [...recipes].sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0));
 const maxPrice = Math.max(...recipes.map((r) => Number(r.maxprice) || 0));
 const maxTaste = Math.max(...recipes.map((r) => Number(r.maxtaste) || 0));
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Dave the Diver Recipe Database",
+  itemListElement: recipes.slice(0, 20).map((r, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: r.title,
+  })),
+};
 ---
 
 <Base
   title="Recipe Database - Dave the Diver - DiverDB"
   description="Searchable Dave the Diver recipe database: ingredients, base and max price, taste, dish count and upgrade value."
+  schema={listSchema}
 >
   <h1>Recipe Database</h1>
   <p class="muted">

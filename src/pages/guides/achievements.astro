@@ -1,5 +1,8 @@
 ---
 import Base from "../../layouts/Base.astro";
+import achievements from "../../data/achievements.json";
+
+const sorted = [...achievements].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
 ---
 
 <Base
@@ -8,7 +11,7 @@ import Base from "../../layouts/Base.astro";
 >
   <h1>Achievement Guide</h1>
   <p class="muted">
-    A practical completion route for the Dave the Diver achievement list.
+    A practical completion route for the Dave the Diver achievement list ({achievements.length} achievements).
   </p>
 
   <h2>Plan around the story</h2>
@@ -32,6 +35,26 @@ import Base from "../../layouts/Base.astro";
     methods and DLC-specific activities. Use the side-mission list as a checklist and return to
     completed chapters after unlocking better gear.
   </p>
+
+  <h2>Achievement checklist</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Achievement</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((a) => (
+          <tr>
+            <td><strong>{a.title}</strong></td>
+            <td>{a.description || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 
   <p>
     Pair the guide with the <a href="/fish/">Fish Database</a>, <a href="/recipes/">Recipe Database</a>

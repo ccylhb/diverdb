@@ -1,0 +1,75 @@
+---
+import Base from "../../layouts/Base.astro";
+import fish from "../../data/fish.json";
+
+const cards = fish
+  .filter((f) => f.card_number)
+  .sort((a, b) => Number(String(a.card_number).replace(/\D/g, "")) - Number(String(b.card_number).replace(/\D/g, "")))
+  .slice(0, 12);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Marinca Card Collection Guide for Dave the Diver",
+  description: "How the Marinca collection works and where to find fish cards.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="Marinca Card Collection Guide - Dave the Diver - DiverDB"
+  description="Dave the Diver Marinca collection guide: fish cards, ranks, zones and Marinca Bloom."
+  schema={articleSchema}
+>
+  <h1>Marinca Card Collection Guide</h1>
+  <p class="muted">
+    Marinca records fish and creature cards for each Blue Hole zone.
+  </p>
+
+  <h2>How the collection works</h2>
+  <p>
+    Marinca is the in-game fish encyclopedia. Each catch fills a card with rank, length and zone
+    information. Reaching higher ranks on a fish card often requires catching larger or higher-grade
+    versions of the same species.
+  </p>
+  <p>
+    The paid expansion In The Jungle adds <strong>Marinca Bloom</strong>, unlocked by Sato after he
+    arrives in the Jungle. It adds jungle cards and a flower that grows from sunlight, water and
+    Marinca progress.
+  </p>
+
+  <h2>Sample card order</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Card</th>
+          <th>Fish</th>
+          <th>Rank</th>
+          <th>Zone</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {cards.map((f) => {
+          const zone = (f.categories || []).find((c) => c !== "Fish" && c !== "Bosses") || f.source || "Unknown";
+          return (
+            <tr>
+              <td>{f.card_number}</td>
+              <td><strong>{f.title}</strong></td>
+              <td>{f.rank || "—"}</td>
+              <td>{zone}</td>
+              <td>{f.active_time || "—"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Search all cards in the <a href="/fish/">Fish Database</a>.
+  </p>
+</Base>

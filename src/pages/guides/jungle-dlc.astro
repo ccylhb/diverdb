@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "In the Jungle DLC Guide for Dave the Diver",
+  description: "How to start the In the Jungle content pack and use Marinca Bloom.",
+  datePublished: "2026-08-20",
+  dateModified: "2026-08-20",
+  author: { "@type": "Organization", name: "DiverDB" },
+};
+---
+
+<Base
+  title="In the Jungle DLC Guide - Dave the Diver - DiverDB"
+  description="Dave the Diver In the Jungle content pack guide: Sato, Marinca Bloom and jungle collection."
+  schema={articleSchema}
+>
+  <h1>In the Jungle DLC Guide</h1>
+  <p class="muted">
+    In the Jungle is the paid expansion that adds the Jungle, Sato and Marinca Bloom.
+  </p>
+
+  <h2>How to start</h2>
+  <p>
+    The Jungle content becomes available through the expansion content. Sato arrives in the Jungle
+    and introduces <strong>Marinca Bloom</strong>, a new app on Dave's smartphone that tracks jungle
+    fish cards.
+  </p>
+
+  <h2>Marinca Bloom flower</h2>
+  <p>
+    The flower has three resources:
+  </p>
+  <ul>
+    <li>Sunlight: earned by walking when not diving.</li>
+    <li>Water: earned by diving.</li>
+    <li>Marinca progress: the number of cards collected.</li>
+  </ul>
+  <p>
+    The flower can wither if its health gets too low. Recover it by applying sunlight or water, then
+    keep collecting cards to reach the final flower level.
+  </p>
+
+  <h2>Collection priority</h2>
+  <p>
+    Complete the base Blue Hole cards before focusing on the Jungle, because Marinca progress counts
+    toward the flower. Use the <a href="/fish/">Fish Database</a> to check zones and active times
+    while collecting.
+  </p>
+</Base>

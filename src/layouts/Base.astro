@@ -2,10 +2,20 @@
 interface Props {
   title: string;
   description: string;
+  schema?: object | string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, schema } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const siteUrl = Astro.site?.href || "https://diverdb.pages.dev/";
+const defaultSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "DiverDB",
+  url: siteUrl,
+  description: "Dave the Diver fish, recipe, staff, weapon and boss database.",
+};
+const schemas = [defaultSchema, ...(schema ? [schema] : [])];
 ---
 
 <!doctype html>
@@ -22,8 +32,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="DiverDB" />
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#11191d" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>" />
+    {
+      schemas.map((s) => (
+        <script type="application/ld+json" set:html={typeof s === "string" ? s : JSON.stringify(s)} />
+      ))
+    }
     <style is:global>
       :root {
         --bg: #11191d;
