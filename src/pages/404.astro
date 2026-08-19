@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Page Not Found - DiverDB"
+  description="The requested Dave the Diver guide or database page could not be found."
+>
+  <h1>Page Not Found</h1>
+  <p class="muted">
+    The page may have moved or the address is incorrect.
+  </p>
+  <div class="grid grid-3">
+    <a class="card" href="/" style="color:inherit">
+      <h3 style="margin:0 0 0.25rem">Home</h3>
+      <p class="muted" style="margin:0;font-size:0.92rem">DiverDB databases and tools.</p>
+    </a>
+    <a class="card" href="/fish/" style="color:inherit">
+      <h3 style="margin:0 0 0.25rem">Fish Database</h3>
+      <p class="muted" style="margin:0;font-size:0.92rem">All fish, zones and farm stats.</p>
+    </a>
+    <a class="card" href="/tools/" style="color:inherit">
+      <h3 style="margin:0 0 0.25rem">Tools</h3>
+      <p class="muted" style="margin:0;font-size:0.92rem">Farm planner, recipe filter and staff compare.</p>
+    </a>
+  </div>
+</Base>
