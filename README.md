@@ -3,6 +3,8 @@
 Static guide and database site for Dave the Diver, built with Astro and hosted for free on
 Cloudflare Pages.
 
+Live: <https://diverdb.pages.dev>
+
 ## Quick start
 
 ```bash
