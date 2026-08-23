@@ -104,6 +104,15 @@ const schemas = [defaultSchema, ...(schema ? [schema] : [])];
         font-size: 0.85rem;
         text-align: center;
       }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        margin-bottom: 0.75rem;
+      }
+      .footer-links a { color: var(--muted); }
+      .footer-links a:hover { color: var(--text); }
       h1 { font-size: 2.1rem; margin: 0 0 0.5rem; line-height: 1.2; }
       h2 { margin: 2rem 0 0.75rem; font-size: 1.45rem; line-height: 1.25; }
       h3 { margin: 1.5rem 0 0.5rem; font-size: 1.08rem; line-height: 1.3; }
@@ -200,6 +209,18 @@ const schemas = [defaultSchema, ...(schema ? [schema] : [])];
       <slot />
     </main>
     <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/fish/">Fish</a>
+        <a href="/recipes/">Recipes</a>
+        <a href="/staff/">Staff</a>
+        <a href="/weapons/">Weapons</a>
+        <a href="/bosses/">Bosses</a>
+        <a href="/tools/">Tools</a>
+        <a href="/guides/">Guides</a>
+        <a href="/sitemap/">All Pages</a>
+        <a href="/about/">About</a>
+        <a href="/privacy-policy/">Privacy</a>
+      </div>
       <p>
         DiverDB is an unofficial fan resource. Dave the Diver is a trademark of MINTROCKET.
         Game data is for informational purposes only.

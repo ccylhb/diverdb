@@ -1,0 +1,91 @@
+---
+import Base from "../layouts/Base.astro";
+
+const groups = [
+  {
+    title: "Databases",
+    links: [
+      ["All Fish", "/fish/"],
+      ["All Recipes", "/recipes/"],
+      ["All Staff", "/staff/"],
+      ["All Weapons", "/weapons/"],
+      ["All Bosses", "/bosses/"],
+      ["Achievements", "/guides/achievements/"],
+    ],
+  },
+  {
+    title: "Tools",
+    links: [
+      ["Fish Farm Planner", "/tools/fish-farm/"],
+      ["Recipe Filter", "/tools/recipe-filter/"],
+      ["Staff Compare", "/tools/staff-compare/"],
+    ],
+  },
+  {
+    title: "Guides",
+    links: [
+      ["Beginner Roadmap", "/guides/beginner/"],
+      ["Best Fish for Early Game", "/guides/best-fish-early-game/"],
+      ["Fish Farm Unlock", "/guides/fish-farm-unlock/"],
+      ["Best Fish to Farm", "/guides/fish-farming/"],
+      ["Tuna Party & Salvage Drone", "/guides/tuna-party-salvage-drone/"],
+      ["Recipe Economy", "/guides/recipe-economy/"],
+      ["Best Dishes by Rank", "/guides/best-dishes/"],
+      ["Staff Training", "/guides/staff-training/"],
+      ["Staff Unlocks", "/guides/staff-unlocks/"],
+      ["Weapon Progression", "/guides/weapon-progression/"],
+      ["Weapon Upgrade Materials", "/guides/weapon-upgrade-materials/"],
+      ["Boss Order", "/guides/boss-order/"],
+      ["Marinca Collection", "/guides/marinca-collection/"],
+      ["Night Diving", "/guides/night-diving/"],
+      ["In the Jungle DLC", "/guides/jungle-dlc/"],
+      ["Achievement Guide", "/guides/achievements/"],
+      ["FAQ", "/guides/faq/"],
+    ],
+  },
+  {
+    title: "Site",
+    links: [
+      ["Home", "/"],
+      ["About", "/about/"],
+      ["Contact", "/contact/"],
+      ["Privacy Policy", "/privacy-policy/"],
+    ],
+  },
+];
+
+const listSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "DiverDB Site Index",
+  itemListElement: groups.flatMap((g) => g.links).map(([name], i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name,
+  })),
+};
+---
+
+<Base
+  title="All Pages - DiverDB Site Index"
+  description="Complete DiverDB site index: all Dave the Diver fish, recipe, staff, weapon, boss and guide pages."
+  schema={listSchema}
+>
+  <h1>All Pages</h1>
+  <p class="muted">
+    Full site index for quick navigation and search engine discovery.
+  </p>
+
+  {groups.map((group) => (
+    <section>
+      <h2>{group.title}</h2>
+      <div class="grid grid-3">
+        {group.links.map(([name, href]) => (
+          <a class="card" href={href} style="display:block;color:inherit">
+            <h3 style="margin:0">{name}</h3>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>
