@@ -5,6 +5,11 @@ Cloudflare Pages.
 
 Live: <https://diverdb.pages.dev>
 
+Popular pages:
+- [Fish Database](https://diverdb.pages.dev/fish/)
+- [Recipe Database](https://diverdb.pages.dev/recipes/)
+- [Tools](https://diverdb.pages.dev/tools/)
+
 ## Quick start
 
 ```bash
