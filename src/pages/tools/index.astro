@@ -5,31 +5,68 @@ const tools = [
   {
     title: "Fish Farm Planner",
     desc: "Filter fish by zone and time, then rank ranch stock by meat per day and breeding rate.",
+    points: ["Zone and time filters", "Meat per day ranking", "Breeding rate and farm cap"],
     href: "/tools/fish-farm/",
     badge: "Planner",
   },
   {
     title: "Recipe Filter",
     desc: "Search recipes by ingredient, taste and dish count to build the strongest menu.",
+    points: ["Ingredient search", "Max taste threshold", "Dish count planning"],
     href: "/tools/recipe-filter/",
     badge: "Filter",
   },
   {
     title: "Staff Compare",
     desc: "Compare two staff members on base and max stats, then check their strongest role.",
+    points: ["Base and max stats", "Hiring fee comparison", "Best role detection"],
     href: "/tools/staff-compare/",
     badge: "Compare",
   },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which DiverDB tool should I use for fish farming?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Use the Fish Farm Planner to filter fish by zone and rank candidates by meat per day and breeding rate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I choose the best Dave the Diver recipes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Use the Recipe Filter with a max taste threshold and dish count target to match your ingredient supply.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I compare restaurant staff in Dave the Diver?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Use Staff Compare to review base and max Cooking, Serving, Procurement and Appeal stats side by side.",
+      },
+    },
+  ],
+};
 ---
 
 <Base
   title="Dave the Diver Tools & Calculators - DiverDB"
   description="Free Dave the Diver tools: fish farm planner, recipe filter and staff stat comparison."
+  schema={faqSchema}
 >
   <h1>Tools</h1>
   <p class="muted">
     Practical planning tools for fish farming, restaurant menus and staff training.
+    Each tool reads the same data as the DiverDB databases, so the numbers stay consistent
+    across the site.
   </p>
   <div class="grid grid-3">
     {tools.map((t) => (
@@ -37,7 +74,26 @@ const tools = [
         <span class="tag">{t.badge}</span>
         <h3 style="margin:0.5rem 0 0.25rem">{t.title}</h3>
         <p class="muted" style="margin:0;font-size:0.92rem">{t.desc}</p>
+        <ul style="margin:0.75rem 0 0;padding-left:1.1rem;font-size:0.9rem;color:var(--muted)">
+          {t.points.map((p) => <li>{p}</li>)}
+        </ul>
       </a>
     ))}
   </div>
+
+  <section>
+    <h2>Common tool questions</h2>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">Which tool should I use for fish farming?</h3>
+      <p style="margin:0">Use the Fish Farm Planner to filter by zone and rank candidates by meat per day and breeding rate.</p>
+    </div>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">How do I choose the best recipes?</h3>
+      <p style="margin:0">Use the Recipe Filter with a max taste threshold and dish count target to match your ingredient supply.</p>
+    </div>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">How do I compare staff?</h3>
+      <p style="margin:0">Use Staff Compare to review base and max Cooking, Serving, Procurement and Appeal stats side by side.</p>
+    </div>
+  </section>
 </Base>

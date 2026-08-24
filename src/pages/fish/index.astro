@@ -19,16 +19,47 @@ const listSchema = {
     name: f.title,
   })),
 };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best fish to farm in Dave the Diver?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Use the Fish Farm Planner to rank species by meat per day and breeding rate before choosing ranch stock.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why do fish appear in multiple zones?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many Dave the Diver fish can appear in more than one Blue Hole zone and at different active times.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I find nocturnal fish in Dave the Diver?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Complete A Noisy Customer to unlock night diving, then filter this database by the night active time.",
+      },
+    },
+  ],
+};
 ---
 
 <Base
   title="All Fish Database - Dave the Diver - DiverDB"
   description="Searchable Dave the Diver fish database: zone, rank, weight, meat yield, breeding rate, fish per day and farm value."
-  schema={listSchema}
+  schema={[listSchema, faqSchema]}
 >
   <h1>Fish Database</h1>
   <p class="muted">
     Every fish and catchable creature from the Marinca database, with farming stats for ranch planning.
+    Use the filters to compare active times, farm output and breeding rates before deciding what to stock.
   </p>
 
   <div class="card" style="display:flex;gap:1rem;flex-wrap:wrap;align-items:end">
@@ -131,4 +162,20 @@ const listSchema = {
     zone.addEventListener("change", render);
     time.addEventListener("change", render);
   </script>
+
+  <section>
+    <h2>Fishing data FAQ</h2>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">What is the best fish to farm?</h3>
+      <p style="margin:0">Rank candidates by meat per day and breeding rate in the Fish Farm Planner before choosing ranch stock.</p>
+    </div>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">Why do fish appear in multiple zones?</h3>
+      <p style="margin:0">Many fish can appear in more than one Blue Hole zone and at different active times.</p>
+    </div>
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">How do I find nocturnal fish?</h3>
+      <p style="margin:0">Unlock night diving through A Noisy Customer, then filter this database by the night active time.</p>
+    </div>
+  </section>
 </Base>
