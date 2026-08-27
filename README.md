@@ -3,7 +3,8 @@
 Static guide and database site for Dave the Diver, built with Astro and hosted for free on
 Cloudflare Pages.
 
-Live: <https://diverdb.pages.dev>
+Live: <https://ccylhb.github.io/diverdb/>
+Cloudflare mirror: <https://diverdb.pages.dev>
 
 Popular pages:
 - [Fish Database](https://diverdb.pages.dev/fish/)
