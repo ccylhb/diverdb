@@ -3,9 +3,10 @@
 import { copyFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
-const src = join(process.cwd(), "dist", "sitemap-0.xml");
-const dst = join(process.cwd(), "dist", "sitemap.xml");
-const alt = join(process.cwd(), "dist", "sitemap-diverdb.xml");
+const outDir = process.env.DIVERDB_OUT_DIR || "dist";
+const src = join(process.cwd(), outDir, "sitemap-0.xml");
+const dst = join(process.cwd(), outDir, "sitemap.xml");
+const alt = join(process.cwd(), outDir, "sitemap-diverdb.xml");
 
 if (existsSync(src)) {
   copyFileSync(src, dst);

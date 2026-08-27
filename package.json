@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/copy-sitemap.mjs",
+    "build:gh": "astro build --config astro.config.gh.mjs --outDir dist-gh && node scripts/copy-sitemap.mjs && node scripts/prefix-gh-links.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
