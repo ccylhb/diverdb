@@ -1,0 +1,110 @@
+---
+import Base from "../layouts/Base.astro";
+import weapons from "../data/weapons.json";
+import recipes from "../data/recipes.json";
+import staff from "../data/staff.json";
+
+const num = (v: unknown): number => {
+  const n = parseFloat(String(v ?? "").replace(/[^0-9.]/g, ""));
+  return Number.isFinite(n) ? n : 0;
+};
+
+const topWeapons = [...weapons]
+  .filter((w) => num(w.dmg) > 0)
+  .sort((a, b) => num(b.dmg) - num(a.dmg))
+  .slice(0, 15);
+
+const topTaste = [...recipes]
+  .filter((r) => num(r.maxtaste) > 0)
+  .sort((a, b) => num(b.maxtaste) - num(a.maxtaste))
+  .slice(0, 15);
+
+const topPrice = [...recipes]
+  .filter((r) => num(r.maxprice) > 0)
+  .sort((a, b) => num(b.maxprice) - num(a.maxprice))
+  .slice(0, 15);
+
+const topStaff = [...staff]
+  .filter((s) => num(s.maxtotal) > 0)
+  .sort((a, b) => num(b.maxtotal) - num(a.maxtotal))
+  .slice(0, 12);
+---
+
+<Base
+  title="Dave the Diver Rankings — Best Weapons, Recipes & Staff"
+  description="Answer-first rankings for Dave the Diver: highest damage weapons, best tasting dishes, most profitable recipes and strongest staff at max level."
+>
+  <h1>Rankings</h1>
+  <p class="muted">
+    The short answers, no digging. All numbers are max-level values.
+  </p>
+
+  <h2 id="weapons">Best weapons by damage</h2>
+  <table>
+    <thead><tr><th>#</th><th>Weapon</th><th>Type</th><th>Damage</th><th>Effect</th></tr></thead>
+    <tbody>
+      {topWeapons.map((w, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td>{w.title}</td>
+          <td>{w.type}</td>
+          <td><strong>{num(w.dmg)}</strong></td>
+          <td>{w.effects || "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p><a href="/weapons/">See all {weapons.length} weapons →</a></p>
+
+  <h2 id="taste">Best dishes by taste</h2>
+  <p class="muted">Highest taste score at max dish level — feed these to customers for max stars.</p>
+  <table>
+    <thead><tr><th>#</th><th>Dish</th><th>Ingredients</th><th>Max taste</th><th>Max price</th></tr></thead>
+    <tbody>
+      {topTaste.map((r, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td>{r.title}</td>
+          <td>{r.ingredients}</td>
+          <td><strong>{num(r.maxtaste)}</strong></td>
+          <td>${num(r.maxprice)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p><a href="/recipes/">See all {recipes.length} recipes →</a></p>
+
+  <h2 id="price">Most profitable dishes</h2>
+  <p class="muted">Highest selling price per dish served — best for money farming.</p>
+  <table>
+    <thead><tr><th>#</th><th>Dish</th><th>Max price</th><th>Max taste</th><th>Flame cost</th></tr></thead>
+    <tbody>
+      {topPrice.map((r, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td>{r.title}</td>
+          <td><strong>${num(r.maxprice)}</strong></td>
+          <td>{num(r.maxtaste)}</td>
+          <td>{r.flame_cost}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2 id="staff">Strongest staff at max level</h2>
+  <table>
+    <thead><tr><th>#</th><th>Staff</th><th>Role</th><th>Rating</th><th>Total (max)</th></tr></thead>
+    <tbody>
+      {topStaff.map((s, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td>{s.name}</td>
+          <td>{s.occupation}</td>
+          <td>{s.rating}</td>
+          <td><strong>{num(s.maxtotal)}</strong></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p><a href="/staff/">See all {staff.length} staff →</a></p>
+</Base>
