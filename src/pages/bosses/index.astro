@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import bosses from "../../data/bosses.json";
 
+import Related from "../../components/Related.astro";
 const sorted = [...bosses].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
 const listSchema = {
   "@context": "https://schema.org",
@@ -93,4 +94,12 @@ const listSchema = {
 
     q.addEventListener("input", render);
   </script>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Gear and prep checks before every boss", tool: true },
+    { href: "/guides/boss-order/", title: "Boss Order Guide", sub: "Full boss progression walkthrough", tool: false },
+  ]}
+  />
 </Base>

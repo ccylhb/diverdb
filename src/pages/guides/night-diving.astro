@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import fish from "../../data/fish.json";
 
+import Related from "../../components/Related.astro";
 const nightFish = fish
   .filter((f) => (f.active_time || "").toLowerCase().includes("night") || (f.categories || []).includes("Nocturnal Fish"))
   .sort((a, b) => Number(b.rank || 99) - Number(a.rank || 99))
@@ -73,4 +74,12 @@ const articleSchema = {
   <p>
     Full zone and time filters are in the <a href="/fish/">Fish Database</a>.
   </p>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Best fish, dishes, staff and weapons ranked", tool: true },
+    { href: "/tools/", title: "Tools", sub: "Planner, filter and compare utilities", tool: true },
+  ]}
+  />
 </Base>

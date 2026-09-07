@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import weapons from "../../data/weapons.json";
 
+import Related from "../../components/Related.astro";
 const types = [...new Set(weapons.map((w) => w.type).filter(Boolean))].sort();
 const sorted = [...weapons].sort((a, b) => (a.type || "").localeCompare(b.type || ""));
 const listSchema = {
@@ -107,4 +108,12 @@ const listSchema = {
     q.addEventListener("input", render);
     type.addEventListener("change", render);
   </script>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Weapons ranked by damage and upgrade value", tool: true },
+    { href: "/guides/weapon-progression/", title: "Weapon Progression Guide", sub: "What to upgrade next", tool: false },
+  ]}
+  />
 </Base>

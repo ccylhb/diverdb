@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import fish from "../../data/fish.json";
 
+import Related from "../../components/Related.astro";
 const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
   .filter((z) => z && !["Fish", "Bosses"].includes(z))
   .sort();
@@ -178,4 +179,13 @@ const faqSchema = {
       <p style="margin:0">Unlock night diving through A Noisy Customer, then filter this database by the night active time.</p>
     </div>
   </section>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/tools/fish-farm/", title: "Fish Farm Planner", sub: "Rank fish by meat per day for your ranch", tool: true },
+    { href: "/tools/recipe-filter/", title: "Recipe Filter", sub: "Find dishes by ingredient and taste", tool: true },
+    { href: "/rankings/", title: "Rankings", sub: "Best fish, dishes and staff ranked", tool: true },
+  ]}
+  />
 </Base>

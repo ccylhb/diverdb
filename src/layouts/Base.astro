@@ -170,6 +170,30 @@ const schemas = [defaultSchema, ...extraSchemas];
       }
       .toc { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; }
       .toc ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+      .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+      a.related-card {
+        display: flex; align-items: center; gap: 0.7rem;
+        background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+        padding: 0.7rem 0.85rem; color: inherit;
+        transition: border-color 0.15s ease, transform 0.15s ease;
+      }
+      a.related-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+      a.related-card img { width: 38px; height: 38px; object-fit: contain; flex: none; }
+      a.related-card .rc-title { font-weight: 600; font-size: 0.95rem; }
+      a.related-card .rc-sub { color: var(--muted); font-size: 0.82rem; }
+      a.related-card.tool-card {
+        border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+        background: color-mix(in srgb, var(--accent) 10%, var(--card));
+      }
+      a.related-card.tool-card .rc-badge {
+        display: inline-block; background: var(--accent); color: var(--bg);
+        border-radius: 999px; padding: 0.05rem 0.5rem; font-size: 0.7rem; font-weight: 700;
+        margin-left: 0.4rem; vertical-align: middle;
+      }
+      nav.main-nav a.navtool {
+        color: var(--accent);
+        border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+      }
       .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
       .stat { border-left: 3px solid var(--accent-2); padding-left: 0.75rem; }
       .stat strong { display: block; font-size: 1.35rem; color: var(--text); }
@@ -195,13 +219,13 @@ const schemas = [defaultSchema, ...extraSchemas];
         <a class="brand" href="/">Diver<span>DB</span></a>
         <nav class="main-nav">
           <a href="/">Home</a>
-          <a href="/rankings/">Rankings</a>
+          <a class="navtool" href="/rankings/">Rankings</a>
+          <a class="navtool" href="/tools/">Tools</a>
           <a href="/fish/">Fish</a>
           <a href="/recipes/">Recipes</a>
           <a href="/staff/">Staff</a>
           <a href="/weapons/">Weapons</a>
           <a href="/bosses/">Bosses</a>
-          <a href="/tools/">Tools</a>
           <a href="/guides/">Guides</a>
           <a href="/about/">About</a>
         </nav>

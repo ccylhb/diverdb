@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import weapons from "../../data/weapons.json";
 
+import Related from "../../components/Related.astro";
 const melee = weapons.filter((w) => (w.type || "").toLowerCase().includes("melee"));
 const guns = weapons.filter((w) => (w.type || "").toLowerCase().includes("weapon"));
 const consumables = weapons.filter((w) => (w.type || "").toLowerCase().includes("consumable"));
@@ -65,4 +66,11 @@ const articleSchema = {
   <p>
     Browse every weapon in the <a href="/weapons/">Weapons Database</a>.
   </p>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Weapons ranked by upgrade value", tool: true },
+  ]}
+  />
 </Base>

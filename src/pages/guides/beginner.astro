@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Related from "../../components/Related.astro";
 ---
 
 <Base
@@ -53,4 +54,12 @@ import Base from "../../layouts/Base.astro";
     Do not fill the farm with rare one-off catches; use it for steady producers that feed the menu
     every day.
   </p>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Best fish, dishes, staff and weapons ranked", tool: true },
+    { href: "/tools/", title: "Tools", sub: "Planner, filter and compare utilities", tool: true },
+  ]}
+  />
 </Base>

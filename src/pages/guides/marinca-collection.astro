@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import fish from "../../data/fish.json";
 
+import Related from "../../components/Related.astro";
 const cards = fish
   .filter((f) => f.card_number)
   .sort((a, b) => Number(String(a.card_number).replace(/\D/g, "")) - Number(String(b.card_number).replace(/\D/g, "")))
@@ -72,4 +73,12 @@ const articleSchema = {
   <p>
     Search all cards in the <a href="/fish/">Fish Database</a>.
   </p>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Best fish, dishes, staff and weapons ranked", tool: true },
+    { href: "/tools/", title: "Tools", sub: "Planner, filter and compare utilities", tool: true },
+  ]}
+  />
 </Base>

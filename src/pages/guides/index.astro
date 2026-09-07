@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 
+import Related from "../../components/Related.astro";
 const guides = [
   { title: "Beginner Roadmap", desc: "First-day upgrades, money loop and what to keep.", href: "/guides/beginner/" },
   { title: "Best Fish for Early Game", desc: "Shallow-water producers that feed the early menu.", href: "/guides/best-fish-early-game/" },
@@ -35,4 +36,12 @@ const guides = [
       </a>
     ))}
   </div>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/rankings/", title: "Rankings", sub: "Best fish, dishes, staff and weapons ranked", tool: true },
+    { href: "/tools/", title: "Tools", sub: "Planner, filter and compare utilities", tool: true },
+  ]}
+  />
 </Base>

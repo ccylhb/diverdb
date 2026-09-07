@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import fish from "../../data/fish.json";
 
+import Related from "../../components/Related.astro";
 const earlyCandidates = fish
   .filter((f) => {
     const zone = (f.categories || []).join(" ");
@@ -76,4 +77,11 @@ const articleSchema = {
   <p>
     Full stats are in the <a href="/fish/">Fish Database</a>.
   </p>
+
+  <Related
+    heading="Next steps"
+    links={[
+    { href: "/tools/fish-farm/", title: "Fish Farm Planner", sub: "Plan ranch stock", tool: true },
+  ]}
+  />
 </Base>
