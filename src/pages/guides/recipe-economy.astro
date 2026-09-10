@@ -4,11 +4,20 @@ import recipes from "../../data/recipes.json";
 
 import Related from "../../components/Related.astro";
 const byTaste = [...recipes].sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0)).slice(0, 10);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Recipe Economy & Menu Planning - Dave the Diver",
+  description: "Dave the Diver recipe economy guide: how max taste, price and dish count shape the nightly menu.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Recipe Economy & Menu Planning - Dave the Diver - DiverDB"
   description="Dave the Diver recipe economy guide: how max taste, price and dish count shape the nightly menu."
+  schema={articleSchema}
 >
   <h1>Recipe Economy &amp; Menu Planning</h1>
   <p class="muted">

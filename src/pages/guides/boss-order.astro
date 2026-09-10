@@ -16,11 +16,20 @@ const groups = [
   ["Glacier", glacier],
   ["Other encounters", others],
 ];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Boss Order & Drops - Dave the Diver",
+  description: "Dave the Diver boss order by zone, plus loot drops and recipes unlocked by boss ingredients.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Boss Order & Drops - Dave the Diver - DiverDB"
   description="Dave the Diver boss order by zone, plus loot drops and recipes unlocked by boss ingredients."
+  schema={articleSchema}
 >
   <h1>Boss Order &amp; Drops</h1>
   <p class="muted">

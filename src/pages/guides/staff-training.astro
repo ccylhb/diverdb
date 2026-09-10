@@ -4,11 +4,20 @@ import staff from "../../data/staff.json";
 
 import Related from "../../components/Related.astro";
 const top = [...staff].sort((a, b) => Number(b.maxtotal || 0) - Number(a.maxtotal || 0)).slice(0, 12);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Staff Training & Role Guide - Dave the Diver",
+  description: "Dave the Diver staff guide: hiring, training, role assignment and the best staff by max total stats.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Staff Training & Role Guide - Dave the Diver - DiverDB"
   description="Dave the Diver staff guide: hiring, training, role assignment and the best staff by max total stats."
+  schema={articleSchema}
 >
   <h1>Staff Training &amp; Role Guide</h1>
   <p class="muted">

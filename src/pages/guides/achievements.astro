@@ -4,11 +4,20 @@ import achievements from "../../data/achievements.json";
 
 import Related from "../../components/Related.astro";
 const sorted = [...achievements].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Achievement Guide - Dave the Diver",
+  description: "Dave the Diver achievement guide: full collection, hidden achievements and the most efficient completion order.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Achievement Guide - Dave the Diver - DiverDB"
   description="Dave the Diver achievement guide: full collection, hidden achievements and the most efficient completion order."
+  schema={articleSchema}
 >
   <h1>Achievement Guide</h1>
   <p class="muted">

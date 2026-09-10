@@ -28,11 +28,21 @@ const topStaff = [...staff]
   .filter((s) => num(s.maxtotal) > 0)
   .sort((a, b) => num(b.maxtotal) - num(a.maxtotal))
   .slice(0, 12);
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://diverdb.pages.dev/" },
+    { "@type": "ListItem", position: 2, name: "Dave the Diver Rankings — Best Weapons, Recipes & Staff", item: Astro.url },
+  ],
+};
 ---
 
 <Base
   title="Dave the Diver Rankings — Best Weapons, Recipes & Staff"
   description="Answer-first rankings for Dave the Diver: highest damage weapons, best tasting dishes, most profitable recipes and strongest staff at max level."
+  schema={breadcrumbSchema}
 >
   <h1>Rankings</h1>
   <p class="muted">

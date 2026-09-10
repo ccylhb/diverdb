@@ -6,11 +6,20 @@ import Related from "../../components/Related.astro";
 const melee = weapons.filter((w) => (w.type || "").includes("Melee"));
 const ranged = weapons.filter((w) => (w.type || "").includes("Rifle") || (w.type || "").includes("Gun"));
 const consumables = weapons.filter((w) => (w.type || "").toLowerCase().includes("consumable"));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Weapon Upgrade Progression - Dave the Diver",
+  description: "Dave the Diver weapon progression guide: early melee tools, reliable rifles and special weapons for bosses.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Weapon Upgrade Progression - Dave the Diver - DiverDB"
   description="Dave the Diver weapon progression guide: early melee tools, reliable rifles and special weapons for bosses."
+  schema={articleSchema}
 >
   <h1>Weapon Upgrade Progression</h1>
   <p class="muted">

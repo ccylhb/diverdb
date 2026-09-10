@@ -7,11 +7,20 @@ const top = [...fish]
   .filter((f) => Number(f.meat_per_day) > 0)
   .sort((a, b) => Number(b.meat_per_day || 0) - Number(a.meat_per_day || 0))
   .slice(0, 12);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best Fish to Farm in Dave the Diver",
+  description: "Best Dave the Diver fish for the ranch based on meat per day, breeding rate and farm capacity.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Best Fish to Farm in Dave the Diver - DiverDB"
   description="Best Dave the Diver fish for the ranch based on meat per day, breeding rate and farm capacity."
+  schema={articleSchema}
 >
   <h1>Best Fish to Farm for the Ranch</h1>
   <p class="muted">

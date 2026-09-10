@@ -3,11 +3,20 @@ import Base from "../../layouts/Base.astro";
 import staff from "../../data/staff.json";
 
 const sorted = [...staff].sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Staff Compare - Dave the Diver",
+  description: "Compare two Dave the Diver staff members on base and max cooking, serving, procurement and appeal stats.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Staff Compare - Dave the Diver - DiverDB"
   description="Compare two Dave the Diver staff members on base and max cooking, serving, procurement and appeal stats."
+  schema={articleSchema}
 >
   <h1>Staff Compare</h1>
   <p class="muted">

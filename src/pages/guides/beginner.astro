@@ -1,11 +1,20 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Related from "../../components/Related.astro";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Dave the Diver Beginner Roadmap",
+  description: "Dave the Diver beginner guide: what to upgrade first, how to run the restaurant and which early fish matter.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Dave the Diver Beginner Roadmap - DiverDB"
   description="Dave the Diver beginner guide: what to upgrade first, how to run the restaurant and which early fish matter."
+  schema={articleSchema}
 >
   <h1>Dave the Diver Beginner Roadmap</h1>
 

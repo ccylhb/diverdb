@@ -7,11 +7,20 @@ const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
   .sort();
 const sorted = [...fish].sort((a, b) => Number(b.meat_per_day || 0) - Number(a.meat_per_day || 0));
 const maxMeat = Math.max(...fish.map((f) => Number(f.meat_per_day) || 0));
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Fish Farm Planner - Dave the Diver",
+  description: "Rank Dave the Diver fish by meat per day, farm meat average and breeding rate to plan the most profitable ranch.",
+  mainEntityOfPage: Astro.url,
+};
 ---
 
 <Base
   title="Fish Farm Planner - Dave the Diver - DiverDB"
   description="Rank Dave the Diver fish by meat per day, farm meat average and breeding rate to plan the most profitable ranch."
+  schema={articleSchema}
 >
   <h1>Fish Farm Planner</h1>
   <p class="muted">
