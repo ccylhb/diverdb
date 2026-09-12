@@ -1,0 +1,292 @@
+---
+import Base from "../../layouts/Base.astro";
+import Related from "../../components/Related.astro";
+import {
+  fishData,
+  recipeByTitle,
+  dishTitles,
+  fishInZoneByMeat,
+  slugify,
+  splitDishTitles,
+  primaryZone,
+  num,
+} from "../../lib/diverdb.js";
+
+export async function getStaticPaths() {
+  return fishData.map((f) => ({ params: { slug: slugify(f.title) }, props: { f } }));
+}
+
+const { f } = Astro.props;
+
+const zone = primaryZone(f);
+const dishes = splitDishTitles(f.recipes, dishTitles);
+const knownDishes = dishes.filter((d) => dishTitles.has(d));
+const unknownDishes = dishes.filter((d) => !dishTitles.has(d));
+
+const meatTiers = [
+  { label: "Tier 1", value: f.meat1 },
+  { label: "Tier 2", value: f.meat2 },
+  { label: "Tier 3", value: f.meat3 },
+].filter((t) => t.value);
+
+const hasFarm = Boolean(f.breed_rate || f.breed_cap || f.fish_per_day || f.max_tank);
+const farmRows = [
+  ["Breeding rate", f.breed_rate],
+  ["Breed cap", f.breed_cap],
+  ["Fish per day", f.fish_per_day],
+  ["Meat per day", f.meat_per_day],
+  ["Average meat per fish", f.farm_meat_avg],
+  ["Tank capacity needed", f.max_tank],
+  ["Reliable hold", f.reliable_hold],
+  ["Density", f.density],
+].filter(([, v]) => v);
+
+// 同区域对比：按「每天肉产量」排序，取前 8，若本鱼不在其中则补一行
+const zoneMates = fishInZoneByMeat(zone);
+let compareRows = zoneMates.slice(0, 8);
+if (!compareRows.some((r) => r.title === f.title)) compareRows = [...compareRows, f];
+
+const avgMeat = f.farm_meat_avg || meatTiers[0]?.value || "—";
+
+const quickAnswer = [
+  `${f.title} is a rank ${f.rank || "?"} fish in Dave the Diver.`,
+  `It is found in the ${zone}${f.source ? ` (spawn point: ${f.source})` : ""}${
+    f.active_time ? ` and is active during the ${String(f.active_time).toLowerCase()}` : ""
+  }.`,
+  f.weight || f.length
+    ? `Each catch weighs about ${f.weight || "?"}${
+        f.length ? ` and measures ${f.length}` : ""
+      }, yielding roughly ${avgMeat} meat.`
+    : "",
+  knownDishes.length
+    ? `It is the base ingredient for ${knownDishes.slice(0, 3).join(", ")}.`
+    : "",
+]
+  .filter(Boolean)
+  .join(" ");
+
+const faqs = [
+  {
+    q: `Where do you catch ${f.title} in Dave the Diver?`,
+    a: `${f.title} appears in the ${zone}${f.source ? `, at the spawn point recorded as "${f.source}"` : ""}${
+      f.active_time ? `, and only during the ${String(f.active_time).toLowerCase()}` : ""
+    }. Check the All Fish database to compare spawn points across every zone.`,
+  },
+];
+if (f.weight || f.length) {
+  faqs.push({
+    q: `How big is ${f.title}?`,
+    a: `${f.title} weighs about ${f.weight || "an unrecorded amount"}${
+      f.length ? ` and measures ${f.length} in length` : ""
+    }. It is recorded as rank ${f.rank || "?"} in the Marinca database and yields ${avgMeat} meat on average.`,
+  });
+}
+faqs.push({
+  q: `What is ${f.title} used for?`,
+  a: knownDishes.length
+    ? `${f.title} is a cooking ingredient. It is used in ${knownDishes.join(", ")}. Open a dish page to see the full ingredient list, sale price and taste value.`
+    : `${f.title} is a Marinca database entry and a cooking ingredient. Fish farm output of this species is measured in meat rather than gold, so use the Fish Farm Planner to decide whether it is worth stocking.`,
+});
+faqs.push({
+  q: `Can you farm ${f.title} in Dave the Diver?`,
+  a: hasFarm
+    ? `Yes. ${f.title} has a breeding rate of ${f.breed_rate || "—"}${
+        f.breed_cap ? `, a breed cap of ${f.breed_cap} fish` : ""
+      }${
+        f.meat_per_day ? ` and produces about ${f.meat_per_day} meat per day at full stock` : ""
+      }. ${
+        f.max_tank ? `It needs a tank capacity of ${f.max_tank} and holds ${f.reliable_hold || "—"} reliably.` : ""
+      }`
+    : `${f.title} is not part of the fish farm roster, so it can only be caught while diving. The Fish Farm Planner ranks the species that do produce meat passively.`,
+});
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+      { "@type": "ListItem", position: 2, name: "Fish", item: new URL("/fish/", Astro.site).href },
+      { "@type": "ListItem", position: 3, name: f.title, item: Astro.url.href },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((x) => ({
+      "@type": "Question",
+      name: x.q,
+      acceptedAnswer: { "@type": "Answer", text: x.a },
+    })),
+  },
+];
+---
+
+<Base
+  title={`${f.title} - Dave the Diver: Where to Catch, Stats & Recipes - DiverDB`}
+  description={`${f.title} in Dave the Diver: found in the ${zone}${
+    f.active_time ? ` during the ${String(f.active_time).toLowerCase()}` : ""
+  }, rank ${f.rank || "?"}, ${f.weight || "unknown weight"}, about ${avgMeat} meat per catch${
+    knownDishes.length ? `, used in ${knownDishes.slice(0, 2).join(" and ")}` : ""
+  }.`}
+  schema={schema}
+>
+<p style="margin:0"><a href="/fish/">← All fish</a></p>
+<h1>{f.title}</h1>
+<p>
+  <span class="tag">{zone}</span>
+  <span class="tag">Rank {f.rank || "?"}</span>
+  {f.active_time && <span class="tag">{f.active_time}</span>}
+  {f.weight && <span class="tag">{f.weight}</span>}
+  {hasFarm && <span class="tag hot">Farmable</span>}
+</p>
+
+<p>{quickAnswer}</p>
+
+<div class="stats" style="margin:1rem 0">
+  <div class="stat"><strong>{f.rank || "—"}</strong><span>Marinca rank</span></div>
+  <div class="stat"><strong>{f.weight || "—"}</strong><span>Weight</span></div>
+  <div class="stat"><strong>{f.length || "—"}</strong><span>Length</span></div>
+  <div class="stat"><strong>{f.active_time || "—"}</strong><span>Active time</span></div>
+  <div class="stat"><strong>{avgMeat}</strong><span>Average meat</span></div>
+  {f.meat_per_day && <div class="stat"><strong>{f.meat_per_day}</strong><span>Meat / day (farm)</span></div>}
+</div>
+
+<section>
+  <h2>Where to catch {f.title}</h2>
+  <table>
+    <tbody>
+      <tr><th style="width:38%">Zone</th><td><strong>{zone}</strong></td></tr>
+      <tr><th>Spawn point</th><td>{f.source || "—"}</td></tr>
+      <tr><th>Active time</th><td>{f.active_time || "Any time"}</td></tr>
+      <tr><th>Marinca card</th><td>{f.card_number || "—"}</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">
+    Night-only species require the night diving upgrade before they can be caught. Use the
+    <a href="/guides/night-diving/">night diving guide</a> if this fish never shows up on your dives.
+  </p>
+</section>
+
+{
+  meatTiers.length > 0 && (
+    <section>
+      <h2>Meat yield</h2>
+      <table>
+        <thead>
+          <tr><th>Tier</th><th>Meat</th></tr>
+        </thead>
+        <tbody>
+          {meatTiers.map((t) => (
+            <tr><td>{t.label}</td><td><strong>{t.value}</strong></td></tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="muted">Values as recorded in the Marinca database.</p>
+    </section>
+  )
+}
+
+{
+  hasFarm && (
+    <section>
+      <h2>{f.title} fish farm stats</h2>
+      <table>
+        <tbody>
+          {farmRows.map(([k, v]) => (
+            <tr><th style="width:48%">{k}</th><td><strong>{v}</strong></td></tr>
+          ))}
+        </tbody>
+      </table>
+      <p>
+        Rank every species by daily meat output in the{" "}
+        <a href="/tools/fish-farm/">Fish Farm Planner</a> before spending gold on stock.
+      </p>
+    </section>
+  )
+}
+
+{
+  dishes.length > 0 && (
+    <section>
+      <h2>Dishes made from {f.title}</h2>
+      <div class="grid grid-3">
+        {knownDishes.map((d) => (
+          <a class="card" href={`/recipes/${slugify(d)}/`} style="display:block;color:inherit">
+            <h3 style="margin:0 0 0.25rem">{d}</h3>
+            <p class="muted" style="margin:0">
+              {recipeByTitle.get(d)?.baseprice
+                ? `${recipeByTitle.get(d).baseprice} → ${recipeByTitle.get(d).maxprice} gold`
+                : "Recipe details"}
+            </p>
+          </a>
+        ))}
+      </div>
+      {unknownDishes.length > 0 && (
+        <p class="muted">Also recorded for: {unknownDishes.join(", ")}.</p>
+      )}
+    </section>
+  )
+}
+
+<section>
+  <h2>How {f.title} compares in the {zone}</h2>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Fish</th>
+          <th>Rank</th>
+          <th>Weight</th>
+          <th>Meat / day</th>
+          <th>Breed rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {compareRows.map((x) => (
+          <tr style={x.title === f.title ? "outline:2px solid var(--accent);outline-offset:-2px" : ""}>
+            <td>
+              {x.title === f.title ? (
+                <strong>{x.title}</strong>
+              ) : (
+                <a href={`/fish/${slugify(x.title)}/`}>{x.title}</a>
+              )}
+            </td>
+            <td>{x.rank || "—"}</td>
+            <td>{x.weight || "—"}</td>
+            <td>{x.meat_per_day || "—"}</td>
+            <td>{x.breed_rate || "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="muted">
+    Top farm species recorded in the {zone}. See the{" "}
+    <a href="/rankings/">rankings page</a> for site-wide comparisons.
+  </p>
+</section>
+
+<section>
+  <h2>{f.title} FAQ</h2>
+  {faqs.map((x) => (
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">{x.q}</h3>
+      <p style="margin:0">{x.a}</p>
+    </div>
+  ))}
+</section>
+
+<Related
+  heading="Next steps"
+  links={[
+    { href: "/tools/fish-farm/", title: "Fish Farm Planner", sub: "Rank fish by meat per day", tool: true },
+    { href: "/fish/", title: "All Fish Database", sub: `Every species by zone and rank` },
+    ...(knownDishes.slice(0, 3).map((d) => ({
+      href: `/recipes/${slugify(d)}/`,
+      title: d,
+      sub: recipeByTitle.get(d)?.maxprice ? `${recipeByTitle.get(d).baseprice} → ${recipeByTitle.get(d).maxprice} gold` : "Recipe",
+    }))),
+  ]}
+/>
+</Base>

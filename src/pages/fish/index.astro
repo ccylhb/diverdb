@@ -3,6 +3,9 @@ import Base from "../../layouts/Base.astro";
 import fish from "../../data/fish.json";
 
 import Related from "../../components/Related.astro";
+import recipes from "../../data/recipes.json";
+import { slugify, splitDishTitles } from "../../lib/diverdb.js";
+const dishTitles = new Set(recipes.map((r) => r.title));
 const zones = [...new Set(fish.flatMap((f) => f.categories || []))]
   .filter((z) => z && !["Fish", "Bosses"].includes(z))
   .sort();
@@ -104,7 +107,7 @@ const faqSchema = {
           const zone = (f.categories || []).find((c) => c !== "Fish" && c !== "Bosses") || f.source || "Unknown";
           return (
             <tr data-name={(f.title || "").toLowerCase()} data-zone={zone} data-time={f.active_time || ""}>
-              <td><strong>{f.title}</strong></td>
+              <td><a href={`/fish/${slugify(f.title)}/`}><strong>{f.title}</strong></a></td>
               <td>{f.rank || "—"}</td>
               <td>{zone}</td>
               <td>{f.active_time || "—"}</td>
@@ -112,7 +115,16 @@ const faqSchema = {
               <td>{f.meat_per_day || "—"}</td>
               <td>{f.farm_meat_avg || "—"}</td>
               <td>{f.breed_rate || "—"}</td>
-              <td style="max-width:240px">{f.recipes || "—"}</td>
+              <td style="max-width:240px">
+                {splitDishTitles(f.recipes, dishTitles).map((d) =>
+                  dishTitles.has(d) ? (
+                    <a href={`/recipes/${slugify(d)}/`} style="display:block">{d}</a>
+                  ) : (
+                    <span class="muted">{d}</span>
+                  )
+                )}
+                {!f.recipes && "—"}
+              </td>
             </tr>
           );
         })}

@@ -1,0 +1,271 @@
+---
+import Base from "../../layouts/Base.astro";
+import Related from "../../components/Related.astro";
+import {
+  recipeData,
+  fishByTitle,
+  recipePeers,
+  maxPriceSite,
+  maxTasteSite,
+  slugify,
+  parseIngredients,
+  num,
+} from "../../lib/diverdb.js";
+
+export async function getStaticPaths() {
+  return recipeData.map((r) => ({ params: { slug: slugify(r.title) }, props: { r } }));
+}
+
+const { r } = Astro.props;
+
+const fishSlug = (name) => (fishByTitle.has(name) ? `/fish/${slugify(name)}/` : null);
+
+const ingredients = parseIngredients(r.ingredients);
+
+const scaling = [
+  ["Sale price", r.baseprice, r.maxprice, "gold"],
+  ["Taste", r.basetaste, r.maxtaste, ""],
+  ["Dish slots filled", r.basedish, r.maxdish, ""],
+].filter(([, a, b]) => a || b);
+
+// 同类对比（分层回退逻辑在 lib 的 recipePeers 里，索引只建一次）
+const { rows: compareRows, heading: peerHeading, note: peerNote } = recipePeers(r);
+
+const ingredientSentence = ingredients.length
+  ? ingredients.map((i) => `${i.qty ? i.qty + " " : ""}${i.name}`).join(", ")
+  : "no listed ingredients";
+
+const quickAnswer = [
+  `${r.title} is a Dave the Diver dish${r.acquired ? ` unlocked through ${r.acquired}` : ""}.`,
+  ingredients.length ? `It needs ${ingredientSentence}.` : "",
+  r.baseprice || r.maxprice
+    ? `It sells for ${r.baseprice || "?"} gold at base quality and up to ${r.maxprice || "?"} gold once fully upgraded.`
+    : "",
+  r.basetaste || r.maxtaste
+    ? `Its taste rating runs from ${r.basetaste || "?"} to ${r.maxtaste || "?"}${
+        r.maxdish ? ` while filling ${r.maxdish} dish slots` : ""
+      }.`
+    : "",
+]
+  .filter(Boolean)
+  .join(" ");
+
+const faqs = [
+  {
+    q: `What are the ingredients for ${r.title} in Dave the Diver?`,
+    a: ingredients.length
+      ? `${r.title} requires ${ingredients
+          .map((i) => `${i.qty ? i.qty + " " : ""}${i.name}`)
+          .join(" + ")}. Open an ingredient page to see where that fish spawns, how much meat it gives and whether it can be farmed.`
+      : `${r.title} has no ingredient list recorded in the recipe database.`,
+  },
+];
+if (r.baseprice || r.maxprice) {
+  faqs.push({
+    q: `How much does ${r.title} sell for?`,
+    a: `${r.title} starts at ${r.baseprice || "?"} gold and reaches ${r.maxprice || "?"} gold at maximum upgrade, the site's highest dish price being ${maxPriceSite} gold. Taste rises from ${r.basetaste || "?"} to ${r.maxtaste || "?"} over the same upgrades.`,
+  });
+}
+if (r.acquired) {
+  faqs.push({
+    q: `How do you unlock ${r.title}?`,
+    a: fishByTitle.has(r.acquired)
+      ? `${r.title} is unlocked by catching its ingredient, ${r.acquired}. See the ${r.acquired} page for its zone, active time and farm output.`
+      : `${r.title} is unlocked through ${r.acquired}. Dish unlocking is tied to Cooksta rank, quest completion or harvesting the required ingredient.`,
+  });
+}
+if (r.maxtaste || r.maxdish) {
+  faqs.push({
+    q: `Is ${r.title} worth cooking?`,
+    a: `At maximum upgrade ${r.title} has a taste of ${r.maxtaste || "?"} out of a site high of ${maxTasteSite}, and it fills ${
+      r.maxdish || "?"
+    } dish slot${String(r.maxdish) === "1" ? "" : "s"}. Compare it against the dishes below, or filter the whole list with the Recipe Filter tool, before adding it to the daily menu.`,
+  });
+}
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", Astro.site).href },
+      { "@type": "ListItem", position: 2, name: "Recipes", item: new URL("/recipes/", Astro.site).href },
+      { "@type": "ListItem", position: 3, name: r.title, item: Astro.url.href },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((x) => ({
+      "@type": "Question",
+      name: x.q,
+      acceptedAnswer: { "@type": "Answer", text: x.a },
+    })),
+  },
+];
+---
+
+<Base
+  title={`${r.title} - Dave the Diver: Ingredients, Price & Taste - DiverDB`}
+  description={`${r.title} recipe in Dave the Diver: ${
+    ingredients.length ? `made from ${ingredientSentence}, ` : ""
+  }sells for ${r.baseprice || "?"} to ${r.maxprice || "?"} gold with taste ${r.basetaste || "?"} to ${
+    r.maxtaste || "?"
+  }.`}
+  schema={schema}
+>
+<p style="margin:0"><a href="/recipes/">← All recipes</a></p>
+<h1>{r.title}</h1>
+<p>
+  {r.acquired && <span class="tag">Unlocked: {r.acquired}</span>}
+  {r.maxdish && <span class="tag">{r.maxdish} dish{r.maxdish === "1" ? "" : "es"}</span>}
+  {r.maxtaste && <span class="tag hot">Max taste {r.maxtaste}</span>}
+</p>
+
+<p>{quickAnswer}</p>
+
+{
+  r.description && (
+    <p class="muted">
+      {String(r.description).split(";")[0].replace(/\.$/, "")}.
+    </p>
+  )
+}
+
+<div class="stats" style="margin:1rem 0">
+  <div class="stat"><strong>{r.baseprice || "—"}</strong><span>Base price (gold)</span></div>
+  <div class="stat"><strong>{r.maxprice || "—"}</strong><span>Max price (gold)</span></div>
+  <div class="stat"><strong>{r.basetaste || "—"}</strong><span>Base taste</span></div>
+  <div class="stat"><strong>{r.maxtaste || "—"}</strong><span>Max taste</span></div>
+  <div class="stat"><strong>{r.maxdish || "—"}</strong><span>Dish slots</span></div>
+</div>
+
+<section>
+  <h2>Ingredients for {r.title}</h2>
+  {
+    ingredients.length ? (
+      <table>
+        <thead>
+          <tr>
+            <th>Qty</th>
+            <th>Ingredient</th>
+            <th>Lookup</th>
+          </tr>
+        </thead>
+        <tbody>
+          {ingredients.map((i) => (
+            <tr>
+              <td><strong>{i.qty || "—"}</strong></td>
+              <td>{i.name}</td>
+              <td>
+                {fishSlug(i.name) ? (
+                  <a href={fishSlug(i.name)}>Where to catch {i.name}</a>
+                ) : (
+                  <span class="muted">Pantry item</span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ) : (
+      <p class="muted">No ingredient list is recorded for this dish.</p>
+    )
+  }
+  {
+    fishByTitle.has(r.acquired) && (
+      <p>
+        This recipe is unlocked by <a href={`/fish/${slugify(r.acquired)}/`}>{r.acquired}</a>. See that page
+        for its spawn zone and farm output.
+      </p>
+    )
+  }
+</section>
+
+<section>
+  <h2>Price and taste scaling</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Stat</th>
+        <th>Base</th>
+        <th>Max</th>
+        <th>Gain</th>
+      </tr>
+    </thead>
+    <tbody>
+      {scaling.map(([label, a, b, unit]) => (
+        <tr>
+          <th style="width:40%">{label}</th>
+          <td>{a || "—"}{unit ? ` ${unit}` : ""}</td>
+          <td><strong>{b || "—"}</strong>{unit ? ` ${unit}` : ""}</td>
+          <td>{num(b) && num(a) ? `+${num(b) - num(a)}` : "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p class="muted">
+    Upgrade dishes at the restaurant to move each stat from its base value to its maximum.
+  </p>
+</section>
+
+{
+  compareRows.length > 0 && (
+    <section>
+      <h2>{peerHeading}</h2>
+      <div style="overflow-x:auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Dish</th>
+              <th>Base price</th>
+              <th>Max price</th>
+              <th>Max taste</th>
+              <th>Unlocked by</th>
+            </tr>
+          </thead>
+          <tbody>
+            {compareRows.map((x) => (
+              <tr>
+                <td><a href={`/recipes/${slugify(x.title)}/`}>{x.title}</a></td>
+                <td>{x.baseprice || "—"}</td>
+                <td>{x.maxprice || "—"}</td>
+                <td>{x.maxtaste || "—"}</td>
+                <td>{x.acquired || "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">
+        {peerNote} Use the{" "}
+        <a href="/tools/recipe-filter/">Recipe Filter</a> to search the full list by ingredient, price or taste.
+      </p>
+    </section>
+  )
+}
+
+<section>
+  <h2>{r.title} FAQ</h2>
+  {faqs.map((x) => (
+    <div class="card" style="margin-bottom:0.75rem">
+      <h3 style="margin:0 0 0.25rem">{x.q}</h3>
+      <p style="margin:0">{x.a}</p>
+    </div>
+  ))}
+</section>
+
+<Related
+  heading="Next steps"
+  links={[
+    { href: "/tools/recipe-filter/", title: "Recipe Filter", sub: "Search dishes by ingredient and taste", tool: true },
+    { href: "/rankings/", title: "Rankings", sub: "Best dishes and fish ranked", tool: true },
+    { href: "/recipes/", title: "All Recipes", sub: "The full recipe database" },
+    ...(ingredients
+      .map((i) => i.name)
+      .filter((n) => fishByTitle.has(n))
+      .slice(0, 2)
+      .map((n) => ({ href: `/fish/${slugify(n)}/`, title: n, sub: "Where to catch and farm" }))),
+  ]}
+/>
+</Base>

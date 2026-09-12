@@ -3,6 +3,9 @@ import Base from "../../layouts/Base.astro";
 import recipes from "../../data/recipes.json";
 
 import Related from "../../components/Related.astro";
+import fish from "../../data/fish.json";
+import { slugify, parseIngredients } from "../../lib/diverdb.js";
+const fishTitles = new Set(fish.map((f) => f.title));
 const sorted = [...recipes].sort((a, b) => Number(b.maxtaste || 0) - Number(a.maxtaste || 0));
 const maxPrice = Math.max(...recipes.map((r) => Number(r.maxprice) || 0));
 const maxTaste = Math.max(...recipes.map((r) => Number(r.maxtaste) || 0));
@@ -61,8 +64,17 @@ const listSchema = {
       <tbody>
         {sorted.map((r) => (
           <tr data-name={(r.title || "").toLowerCase()} data-taste={Number(r.maxtaste) || 0}>
-            <td><strong>{r.title}</strong></td>
-            <td style="max-width:280px">{r.ingredients || "—"}</td>
+            <td><a href={`/recipes/${slugify(r.title)}/`}><strong>{r.title}</strong></a></td>
+            <td style="max-width:280px">
+              {parseIngredients(r.ingredients).map((i) =>
+                fishTitles.has(i.name) ? (
+                  <a href={`/fish/${slugify(i.name)}/`} style="display:block">{i.qty} {i.name}</a>
+                ) : (
+                  <span class="muted" style="display:block">{i.qty} {i.name}</span>
+                )
+              )}
+              {!r.ingredients && "—"}
+            </td>
             <td>{r.baseprice || "—"}</td>
             <td>{r.maxprice || "—"}</td>
             <td>{r.basetaste || "—"}</td>
