@@ -1,8 +1,8 @@
 name: Deploy to Cloudflare Pages
 
+# 仅手动触发：本项目的生产部署走本地 wrangler（wrangler pages deploy dist），
+# 曾配置的 push 自动部署因 secrets 未配置从未成功，保留为手动兜底。
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
