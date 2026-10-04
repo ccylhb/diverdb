@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://diverdb.pages.dev/sitemap.xml
+Sitemap: https://diverdb.lootseer.com/sitemap.xml
