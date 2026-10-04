@@ -1,15 +1,18 @@
-# DiverDB - Dave the Diver Guide Site (Astro)
+# DiverDB — Dave the Diver Database & Tools (Astro)
 
-Static guide and database site for Dave the Diver, built with Astro and hosted for free on
+A static database and toolkit site for **Dave the Diver**: fish, recipes, restaurant
+staff, weapons and bosses, plus a few planner tools. Built with Astro, hosted on
 Cloudflare Pages.
 
-Live: <https://ccylhb.github.io/diverdb/>
-Cloudflare mirror: <https://diverdb.pages.dev>
+**Live site: <https://diverdb.lootseer.com/>**
 
 Popular pages:
-- [Fish Database](https://diverdb.pages.dev/fish/)
-- [Recipe Database](https://diverdb.pages.dev/recipes/)
-- [Tools](https://diverdb.pages.dev/tools/)
+- [Fish Database](https://diverdb.lootseer.com/fish/) — 232 fish and creatures with depth, time and location
+- [Recipe Database](https://diverdb.lootseer.com/recipes/) — 306 recipes with ingredient breakdowns
+- [Staff](https://diverdb.lootseer.com/staff/) — 24 restaurant staff, dispatch and skills
+- [Weapons](https://diverdb.lootseer.com/weapons/) — 29 weapons with stats
+- [Bosses](https://diverdb.lootseer.com/bosses/) — 16 bosses
+- [Tools](https://diverdb.lootseer.com/tools/) — fish farm planner, recipe filter, staff compare
 
 ## Quick start
 
@@ -34,6 +37,7 @@ src/
   data/staff.json          # 24 restaurant staff members
   data/weapons.json        # 29 weapons
   data/bosses.json         # 16 bosses
+  data/achievements.json   # 43 achievements
   pages/
     index.astro            # homepage: tools, databases, fresh guides
     fish/ recipes/ staff/ weapons/ bosses/  # searchable database pages
@@ -49,10 +53,15 @@ then spot-check key values against the live game before rebuilding.
 
 ## Deployment
 
-Cloudflare Pages:
+Hosted on Cloudflare Pages:
 - Build command: `npm run build`
 - Output directory: `dist`
-- GitHub Actions workflow is included in `.github/workflows/deploy.yml`.
 
-Before launch, replace `https://diverdb.pages.dev` with the real domain in
-`astro.config.mjs` and `public/robots.txt`.
+The canonical domain is **<https://diverdb.lootseer.com/>**. Earlier URLs
+(`diverdb.pages.dev`, the GitHub Pages mirror) are deprecated and no longer
+maintained — link to the canonical domain instead.
+
+## Data source and license
+
+Data is derived from the public Dave the Diver Fandom wiki (CC BY-SA). If you
+reuse it, attribute the upstream wiki.
