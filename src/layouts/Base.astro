@@ -1,4 +1,5 @@
 ---
+import sister from "../../sister-sites.json";
 interface Props {
   title: string;
   description: string;
@@ -17,6 +18,8 @@ const defaultSchema = {
 };
 const extraSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 const schemas = [defaultSchema, ...extraSchemas];
+// Cross-site network block. DiverDB is a hand-written skeleton (no site.config.json), so
+// the pairing lives in its own JSON, imported at the top of this frontmatter.
 ---
 
 <!doctype html>
@@ -112,8 +115,17 @@ const schemas = [defaultSchema, ...extraSchemas];
         gap: 0.5rem 1rem;
         margin-bottom: 0.75rem;
       }
-      .footer-links a { color: var(--muted); }
-      .footer-links a:hover { color: var(--text); }
+.footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--text); }
+    .sister-block { max-width: 1100px; margin: 3rem auto 1rem; padding: 1.5rem 1.5rem 0; border-top: 1px solid var(--border); }
+    .sister-heading { font-size: 1rem; font-weight: 500; margin: 0 0 0.9rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .sister-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.7rem; }
+    .sister-item a { display: block; background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 0.85rem; color: inherit; text-decoration: none; height: 100%; }
+    .sister-item a:hover { border-color: var(--accent); }
+    .sister-item strong { display: block; font-weight: 500; margin-bottom: 0.15rem; }
+    .sister-item span { display: block; font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+    .sister-hub { margin: 1rem 0 0; font-size: 0.9rem; }
+    @media (max-width: 640px) { .sister-grid { grid-template-columns: 1fr; } }
       h1 { font-size: 2.1rem; margin: 0 0 0.5rem; line-height: 1.2; }
       h2 { margin: 2rem 0 0.75rem; font-size: 1.45rem; line-height: 1.25; }
       h3 { margin: 1.5rem 0 0.5rem; font-size: 1.08rem; line-height: 1.3; }
@@ -234,6 +246,15 @@ const schemas = [defaultSchema, ...extraSchemas];
     <main>
       <slot />
     </main>
+    <nav class="sister-block" aria-label="Other LootSeer databases">
+      <h2 class="sister-heading">More game databases</h2>
+      <ul class="sister-grid">
+        {sister.sisterSites.map((s) => (
+          <li class="sister-item"><a href={s.url}><strong>{s.name}</strong><span>{s.blurb}</span></a></li>
+        ))}
+      </ul>
+      <p class="sister-hub"><a href={sister.hubSite.url}><strong>{sister.hubSite.name}</strong> &mdash; all databases in one place</a></p>
+    </nav>
     <footer class="site-footer">
       <div class="footer-links">
         <a href="/fish/">Fish</a>
